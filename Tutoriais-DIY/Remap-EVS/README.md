@@ -1,7 +1,3 @@
-**EM CONSTRUÇÃO**  
-# Nome-do-Projeto / Tutorial: <Título que descreva o que o vídeo ensina>
-
-> Tutorial baseado no vídeo do YouTube: https://www.youtube.com/embed/k8r8NSqz_7c
 <div align="center">
   <iframe width="560" height="315"
     src="https://www.youtube.com/embed/k8r8NSqz_7c"
@@ -11,6 +7,11 @@
     allowfullscreen>
   </iframe>
 </div>
+
+**EM CONSTRUÇÃO**  
+# Nome-do-Projeto / Tutorial: <Título que descreva o que o vídeo ensina>
+
+> Tutorial baseado no vídeo do YouTube: https://www.youtube.com/embed/k8r8NSqz_7c
 
 
 ## 🌟 Objetivo / O que você vai aprender
