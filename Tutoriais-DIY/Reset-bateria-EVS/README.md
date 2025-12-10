@@ -43,6 +43,11 @@ Sumiu uma bateria do painel da voltz, agora vou mostrar o modo mais simples e r�
     </a><br>
   </li>
 
+![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Reset-bateria-EVS/1.png)
+
+![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Reset-bateria-EVS/2.png)
+
+
   <li>
     <strong>
     <a href="https://www.youtube.com/watch?v=k8r8NSqz_7c&t=338s" target="_blank" rel="noopener noreferrer">
