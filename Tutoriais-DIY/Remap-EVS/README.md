@@ -40,10 +40,10 @@ Liste o que é necessário para seguir o tutorial. Exemplo:
   </li>
 
   <li>
-    <strong>00:19 – Ferramentas</strong><br>
+    <strong>
     <a href="https://www.youtube.com/watch?v=k8r8NSqz_7c&t=19s" target="_blank" rel="noopener noreferrer">
-      Abrir no segundo 19
-    </a>
+      00:19 – Ferramentas</strong>
+    </a><br>
   </li>
 
   <li>
