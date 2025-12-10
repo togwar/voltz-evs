@@ -1,20 +1,23 @@
 
 
 **EM CONSTRUÇÃO**  
-# Tropicalização da EVS
+# Tropicalização da EVS - Peças, Troca de BMS e Instalação.
 
+- Modificação EVS Parte 1: Peças e Ferramentas
 <p align="center">
   <a href="https://youtube.com/watch?v=L5VHc5klR04" target="_blank" rel="noopener noreferrer">
     <img src="https://i.ytimg.com/vi/L5VHc5klR04/maxresdefault.jpg">
   </a>
 </p>
 
+- Modificação EVS Parte 2: Troca da BMS
 <p align="center">
   <a href="https://youtube.com/watch?v=tKhqxlfBPuA" target="_blank" rel="noopener noreferrer">
     <img src="https://i.ytimg.com/vi/tKhqxlfBPuA/maxresdefault.jpg">
   </a>
 </p>
 
+- Modificação EVS Parte 3: Montagem do Kit
 <p align="center">
   <a href="https://youtube.com/watch?v=dftcn9fOm48" target="_blank" rel="noopener noreferrer">
     <img src="https://i.ytimg.com/vi/dftcn9fOm48/maxresdefault.jpg">
@@ -23,15 +26,9 @@
 
 ## 🌟 Objetivo / O que você vai aprender
 
-- Modificação EVS Parte 1: Peças e Ferramentas
-- Modificação EVS Parte 2: Troca da BMS
-- Modificação EVS Parte 3: Montagem do Kit
-
+Esse é uma série de 3 vídeos que mostra o passo a passo para executar as modificações necessárias para remover a BMS e subistituição da controladora da Voltz EVS. A intenção é trocar todas as peças originais por peças padrão do mercado para ter independência e maior controle sobre o veículo.
 
 ## 🧰 Pré-requisitos
-
-Esse é o primeiro vídeo da série que mostrará as modificações que irei fazer na minha Voltz EVS. A intenção é trocar todas as peças originais por peças padrão do mercado para ter independência e maior controle sobre o veículo.
-Também pretendo fazer algumas modificações mecânicas no futuro utilizando impressão 3D.
 
 Lista de Componentes mostrados no vídeo ------------------------------------------------
 
