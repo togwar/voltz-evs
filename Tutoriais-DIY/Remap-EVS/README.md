@@ -19,9 +19,10 @@ Como Reprogramar a controladora original da VOLTZ
 
 - Computador com sistema operacional Windows.
 - Conhecimento básico em informática e uso do computador.
+- Aplicativos disponibilizados neste repositório.
 - <a href="https://shopee.com.br/Cabo-Db9-Adaptador-Usb-2.0-Serial-Rs232-Conversor-9-Pinos-i.404162541.10814284463" target="_blank" rel="noopener noreferrer">Shopee.com.br - Cabo RS232</a><br>
 - ou compre pessoalmente o cabo RS232 na santa efigenia ( rua vitoria, 24 ) - newportcom
-- Aplicativos disponibilizados neste repositório.
+- jump de fios para ligar no RS232 e conector da moto.
 
 ## ⏱️ Momentos importantes do vídeo
 
