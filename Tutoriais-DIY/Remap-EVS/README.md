@@ -1,17 +1,13 @@
+
+
+**EM CONSTRUÇÃO**  
+# Upgrade na VOLTZ EVS
+
 <p align="center">
   <a href="https://www.youtube.com/watch?v=k8r8NSqz_7c" target="_blank" rel="noopener noreferrer">
     <img src="https://img.youtube.com/vi/k8r8NSqz_7c/hqdefault.jpg">
   </a>
 </p>
-
-**EM CONSTRUÇÃO**  
-# Upgrade na VOLTZ EVS
-
-> Parte 1: https://www.youtube.com/embed/6OnDzg1lFww
-> Parte 2: Só para Membros do Canal do Joch
-> Parte 3: https://www.youtube.com/embed/k8r8NSqz_7c
-> Parte 4: Só para Membros do Canal do Joch
-> Parte 5: https://www.youtube.com/embed/ClDa8YNVks8
 
 
 ## 🌟 Objetivo / O que você vai aprender
@@ -20,8 +16,6 @@ Como Reprogramar a controladora original da VOLTZ
 
 
 ## 🧰 Pré-requisitos
-
-Liste o que é necessário para seguir o tutorial. Exemplo:
 
 - Computador com sistema operacional Windows.
 - Conhecimento básico em informática e uso do computador.
@@ -124,20 +118,3 @@ Liste o que é necessário para seguir o tutorial. Exemplo:
   </li>
 </ul>
 
-
-Descreva os passos necessários para reproduzir o resultado do vídeo. Use blocos de código para comandos, exemplos de configuração, etc.  
-Exemplo:
-
-```bash
-# Clone este repositório
-git clone https://github.com/SEU_USUARIO/SEU_REPO.git
-cd SEU_REPO
-
-# Instale dependências
-# Exemplo
-npm install
-
-# Execute o projeto / tutorial
-npm run start
-
-https://www.youtube.com/watch?v=k8r8NSqz_7c
