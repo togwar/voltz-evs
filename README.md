@@ -1,18 +1,15 @@
 # ⚡ Voltz EVs – Software, Firmwares e Tutoriais Técnicos
 **EM CONSTRUÇÃO**  
-
-Repositório oficial mantido pela comunidade para **compartilhar software, firmwares, documentação técnica e tutoriais** relacionados aos veículos elétricos da **VOLTZ Motors**.
-
-O objetivo é centralizar conhecimento, facilitar atualizações e apoiar entusiastas, mecânicos e desenvolvedores que desejam compreender e aprimorar suas motos elétricas.
-
----
-
 ## 📌 Status do Projeto
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
 ![License](https://img.shields.io/github/license/togwar/voltz-evs)
 ![Issues](https://img.shields.io/github/issues/togwar/voltz-evs)
 ![Stars](https://img.shields.io/github/stars/togwar/voltz-evs?style=social)
+
+Repositório oficial mantido pela comunidade para **compartilhar software, firmwares, documentação técnica e tutoriais** relacionados aos veículos elétricos da **VOLTZ Motors**.
+
+O objetivo é centralizar conhecimento, facilitar atualizações e apoiar entusiastas, mecânicos e desenvolvedores que desejam compreender e aprimorar suas motos elétricas.
 
 ---
 
