@@ -5,25 +5,29 @@
 </p>
 
 **EM CONSTRUÇÃO**  
-# Nome-do-Projeto / Tutorial: <Título que descreva o que o vídeo ensina>
+# Upgrade na VOLTZ EVS
 
-> Tutorial baseado no vídeo do YouTube: https://www.youtube.com/embed/k8r8NSqz_7c
+> Parte 1: https://www.youtube.com/embed/6OnDzg1lFww
+> Parte 2: Só para Membros do Canal do Joch
+> Parte 3: https://www.youtube.com/embed/k8r8NSqz_7c
+> Parte 4: Só para Membros do Canal do Joch
+> Parte 5: https://www.youtube.com/embed/ClDa8YNVks8
 
 
 ## 🌟 Objetivo / O que você vai aprender
 
-Perca sua garantia da VOLTZ com estilo!
+Como Reprogramar a controladora original da VOLTZ
 
-Esse é o terceiro episódio de uma mini serie que pretendo fazer ensinando a como modificar a moto de ponta a ponta
 
 ## 🧰 Pré-requisitos
 
 Liste o que é necessário para seguir o tutorial. Exemplo:
 
-- Sistema operacional (ex: Windows, Linux, macOS)  
-- Versão da linguagem/plataforma (ex: Node.js version X, Python 3.Y)  
-- <a href="https://shopee.com.br/Cabo-Db9-Adaptador-Usb-2.0-Serial-Rs232-Conversor-9-Pinos-i.404162541.10814284463" target="_blank" rel="noopener noreferrer">Cabo RS232</a><br>
-
+- Computador com sistema operacional Windows.
+- Conhecimento básico em informática e uso do computador.
+- <a href="https://shopee.com.br/Cabo-Db9-Adaptador-Usb-2.0-Serial-Rs232-Conversor-9-Pinos-i.404162541.10814284463" target="_blank" rel="noopener noreferrer">Shopee.com.br - Cabo RS232</a><br>
+- ou compre pessoalmente o cabo RS232 na santa efigenia ( rua vitoria, 24 ) - newportcom
+- Aplicativos disponibilizados neste repositório.
 
 ## ⏱️ Momentos importantes do vídeo
 
