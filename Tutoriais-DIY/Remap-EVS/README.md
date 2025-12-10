@@ -26,6 +26,21 @@ Liste o que é necessário para seguir o tutorial. Exemplo:
 
 ## 🚀 Passo a passo / Instruções
 
+0:00 - intro
+<a class="yt-core-attributed-string__link yt-core-attributed-string__link--call-to-action-color" tabindex="0" aria-label="19 segundos" href="https://www.youtube.com/embed/k8r8NSqz_7c&amp;t=19s target="" force-new-state="true">0:19</a>
+0:19 - ferramentas
+0:45 - abrindo a moto
+2:05 - instalação
+3:35 - bateria voltagem
+4:30 - angulo hall
+5:10 - curva aceleração
+5:30 - modos condução
+6:17 - RPM
+9:25 - regenerativo em ação
+10:13 - outras funçoes
+10:59 - relatorio de erros
+11:16 - despedidas!
+
 Descreva os passos necessários para reproduzir o resultado do vídeo. Use blocos de código para comandos, exemplos de configuração, etc.  
 Exemplo:
 
