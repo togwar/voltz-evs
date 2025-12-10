@@ -25,6 +25,6 @@ Ele emite a comunicação de autorização de carregamento entre outras funçõe
 
 
 
-![video](https://github.com/togwar/voltz-evs/raw/main/Solucoes/EBM/ByPass-Carregador/video1.mp4)
+![video](video1.mp4)
 
 
