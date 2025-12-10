@@ -27,7 +27,8 @@ Liste o que é necessário para seguir o tutorial. Exemplo:
 ## 🚀 Passo a passo / Instruções
 
 0:00 - intro
-<a class="yt-core-attributed-string__link yt-core-attributed-string__link--call-to-action-color" tabindex="0" aria-label="19 segundos" href="https://www.youtube.com/embed/k8r8NSqz_7c&amp;t=19s target="" force-new-state="true">0:19</a>
+[Ir direto para o segundo 19 do vídeo](https://www.youtube.com/watch?v=k8r8NSqz_7c&t=19s)
+
 0:19 - ferramentas
 0:45 - abrindo a moto
 2:05 - instalação
