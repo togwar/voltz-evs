@@ -8,7 +8,7 @@ Firmwares específicas para as motos EVS e EVS Work, **Originais do fabricante A
 ---
 
 ## VERSÃO VOLTZ EVS
-**ATENÇÃO:** EXCLUSIVA para **EVS**, não utilizar na EVS Work.
+⚠**ATENÇÃO:** EXCLUSIVA para **EVS**, não utilizar na EVS Work.
 
 ⏳ A1705_V10000_EVS_70_YM-T7.dat (EM DESENVOLVIMENTO)
 
@@ -57,6 +57,7 @@ Firmwares específicas para as motos EVS e EVS Work, **Originais do fabricante A
 ---
 
 ## VERSÃO VOLTZ EVS WORK
+⚠**ATENÇÃO:** EXCLUSIVA para **EVS WORK**, não utilizar na EVS (monobraço).
 
 ⏳ A1705_V10000_EVSW_70_YM-T7.dat (EM DESENVOLVIMENTO)
 
