@@ -72,7 +72,6 @@ Ferramentas:
     </a><br>
   </li>
 
-
   <li>
     <strong>
     <a href="https://www.youtube.com/watch?v=k8r8NSqz_7c&t=338s" target="_blank" rel="noopener noreferrer">
