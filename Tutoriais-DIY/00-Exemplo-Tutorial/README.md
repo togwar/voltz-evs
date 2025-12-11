@@ -11,6 +11,7 @@ Imagens de destaque, que você pode anexar ao conteúdo também é possível.
 
 Por fim, links direto a momentos importantes no video do youtube que esta se referenciado.
 
+Concluindo a sua edição, basta compactar a pasta e enviar para o administrador do Github.
 ---
 
 # Aqui fica o título do seu tutorial.
