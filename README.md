@@ -21,7 +21,7 @@ O objetivo é centralizar conhecimento, facilitar atualizações e apoiar entusi
 4. [Tutoriais](#-tutoriais-de-ajuste-e-manutenção) 
 5. [Firmwares e Softwares](#-firmwares-e-softwares)
 6. [Manutenção DIY - Faça você mesmo](#-manutenção-diy---faça-você-mesmo)
-
+7. [Prestadores e Referências](#-prestadores-e-referências)
 
 ---
 
@@ -77,7 +77,7 @@ Atualmente o repositório cobre (verifique compatibilidade):
 > Lembre-se do que você comprou o veículo e sua proposta, ele é uma máquina "limitada", **não será apenas um número que irá mudar na configuração que dará super poderes à sua moto.
 > **PRUDÊNCIA E CONSCIÊNCIA** são fundamentais para uma customização.
 >
-## 🤝 Prestadores e referências.
+## 🤝 Prestadores e Referências.
 > Segue uma relação de proficionais ou entusiastas que desenvolvem soluções ou conteúdo sobre mobilídade eletrica que recomendo (ordem alfabética, máximo 2 por região):
 - EBM Eletronics - DDD 51 - https://www.youtube.com/@ebmelectronic7865
 - Euller Labs - DDD 34 - https://www.youtube.com/@eullerm
