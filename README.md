@@ -19,8 +19,8 @@ O objetivo é centralizar conhecimento, facilitar atualizações e apoiar entusi
 2. [Modelos Compatíveis](#-modelos-de-motos-compatíveis)
 3. [Conteúdos Disponíveis](#-conteúdos-disponíveis)
 4. [Tutoriais](#-tutoriais-de-ajuste-e-manutenção) 
-5. [Firmwares e Software](#-firmwares-e-software)
-6. [Manutenção DIY - Faça você mesmo!](#-manutenção-DIY-Faça-você-mesmo!)
+5. [Firmwares e Softwares](#-firmwares-e-softwares)
+6. [Manutenção DIY - Faça você mesmo](#-manutenção-diy-faça-você-mesmo)
 
 
 ---
@@ -70,7 +70,7 @@ Atualmente o repositório cobre (verifique compatibilidade):
 
 ---
 
-## 🛠 Manutenção DIY - Faça você mesmo!
+## 🛠 Manutenção DIY - Faça você mesmo
 > **Atenção:** Nosso objetivo é prover o meio, a execução e responsabilidade é integralmente SUA!
 > Provemos os arquivos e estruturas para o conhecimento e execução final, porém se não domina essa atividade recomendamos buscar alguns especialistas no assunto que mais promovem conteúdo e informação na rede, tais como:
 - Well Bike Elétrica https://www.youtube.com/@wellbikeeletricahnd
