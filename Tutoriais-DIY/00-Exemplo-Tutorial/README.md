@@ -1,6 +1,9 @@
-Nesse post você **pode salvar o arquivo README.md e edita-lo em seu computador** ou dispositivo, de acordo com o seu objetivo ou video que queira publicar, isso é, o "seu conteúdo" que julga interessante.
+Nesse repositorio baixe o arquivo:
+https://github.com/togwar/voltz-evs/blob/main/Tutoriais-DIY/00-Exemplo-Tutorial/00-Exemplo-Tutorial.zip
 
-Nesse arquivo contem toda a demonstração das funções ja preenchidas no arquivo, logo, o trabalho será apenas compreender o video... obter o codigo do video... e subistitui-lo nos links do tutorial.
+Ele no seu computador, extraia que irá ver uma pasta, **com o arquivo README.md** e algumas imagens de exemplo, basta editá-los em seu computador ou dispositivo, de acordo com o seu objetivo ou video que queira publicar, isso é, o "seu conteúdo" que julga interessante.
+
+Nesse arquivo contem toda a demonstração das funções ja preenchidas no arquivo, logo, o trabalho será apenas compreender o video... obter o código do video do youtube... e subistituí-lo nos links do tutorial.
 
 Talvez agregar conteudos como links externos para produtos ou ferramentas... caso não preciso disso, basta remover.
 
