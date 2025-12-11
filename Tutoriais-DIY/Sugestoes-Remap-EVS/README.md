@@ -23,6 +23,7 @@ Aqui iremos centralizar sugestões e configurações da controladora APT para a 
 		> Velocidade máxima real (5km/h) muito mais segura e confortável para manobras
 		> Inalterado a força e a potência da "marcha ré".
 		> Essa configuração não oferece risco para a controladora.
+		
 ![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/1.png)
 
 ---
