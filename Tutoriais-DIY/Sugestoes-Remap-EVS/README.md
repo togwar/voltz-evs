@@ -38,9 +38,12 @@ Aqui iremos centralizar sugestões e configurações da controladora APT para a 
 
 ![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/2.png)
 
-		> Com esses ajustes, a moto passa a entregar a potência da moto de acordo com o giro do acelerador com muito maior precisão, resultando em uma maior linearidade.
-		> Na imagem temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
-		> O ganho de controle na precisão do acelerador é 2x maior.
+
+	Com esses ajustes, a moto passa a entregar a potência da moto de acordo com o giro do acelerador com muito maior precisão, resultando em uma maior linearidade.
+	
+	O ganho de controle na precisão do acelerador é 2x maior.
+	
+	Na imagem abaixo, temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
 		
 ![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/3.png)
 
