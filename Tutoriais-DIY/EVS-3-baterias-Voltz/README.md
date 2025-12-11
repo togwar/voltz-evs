@@ -73,13 +73,12 @@ Em breve teremos a versão final publicada aqui.
 
 ## 📷 Imagens complementares
 
+![Descrição da imagem](04.jpg)
 
-![Descrição da imagem](01.jpg)
-
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/EVS-3-baterias-Voltz/02.jpg)
+![Descrição da imagem](02.jpg)
 
 ![Descrição da imagem](03.jpg)
 
-![Descrição da imagem](04.jpg)
-
 ![Descrição da imagem](05.jpg)
+
+![Descrição da imagem](01.jpg)
