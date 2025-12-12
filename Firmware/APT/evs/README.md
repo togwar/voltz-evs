@@ -56,7 +56,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 
 A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente (ou 5000W, um pouco mais forte que a EVS original com apenas uma Bateria).  
 
-Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.  
+Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.🥳  
 
 
 ---
