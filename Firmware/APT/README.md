@@ -23,6 +23,7 @@ Ideal para regiões extremamente quentes com problemas recorrentes de superaquec
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**.
 - Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/A1705_V10000_EVS_70_YM_T8.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_70_YM_T8.dat</strong>
 
 1. Todas as configurações originais da moto e do fabricante.
 2. Destrava TBOX, que passa ter a função de apenas colocar a hora e data no painel, não mais fica refém dele da moto não andar caso ele falhe.
