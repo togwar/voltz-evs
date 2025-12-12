@@ -1,10 +1,10 @@
-# Euller Labs - ALÇA da BATERIA quebrou? Aqui está a Solução.
+# Euller Labs - ALÇA da BATERIA Voltz EVS
 
 Compre sua alça pronta através do link:
 https://shopee.com.br/product/607821839/22091668149/
 
 
-- Folga na Bateria EVS? Resolva esse problema da melhor maneira possível!
+- ALÇA da BATERIA quebrou? Aqui está a Solução
 <p align="center">
   <a href="https://youtube.com/watch?v=rGtOiifGbOk" target="_blank" rel="noopener noreferrer">
     <img src="https://i.ytimg.com/vi/rGtOiifGbOk/maxresdefault.jpg">
