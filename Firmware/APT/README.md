@@ -33,15 +33,15 @@ Ideal para regiões extremamente quentes com problemas recorrentes de superaquec
 ### ⚙️ A1705_V10000_EVS_130_YM-T7.dat (DOWNLOAD EM BREVE)
 **Download ficará disponível após atingirmos 30 videos tutoriais.**
 
-**DESCRIÇÃO**: A firmware sem limitações! O poder máximo que a EVS comporta (com segurança).
+**DESCRIÇÃO**: A firmware sem limitações! O poder máximo que a EVS comporta (com segurança).  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 Desenvolvida para quem tem 2 Bateria, original ou não.  
-**NÃO RECOMENDADA** para quem possui apenas uma bateria original.
+**NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
 Ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
 Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
 Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
-Talvez tenha que manerar no acelerador em regiões extremamente quentes caso tenha problemas recorrentes de superaquecimento.
+Talvez tenha que manerar no acelerador em regiões extremamente quentes caso tenha problemas recorrentes de superaquecimento.  
 
 
 - Controladora Original da EVS.
