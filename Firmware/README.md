@@ -236,4 +236,8 @@ Siga as instruções mostradas na tela.
 
 Se você não souber qual porta **COM** usar, siga o trecho do vídeo:
 
-<a href=https://youtu.be/k8r8NSqz_7c?t=176 target="_blank" rel="noopener noreferrer">Abrir Video</a>
+<p align="center">
+  <a href="https://youtu.be/k8r8NSqz_7c?t=176">
+    <img src="https://img.youtube.com/vi/k8r8NSqz_7c/hqdefault.jpg" alt="Vídeo portas COM">
+  </a>
+</p>
