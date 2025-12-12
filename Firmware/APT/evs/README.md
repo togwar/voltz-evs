@@ -1,5 +1,11 @@
 # Firmwares APT.
 
+1. As Firmware nessa página são originais e certificadas pelo fabricante APT.
+2. Todas as edições e modificações passaram nos testes dos engenheiros da APT.
+3. São firmwares EXCLUSIVAS para o modelo específico da sua moto EVS.
+4. O software **EV_DriveManager** não apresenta ou revela parametros de programações internas ou comportamentais, apenas alterações diretas, logo uma dessas, **pode até lembrar a firmware original**, em sua micro programação é bem diferente!  
+
+
 ## VERSÃO VOLTZ EVS
 ⚠**ATENÇÃO:** EXCLUSIVA para EVS, **NÃO utilizar na EVS Work**.
 
@@ -9,7 +15,7 @@
 
 Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e desenvolvidas especificamente para as motos VOLTZ.
 
-### ⚙️ A1705_V10000_EVS_70_YM_T8.dat
+### ⚙️ A1705_V10000_EVS_70_YM_T8.dat - 11/DEZ/2025
 
 **DESCRIÇÃO**: Essa firmware **tem menos potência comparado a EVS com duas baterias 100% original**.  
 Desenvolvida para quem tem apenas 1 Bateria, original ou não.  
@@ -60,7 +66,6 @@ Talvez tenha que manerar no acelerador em regiões extremamente quentes caso ten
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente!  
 O poder máximo ou autonomia, você poderá escolher.  
-Lembra a firmware original, em sua micro programação do **Max idc pk [A]** é bem diferente!  
 **NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
