@@ -96,21 +96,23 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 ✅**RECOMENDADA** para quem possui **apenas uma bateria**.  
 
 **DESCRIÇÃO**: Essa firmware **tem menos potência comparado a EVS com duas baterias 100% original**.  
-Desenvolvida para quem tem apenas 1 Bateria, original ou não.  
-Ela é recomendada para para quem anda moderado, visando mais autonomia, abrindo mão de potência e velocidade final.  
-Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
-Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
-Ideal para regiões extremamente quentes com problemas recorrentes de superaquecimento.
 
+- Desenvolvida para quem tem apenas 1 Bateria, original ou não.  
+- Recomendada para para quem anda moderado, visando mais autonomia, abrindo mão de potência e velocidade final.  
+- Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
+- Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
+- Ideal para regiões extremamente quentes 🥵, caso tenha problemas recorrentes de superaquecimento.  
+
+**Requisitos:**
 - Controladora APT, Original da EVS.
-- Para Voltz EVS de 1 Bateria ou mais.
+- 1 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
-- Com **ou Sem TBOX**.
+- Com **ou Sem TBOX**. (Desbloqueia TBOX)
 - Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
 - Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_70_YM_T8.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_70_YM_T8.dat</strong>
 
-1. Todas as configurações originais da moto e do fabricante.
-2. Destrava TBOX, que passa ter a função de apenas colocar a hora e data no painel, não mais fica refém dele da moto não andar caso ele falhe.
+1. Todas as configurações originais da moto e do fabricante incluindo motor.  
+2. Destrava TBOX, que passa ter a função de **apenas colocar a hora e data no painel**, não mais fica refém dele, a moto não depende dele para funcionar ou acelerar.  
 3. Nessa versão o parâmetro **Max idc pk [A]** é equivalente ao limite de 70A, ou seja igual o comportamento/potência da moto com apenas uma bateria, mesmo possuindo duas ou mais.
 
 
