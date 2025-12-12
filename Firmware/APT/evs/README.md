@@ -93,6 +93,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 
 
 ## ⚙️ A1705_V10000_EVS_70_YM_T8.dat - 11/DEZ/2025
+✅**RECOMENDADA** para quem possui **apenas uma bateria**.  
 
 **DESCRIÇÃO**: Essa firmware **tem menos potência comparado a EVS com duas baterias 100% original**.  
 Desenvolvida para quem tem apenas 1 Bateria, original ou não.  
