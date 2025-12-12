@@ -7,6 +7,6 @@
 ---
 > Uma loja virtual, no Brasil com carenagem All Black e algumas peças 100% compatíveis com a **EVS**.
 
-**[Carenagem compatível e outros componentes da EVS]([https://bit.ly/pecasvoltz](https://www.fvn.com.br/pecas-por-modelo/sport-901))**
+**[Carenagem compatível e outros componentes da EVS]([https://www.fvn.com.br/pecas-por-modelo/sport-901])**
 
 ---
