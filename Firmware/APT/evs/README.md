@@ -20,7 +20,7 @@ Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e des
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente!  
 O poder máximo ou autonomia, você poderá escolher.  
-**NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
+**NÃO RECOMENDADA** para quem possui **apenas uma bateria** original.  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
