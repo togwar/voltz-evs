@@ -80,13 +80,6 @@ Atualmente o repositório cobre (verifique compatibilidade):
 
 ---
 
-### ⚙️ Peças Compatíveis
-> Segue uma planilha com a compatibilidade de peças. Dentro dela há abas para **EV1** e **EVS**, cada uma com as especificações originais, fabricantes e opções de compatibilidade para cada peça.
-
-**[Planilha de Compatibilidade](https://bit.ly/pecasvoltz)**
-
----
-
 ## 🤝 Prestadores e Referências.
 > Segue uma relação de proficionais ou entusiastas que desenvolvem soluções ou conteúdo sobre mobilídade eletrica que recomendo (ordem alfabética, máximo 2 por região):
 - CanalDoCuriosoX - DDD 81 - https://www.youtube.com/@CanalDoCuriosoX
