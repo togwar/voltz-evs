@@ -50,12 +50,25 @@ Talvez tenha que manerar no acelerador em regiões extremamente quentes caso ten
 - Com **ou Sem TBOX**.
 - Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
 
+**ATENÇÃO:** EXCLUSIVA para quem possui **DUAS BATERIAS**.
 1. Todas as configurações originais da moto e do fabricante.
 2. Destrava TBOX, que passa ter a função de apenas colocar a hora e data no painel, não mais fica refém dele da moto não andar caso ele falhe.
 3. O parâmetro **Max idc pk [A]** é equivalente ao limite de 130A.
-4. **ATENÇÃO:** EXCLUSIVA para quem possui **DUAS BATERIAS**.
+4. 
 
 ### ⚙️ A1705_V10000_EVS_IA_130_YM-T9.dat (DOWNLOAD EM BREVE)
+**Download ficará disponível após atingirmos 30 videos tutoriais.**
+
+**DESCRIÇÃO**: A firmware sem limitações e convergente! O poder máximo ou autonomia, você poderá escolher.  
+
+Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
+É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
+**NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
+Ligou a moto, potência máxima, ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
+Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
+Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
+Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar!  
+
 
 - Controladora Original da EVS.
 - 2 Baterias Voltz EVS ou mais.
@@ -63,10 +76,19 @@ Talvez tenha que manerar no acelerador em regiões extremamente quentes caso ten
 - Com **ou Sem TBOX**.
 - Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
 
+**ATENÇÃO:** EXCLUSIVA para quem possui **DUAS BATERIAS**.
+**ATENÇÃO:** EXCLUSIVA para não desativou o "P" ao precionar o freio.
 1. Todas as configurações originais da moto e do fabricante.
 2. Destrava TBOX, que passa ter a função de apenas colocar a hora e data no painel, não mais fica refém dele da moto não andar caso ele falhe.
-3. Função extra: Com a moto ligada, mantenha o freio (P) e o acelerador totalmente pressionados por 10 segundos - a moto irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente.
-4. **ATENÇÃO:** EXCLUSIVA para quem possui **DUAS BATERIAS**.
+3. Função Extra:  
+Com a Moto desligada
+	>⁠ Pressiona freio e não solte;  
+	> Ligue a moto;  
+    > após 3 segundos, acelere ao máximo e mantém acelerando;  
+    > Mantenha o freio e acelerador por mais 10 segundos;  
+	> Solte o freio e o acelerador;
+A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente. (Semelhante a EVS original com apenas uma Bateria).  
+
 
 ---
 
