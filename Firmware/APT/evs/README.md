@@ -14,12 +14,12 @@
 
 ## 🌟 Objetivo / O que você vai encontrar
 
-Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e desenvolvidas especificamente para as motos VOLTZ.
+Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e desenvolvidas especificamente para o modelo EVS (não utilizar na EVS Work).
 
 ---
 
 ## ⚙️ A1705_V10000_EVS_IA_130_YM-T9.dat - 12/DEZ/2025
-**NÃO RECOMENDADA** para quem possui **apenas uma bateria** original.  
+**NÃO RECOMENDADA** para quem possui **apenas uma bateria**.  
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente!  
 O poder máximo ou autonomia, você poderá escolher.  
@@ -27,7 +27,7 @@ O poder máximo ou autonomia, você poderá escolher.
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
 
-Ligou a moto, potência máxima, ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
+- Ligou a moto, potência máxima, ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
 Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
 Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
 Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar!  
