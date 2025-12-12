@@ -53,7 +53,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
     > 4. Mantenha o freio e acelerador por mais 10 segundos;  
 	> 5. Solte o freio e o acelerador;
 
-A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente (ou 5000W). (Semelhante a EVS original com apenas uma Bateria).  
+A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente (ou 5000W, um pouco mais forte que a EVS original com apenas uma Bateria).  
 
 Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.  
 
@@ -62,17 +62,19 @@ Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.
 
 
 ## ⚙️ A1705_V10000_EVS_130_YM-T7.dat - 12/DEZ/2025
+**NÃO RECOMENDADA** para quem possui **apenas uma bateria**.  
 
-**DESCRIÇÃO**: A firmware sem limitações! O poder máximo que a EVS comporta (com segurança).  
+**DESCRIÇÃO**: A firmware sem limitações!  
+O poder máximo que a EVS comporta (com segurança).  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
-Desenvolvida para quem tem 2 Bateria, original ou não.  
-**NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
-Ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
-Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
-Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
-Talvez tenha que manerar no acelerador em regiões extremamente quentes caso tenha problemas recorrentes de superaquecimento.  
 
+- Ligou a moto, **potência máxima**, ela é recomendada para para quem quer a entrega máxima que a controladora comporta, visando mais potência, torque e velocidade final, abrindo mão de autonomia. 
+- Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
+- Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
+- ⚠ Talvez tenha que manerar no acelerador em regiões extremamente quentes 🥵, caso tenha problemas recorrentes de superaquecimento.  
+
+⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
 
 - Controladora Original da EVS.
 - 2 Baterias Voltz EVS ou mais.
