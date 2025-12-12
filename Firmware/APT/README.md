@@ -82,11 +82,11 @@ Está muito calor, na sua região a controladora costuma esquentar e travar e te
 2. Destrava TBOX, que passa ter a função de apenas colocar a hora e data no painel, não mais fica refém dele da moto não andar caso ele falhe.
 3. Função Extra:  
 Com a Moto desligada
-	>⁠ Pressiona freio e não solte;  
-	> Ligue a moto;  
-    > após 3 segundos, acelere ao máximo e mantém acelerando;  
-    > Mantenha o freio e acelerador por mais 10 segundos;  
-	> Solte o freio e o acelerador;
+	>⁠ 1. Pressiona freio e não solte;  
+	> 2. Ligue a moto;  
+    > 3. após 3 segundos, acelere ao máximo e mantém acelerando;  
+    > 4. Mantenha o freio e acelerador por mais 10 segundos;  
+	> 5. Solte o freio e o acelerador;
 A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente. (Semelhante a EVS original com apenas uma Bateria).  
 
 
