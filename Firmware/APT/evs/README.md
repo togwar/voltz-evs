@@ -1,10 +1,10 @@
 # Firmwares APT.
 
 1. As Firmware nessa página são originais e certificadas pelo fabricante APT.
-2. Todas as edições e modificações passaram nos testes dos engenheiros da APT, **que estão diretamente me apoiando no desenvolvimento** para a nossa comunidade. OBRIGADO APT! 😍
+2. Todas as edições e modificações passaram nos testes dos **engenheiros da APT, que estão diretamente me apoiando no desenvolvimento** para a nossa comunidade. **OBRIGADO APT!** 😍
 3. São firmwares EXCLUSIVAS para o modelo específico da sua moto e seu respectivo Motor.
 4. O software **EV_DriveManager** não apresenta ou revela parametros de programações internas ou comportamentais, apenas alterações diretas, logo uma dessas, **pode até lembrar a firmware original**, em sua micro programação é bem diferente!  
-5. Muito cuidado com firmwares sem procedências, elas se casam com os componentes da sua controladora, um firmware incorreta nem é aceita, porém uma "próxima" pode ser aceita e aqui que está o perigo, podendo queimar sua controladora ou danificar o seu motor.
+5. **Muito cuidado com firmwares sem procedências**, elas se casam com os componentes da sua controladora, um firmware incorreta nem é aceita, porém uma "próxima" pode ser aceita e aqui que está o perigo, podendo queimar sua controladora ou danificar o seu motor.
 6. Se você não tem certeza do que estará configurando, **ao editar as configurações**, NÃO FAÇA! **Procure conhecimento ou ajuda de alguém experiente**.
 
 ## VERSÃO VOLTZ EVS
