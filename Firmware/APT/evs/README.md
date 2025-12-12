@@ -16,11 +16,13 @@
 
 Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e desenvolvidas especificamente para as motos VOLTZ.
 
+---
+
 ### ⚙️ A1705_V10000_EVS_IA_130_YM-T9.dat - 12/DEZ/2025
+**NÃO RECOMENDADA** para quem possui **apenas uma bateria** original.  
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente!  
 O poder máximo ou autonomia, você poderá escolher.  
-**NÃO RECOMENDADA** para quem possui **apenas uma bateria** original.  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
