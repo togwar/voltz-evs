@@ -45,7 +45,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 ⚠ **ATENÇÃO:** Função extra, EXCLUSIVA para quem não desativou o "P" ao precionar o freio. (original).
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
 2. Destrava TBOX, que passa ter a função de **apenas colocar a hora e data no painel**, não mais fica refém dele, a moto não depende dele para funcionar ou acelerar.  
-3. 🤩 Função Opcional Extra (Modo autonoia): Como ativar e caso opte por isso, basta:
+3. 🤩 Função Opcional Extra (Modo autonoia): Como ativar e caso opte por isso, basta:  
 **Com a Moto desligada:**  
 	>⁠ 1. Pressione o freio e não solte;  
 	> 2. Ligue a moto;  
@@ -53,7 +53,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
     > 4. Mantenha o freio e acelerador por mais 10 segundos;  
 	> 5. Solte o freio e o acelerador;
 
-A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente. (Semelhante a EVS original com apenas uma Bateria).  
+A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente (ou 5000W). (Semelhante a EVS original com apenas uma Bateria).  
 
 Para voltar à potência máxima, basta desligar e ligar a moto normalmente.  
 
