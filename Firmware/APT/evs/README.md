@@ -32,17 +32,17 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 - Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
 - Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar!  
 
-Requisitos:
+**Requisitos:**
 - Controladora Original da EVS.
 - 2 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
-- Com **ou Sem TBOX**.
+- Com **ou Sem TBOX**. (Desbloqueia TBOX)
 - Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
 - Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_IA_130_YM_T9.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_IA_130_YM_T9</strong>
 
 
-**ATENÇÃO:** EXCLUSIVA para quem possui **DUAS BATERIAS**.  
-**ATENÇÃO:** EXCLUSIVA para quem não desativou o "P" ao precionar o freio. (original).
+⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
+⚠ **ATENÇÃO:** Função extra, EXCLUSIVA para quem não desativou o "P" ao precionar o freio. (original).
 1. Todas as configurações originais da moto e do fabricante.  
 2. Destrava TBOX, que passa ter a função de apenas colocar a hora e data no painel, não mais fica refém dele da moto não andar caso ele falhe.  
 3. Função Extra (Downgrade):  
