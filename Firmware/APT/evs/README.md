@@ -28,11 +28,11 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
 
 - Ligou a moto, potência máxima, ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
-Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
-Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
-Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar!  
+- Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
+- Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
+- Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar!  
 
-
+Requisitos:
 - Controladora Original da EVS.
 - 2 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
