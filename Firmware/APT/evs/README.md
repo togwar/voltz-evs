@@ -52,6 +52,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
     > 3. após 3 segundos, acelere ao máximo e mantém acelerando;  
     > 4. Mantenha o freio e acelerador por mais 10 segundos;  
 	> 5. Solte o freio e o acelerador;
+
 A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente. (Semelhante a EVS original com apenas uma Bateria).  
 
 Para voltar à potência máxima, basta desligar e ligar a moto normalmente.  
