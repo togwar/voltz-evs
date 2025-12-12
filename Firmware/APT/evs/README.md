@@ -27,10 +27,10 @@ O **poder máximo** ou **modo autonomia**, você poderá escolher.
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
 
-- Ligou a moto, potência máxima, ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
+- Ligou a moto, **potência máxima**, ela é recomendada para para quem quer a entrega máxima que a controladora comporta, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
 - Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
 - Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
-- Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar!  
+- Está muito calor, na sua região a controladora costuma esquentar e travar e te deixar na mão? Nessa versão tem um truque para te salvar! O "modo autonomia"!  🤩
 
 **Requisitos:**
 - Controladora Original da EVS.
@@ -55,7 +55,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 
 A Controladora irá compreender esse comando e irá reduzir sua potência para o limite do parâmetro **Max idc pk [A]** 70A automáticamente (ou 5000W). (Semelhante a EVS original com apenas uma Bateria).  
 
-Para voltar à potência máxima, basta desligar e ligar a moto normalmente.  
+Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.  
 
 
 ---
