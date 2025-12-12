@@ -12,7 +12,7 @@ Firmwares específicas para as motos EVS e EVS Work, **Originais do fabricante A
 
 ### ⚙️ A1705_V10000_EVS_70_YM_T8.dat
 
-**DESCRIÇÃO**: Essa firmware **reduz a potência da moto quando possui duas baterias**.
+**DESCRIÇÃO**: Essa firmware **reduz a potência da moto quando possui duas baterias**.  
 Ela é recomendada para para quem anda moderado, visando mais autonomia, abrindo mão de potência e velocidade final.  
 Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
 Ideal para quem está com a moto parada devido a problemas no TBOX.  
