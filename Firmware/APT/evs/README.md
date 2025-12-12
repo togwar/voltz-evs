@@ -22,7 +22,7 @@ Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e des
 **NÃO RECOMENDADA** para quem possui **apenas uma bateria**.  
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente!  
-O poder máximo ou autonomia, você poderá escolher.  
+O **poder máximo** ou **modo autonomia**, você poderá escolher.  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
@@ -45,7 +45,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 ⚠ **ATENÇÃO:** Função extra, EXCLUSIVA para quem não desativou o "P" ao precionar o freio. (original).
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
 2. Destrava TBOX, que passa ter a função de **apenas colocar a hora e data no painel**, não mais fica refém dele, a moto não depende dele para funcionar ou acelerar.  
-3. 🤩 Função Opcional Extra (Downgrade): Como ativar e caso opte por isso, basta:
+3. 🤩 Função Opcional Extra (Modo autonoia): Como ativar e caso opte por isso, basta:
 **Com a Moto desligada:**  
 	>⁠ 1. Pressione o freio e não solte;  
 	> 2. Ligue a moto;  
