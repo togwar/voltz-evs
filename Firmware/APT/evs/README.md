@@ -58,7 +58,9 @@ Talvez tenha que manerar no acelerador em regiões extremamente quentes caso ten
 ### ⚙️ A1705_V10000_EVS_IA_130_YM-T9.dat (DOWNLOAD EM BREVE)
 **Download ficará disponível após atingirmos 40 videos tutoriais.**
 
-**DESCRIÇÃO**: A firmware sem limitações e convergente! O poder máximo ou autonomia, você poderá escolher.  
+**DESCRIÇÃO**: A firmware sem limitações e convergente!  
+O poder máximo ou autonomia, você poderá escolher.  
+Lembra a firmware original, em sua micro programação do **Max idc pk [A]** é bem diferente!  
 **NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
