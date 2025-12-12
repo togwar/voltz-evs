@@ -60,10 +60,11 @@ Talvez tenha que manerar no acelerador em regiões extremamente quentes caso ten
 **Download ficará disponível após atingirmos 40 videos tutoriais.**
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente! O poder máximo ou autonomia, você poderá escolher.  
+**NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
 
 Essa firmware **entrega mais potência (no geral) comparado a EVS com duas baterias 100% original**.  
 É a fusão inteligente das duas firmwares anteriores a T7 e a T8.  
-**NÃO RECOMENDADA** para quem possui apenas uma bateria original.  
+
 Ligou a moto, potência máxima, ela é recomendada para para quem quer a entrega máxima que as baterias originais comportariam, visando mais potência, torque e velocidade final, abrindo mão de autonomia.  
 Ideal para quem trocou a BMS e ainda possui a controladora da VOLTZ.  
 Ideal para quem está com a moto parada devido a problemas no TBOX ou não depender dele.  
