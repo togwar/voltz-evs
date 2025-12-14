@@ -182,7 +182,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.  
 
 
-### 5.3 Current Rotation
+### 6.3 Current Rotation
 
 - Alterar o valor em **Mode 4 idc[A]** de 0 para **1**.  
 	> Mode 3 idc ≤ Mode 4 idc; Evita clipping; Manter estabilidade térmica.  
@@ -199,25 +199,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 
 
-<!--
-
-**Configuração original:**
-- Max speed = 2500 rpm (valor irreal)  
-- Max Iac pk = 400 A  
-- Boost ativo prolongado  
-
-**GuerraMod v8:**
-- Max speed = 1100 rpm (≈ 130 km/h)  
-- Rated speed @72V = 740 rpm (≈ 88 km/h)  
-- Max Iac pk = 325 A  
-- Boost active sec = 15 s  
-
-**Justificativa:**  
-Respeito ao limite físico do motor e melhor controle térmico do estator.
-
----
-
-### 5.4 Torque PID
+### 6.4 Torque PID
 
 **Configuração original:**
 - Ganhos elevados em alta rotação  
@@ -230,7 +212,7 @@ Evitar oscilações, aquecimento e instabilidade próximo ao *Flux Weakening*.
 
 ---
 
-### 5.5 Flux Weakening
+### 6.5 Flux Weakening
 
 **Configuração original:**
 - FW genérico, sem critério de aplicação  
@@ -243,7 +225,7 @@ Em motor *in-wheel*, FW excessivo gera mais perdas do que ganhos.
 
 ---
 
-### 5.6 IAC Set e Pedal Function
+### 6.6 IAC Set e Pedal Function
 
 **Configuração original:**
 - Resposta genérica e pouco linear  
@@ -254,6 +236,10 @@ Em motor *in-wheel*, FW excessivo gera mais perdas do que ganhos.
 
 **Justificativa:**  
 Separar sensação de aceleração dos limites elétricos do sistema.
+
+
+
+<!--
 
 ---
 
