@@ -130,16 +130,16 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 
 	
 - Para ativá-la, com a moto andando em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição que deseja, e precione o botão de ré ("R" na mão esquerda).
-- Você deverá sentir uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou encoste no freio (até aparecer o "P" no painel).
-- **Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
+- Talvez você sinta uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou encoste no freio (aparecer o "P" no painel).
+- ⚠**Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
 
-	> - Essa função veio desativada pela Voltz na família EVS.  
-	> - Essa função permite a moto manter acelerando em **uma potência** constante fixa de acordo com o momento que você ativou ela.
+	> - Essa função veio desativada pela Voltz na família EVS.😡  
+	> - Essa função permite a moto manter acelerando em **uma potência** (não velocidade) constante fixa de acordo com o momento que você ativou ela.
 	> - Essa configuração não oferece risco para a controladora.
 	> - Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣
 
 
-## 6. Configuração Avançadas – GuerraMod v8
+## 6. Configuração Intermediária – GuerraMod v8
 
 
 ![Descrição da imagem](000.jpg)
