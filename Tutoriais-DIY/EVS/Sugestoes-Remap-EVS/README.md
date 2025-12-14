@@ -1,5 +1,105 @@
 # Sugestões de configurações para controladora APT
 
+# GuerraMod v8 – Voltz EVS
+
+**Versão:** 8.0  
+**Ano:** 2026  
+
+## Introdução
+
+O **GuerraMod v8** consolida **4 anos de uso real, testes e amadurecimento técnico** da motocicleta elétrica **Voltz EVS**.  
+O projeto parte da **calibração original da controladora APT** e realiza ajustes criteriosos para adequação ao **uso urbano e rodoviário brasileiro**, respeitando integralmente as limitações físicas do conjunto.
+
+Este não é um projeto experimental ou exploratório, mas sim uma **consolidação técnica estável**.
+
+---
+
+## Premissas Técnicas
+
+O GuerraMod v8 foi desenvolvido considerando as seguintes premissas fundamentais:
+
+- Motor **in-wheel IPMSM**
+- Controladora **APT**
+- Bateria Li-ion em arquitetura **20S**
+- Limite físico de rotação do motor em torno de **1100 rpm** (≈ **130 km/h reais**)
+- **Corrente DC** como principal fator limitante de durabilidade do sistema
+
+Essas premissas norteiam todas as decisões de calibração.
+
+---
+
+## Filosofia do Projeto
+
+O GuerraMod v8 é guiado por quatro pilares:
+
+- **Previsibilidade**
+- **Durabilidade**
+- **Conforto**
+- **Segurança**
+
+Não se trata de *tuning agressivo*, aumento artificial de desempenho ou exploração de limites.  
+O foco é **engenharia aplicada**, com comportamento coerente, repetível e defensável tecnicamente.
+
+---
+
+## Configuração Base
+
+A configuração base do GuerraMod v8 atua nos seguintes blocos da controladora APT:
+
+- **Voltage Set**
+- **Current Rot**
+- **Torque PID**
+- **Flux Weakening**
+- **IAC Set**
+- **Pedal Function**
+
+Todos os parâmetros foram ajustados de forma **conservadora, coerente e integrada**, buscando equilíbrio entre desempenho utilizável, eficiência e longevidade dos componentes.
+
+---
+
+## Perfis de Uso
+
+O projeto define dois perfis principais de utilização:
+
+- **Cidade**
+  - Suavidade de resposta  
+  - Regeneração mínima  
+  - Controle refinado em baixa velocidade  
+
+- **Rodovia**
+  - Estabilidade em velocidade constante  
+  - Leve freio motor eletrônico  
+  - Redução do desgaste do sistema de freio mecânico  
+
+As diferenças entre os perfis são pontuais, funcionais e tecnicamente justificadas.
+
+---
+
+## Configuração Original vs GuerraMod v8
+
+A calibração original da Voltz EVS é **genérica e conservadora**, pensada para atender múltiplos cenários com simplicidade.
+
+O **GuerraMod v8** ajusta **apenas onde há ganho real**, mantendo:
+
+- Compatibilidade total com o hardware original
+- Margens de segurança elétrica e térmica
+- Comportamento previsível e estável
+
+Quando um parâmetro não foi alterado, isso se deu por ele já estar adequado ao uso proposto.
+
+---
+
+## Conclusão
+
+O **GuerraMod v8** estabelece um **baseline técnico definitivo** para a plataforma **Voltz EVS**, encerrando o ciclo de experimentação e consolidando uma calibração madura, documentada e aplicável ao uso real.
+
+---
+
+> ⚠️ **Aviso**  
+> Este projeto não é afiliado oficialmente à Voltz Motors.  
+> As configurações aqui descritas são de responsabilidade do usuário.
+
+
 ## 🌟 Objetivo / O que você vai aprender
 
 Efetuar alterações coesas e que realmente vão agregar no seu veículo, EVS/EVS Work.
@@ -12,54 +112,3 @@ Aqui iremos centralizar sugestões e configurações da controladora APT para a 
 - Cabo RS232
 - Softwares para acesso a controladora
 - compreensão que sua moto existe limites e do risco de configurar algo ERRADO poderá inutilizar o seu equipamento por completo.
-
-## 📝 Dicas importantes
-
-1. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
-	- Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**.
-		> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras.  
-		> Inalterado a força e a potência da "marcha ré".  
-		> Essa configuração não oferece risco para a controladora.
-
-		
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/1.png)
-
----
-
-2. Ajuste fino e mais linear do **acelerador com relação ao Torque** (Throttle [V])
-	- Alteração do valor de 2,3999 para **3,3200 em PEDAL FUNCTION / Throttle Bst[V]**.
-	- Alteração do valor de 3,4999 para **4,1000 em PEDAL FUNCTION / Throttle high[V]**.
-	- Alteração do valor de 2,1994 para **3,2800 em PEDAL FUNCTION / Throttle mid[V]**.
-		> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.
-		> Inalterado a força e a potência da "marcha ré".
-		> Essa configuração não oferece risco para a controladora.
-
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/2.png)
-
-
-- Com esses ajustes, a moto passa a entregar sua potência de acordo com o giro do acelerador com 2x mais precisão, resultando em uma maior linearidade.
-
-- Na imagem abaixo, temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
-		
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/3.png)
-
----
-
-3. Ativando o Controle de Cruzeiro.
-	- O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.  
-	
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/4.png)
-
-	
-- Para ativá-la, com a moto andando em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição que deseja, e precione o botão de ré ("R" na mão esquerda).
-- Você deverá sentir uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou encoste no freio (até aparecer o "P" no painel).
-- **Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
-
-	> - Essa função veio desativada pela Voltz na família EVS.  
-	> - Essa função permite a moto manter acelerando em **uma potência** constante fixa de acordo com o momento que você ativou ela.
-	> - Essa configuração não oferece risco para a controladora.
-	> - Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣
-
----
-
-**EM CONSTRUÇÃO**  
