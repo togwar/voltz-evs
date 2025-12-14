@@ -1,13 +1,7 @@
 # **CUIDADO!!! EM CONSTRUÇÃO**  
 ## VOLTE MAIS TARDE!!
 
-
-
-
-
-
-
-
+![Descrição da imagem](000.jpg)
 
 # GuerraMod v8 – Voltz EVS (2026)
 
