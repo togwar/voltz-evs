@@ -28,7 +28,7 @@
    			5.1.3 [Controle de Cruizeiro](#513-ativando-o-controle-de-cruzeiro)
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
  	6.1 [Pedal Function](61-pedal-function)  
-	6.2 [Voltage Set](#62-voltage-set)
+	6.2 [Voltage Set](#62-voltage-set)  
 	6.3 [3](3)  
 	6.4 [3](3)  
 	6.5 [3](3)  
@@ -163,41 +163,43 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
 
 ### 6.2 Voltage Set
+
 - Alterar o valor em **Under vdc[V]** de 62 para **64**.  
-	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.
-- Alterar o valor em **Under vdc recover[V]** de 63 para **65**.
-	> Recuperação de potência mais suave; evita oscilação em tensão baixa.
-- Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.
-	> Redução gradual de potência; melhor eficiência do FOC; menor ripple de corrente.
-- Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.
-	> Evita queda abrupta de desempenho em baixa tensão; melhora previsibilidade.
-- Alterar o valor em **Idc min percent[%]** de 20 para **30**.
-	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.
-- Alterar o valor em **Li-ion series Q** de 18 para **20**.
-	> Correção do número de células em série (20S). Essencial para cálculos internos.
-- Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.
-	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).
-- Alterar o valor em **Li-ion capacity[Ah]** de 0 para **66**.
-	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.
+	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.  
+- Alterar o valor em **Under vdc recover[V]** de 63 para **65**.  
+	> Recuperação de potência mais suave; evita oscilação em tensão baixa.  
+- Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.  
+	> Redução gradual de potência; melhor eficiência do FOC; menor ripple de corrente.  
+- Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.  
+	> Evita queda abrupta de desempenho em baixa tensão; melhora previsibilidade.  
+- Alterar o valor em **Idc min percent[%]** de 20 para **30**.  
+	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.  
+- Alterar o valor em **Li-ion series Q** de 18 para **20**.  
+	> Correção do número de células em série (20S). Essencial para cálculos internos.  
+- Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.  
+	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).  
+- Alterar o valor em **Li-ion capacity[Ah]** de 0 para **66**.  
+	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.  
+
+
+### 5.3 Current Rotation
+
+- Alterar o valor em **Mode 4 idc[A]** de 0 para **1**.  
+	> Mode 3 idc ≤ Mode 4 idc; Evita clipping; Manter estabilidade térmica.  
+- Alterar o valor em **Hybrid Factor** de 0 para **1**.  
+	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
+- Alterar o valor em **Mode 4 speed[rpm]** de 0 para **1**.  
+	>  Controle interno consistente; Valor atingivel, reflete a realidade da moto. Flux weakening ser usado como extensão, não como muleta.”  
+- Alterar o valor em **Boost active sec[s]** de 0 para **1**.  
+	> Tempo reduzido para evitar mascarar aquecimento e preservar estabilidade térmica. Evitar manter a corrente elevada demais.  
+- Alterar o valor em **Max Iac pk[A]** de 0 para **1**.  
+	> Limite de corrente AC ajustado para reduzir calor, ruído eletromagnético e stress no estator e vibração;  
+- Alterar o valor em **Max speed[rpm]** de 0 para **1**.  
+	> FOC não tente empurrar fluxo além do útil; PID não fique “caçando” torque inexistente; flux weakening opere só onde realmente funciona.  
+
 
 
 <!--
-
-
-**Configuração original:**
-- Under VDC ≈ 62 V  
-- IDC min percent ≈ 20 %
-
-**GuerraMod v8:**
-- Under VDC = 64–65 V  
-- IDC min percent = 30–35 %
-
-**Justificativa:**  
-Redução de stress das células, menor queda abrupta de desempenho e maior previsibilidade.
-
----
-
-### 5.3 Current Rotation
 
 **Configuração original:**
 - Max speed = 2500 rpm (valor irreal)  
