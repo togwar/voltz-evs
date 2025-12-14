@@ -76,6 +76,7 @@ Premissas adotadas no **GuerraMod v8**:
 4. Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
 5. Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
 6. *Flux Weakening* tratado apenas como extensão, não como solução  
+7. **BLOCOS DE CONFIG**, as alterções são relacionadas em blocos, você só deve ignorar o que está destacado como (Opcional).
 
 ---
 
@@ -148,7 +149,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 **Vamos ao que interessa:**  
 
 - (Opcional) Alteração do valor **de 5000 para 5500** em PEDAL FUNCTION / **Acc of F**.
-	> Maior controle na entrega de torque na faixa média do acelerador; afeta sensação de resposta sem alterar potência máxima ou correntes.  
+	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
 
 ![Descrição da imagem](000.jpg)
 ## VOLTE MAIS TARDE!!
