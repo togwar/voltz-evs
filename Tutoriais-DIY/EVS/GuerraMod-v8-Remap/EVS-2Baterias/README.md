@@ -1,6 +1,14 @@
 # **CUIDADO!!! EM CONSTRUÇÃO**  
 ## VOLTE MAIS TARDE!!
 
+
+
+
+
+
+
+
+
 # GuerraMod v8 – Voltz EVS (2026)
 
 **Versão:** 8.0  
