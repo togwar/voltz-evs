@@ -3,9 +3,9 @@
 # GuerraMod v8 – Projeto Voltz EVS (2026)
 
 **Versão:** 8.0  
-**Ano:** 2026
-**Modelo:** EVS com duas Baterias (ou superior)
-
+**Ano:** 2026  
+**Modelo:** EVS com duas Baterias (ou superior)  
+  
 **Status:** Consolidação Técnica Estável  
 **Autor:** Tiago Guerra  
 **Plataforma:** Voltz EVS  
