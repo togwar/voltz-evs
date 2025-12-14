@@ -25,8 +25,10 @@
 5. [Configuração Base – GuerraMod v8](#5-configura%C3%A7%C3%A3o-base--guerramod-v8)  
 	5.1 [Velocidade da Marcha Ré](#51-altera%C3%A7%C3%B5es-m%C3%ADnimas-para-conforto-e-seguran%C3%A7a)
 		5.1.1 [Velocidade da Marcha Ré](#511-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)
-6. [6](#-6)
-7. [7](#-7)
+   		5.1.2 [Ajuste fino do Acelerador](#512-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)
+   		5.1.3 [Controle de Cruizeiro](#513-ativando-o-controle-de-cruzeiro)
+7. [6](#-6)
+8. [7](#-7)
 
 ---
 
@@ -100,12 +102,12 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ---
 
 #### 5.1.2. Ajuste fino e mais linear do **acelerador com relação ao Torque** (Throttle [V])
-	- Alteração do valor de 2,3999 para **3,3200 em PEDAL FUNCTION / Throttle Bst[V]**.
-	- Alteração do valor de 3,4999 para **4,1000 em PEDAL FUNCTION / Throttle high[V]**.
-	- Alteração do valor de 2,1994 para **3,2800 em PEDAL FUNCTION / Throttle mid[V]**.
-		> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.
-		> Inalterado a força e a potência da "marcha ré".
-		> Essa configuração não oferece risco para a controladora.
+- Alteração do valor de 2,3999 para **3,2500 em PEDAL FUNCTION / Throttle Bst[V]**.
+- Alteração do valor de 3,4999 para **4,1000 em PEDAL FUNCTION / Throttle high[V]**.
+- Alteração do valor de 2,1994 para **3,2800 em PEDAL FUNCTION / Throttle mid[V]**.
+	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.
+	> Inalterado a força e a potência da "marcha ré".
+	> Essa configuração não oferece risco para a controladora.
 
 ![Descrição da imagem](2.png)
 
@@ -119,7 +121,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ---
 
 #### 5.1.3. Ativando o Controle de Cruzeiro.
-	- O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.  
+- O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.  
 	
 ![Descrição da imagem](4.png)
 
