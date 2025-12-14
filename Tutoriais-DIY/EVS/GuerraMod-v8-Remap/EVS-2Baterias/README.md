@@ -39,9 +39,9 @@ Na prática, isso resultou em uma motocicleta funcional, porém com comportament
 
 Essa é uma nova versão aberta ao públíco do **GuerraMod**, que vem para substituir as versões anteriores (v3, v4 e v5).
 
-O GuerraMod surgiu a partir da minha insatisfação por ausência de funcionalidades na EVS e instabilidade, após os pares versões internas exploratória (v1, v2, v6 e v7) que tinham como objetivo documentação exploratória, registrando hipóteses, tentativas e descobertas empíricas.  
+O GuerraMod surgiu a partir da minha insatisfação por ausência de funcionalidades na EVS e instabilidade, após os pares de versões internas exploratória (v1/v2 e v6/v7) que tinham como objetivo documentação, registrando hipóteses, tentativas e descobertas empíricas. Cada uma dessas versões foram contabilizados minimamente 1.000 km de testes por versão.  
   
-O **GuerraMod v8** rompe com esse caráter experimental e estabelece uma **configuração técnica consolidada**, provavelmente será a versão final, ao longo de 4 anos de estudos e testes.  
+O **GuerraMod v8** rompe com esse caráter experimental e estabelece uma **configuração técnica consolidada**, provavelmente será a versão final, ao longo de 4 anos de estudos e descobertas, em sua maioria as cegas e por iniciativa própria.  
 
 Aqui também destaco um agradecimento especial ao ex-funcionarios, engenheiros e mecânicos da Voltz que participaram deste projeto desde a sua concepção, e nessa fase final com a participação dos engenheiros da APT no double check teórico desta revisão final.
 
@@ -52,7 +52,8 @@ Aqui também destaco um agradecimento especial ao ex-funcionarios, engenheiros e
 A configuração original da Voltz EVS apresenta as seguintes características:
 
 - Limites de corrente DC pouco restritivos  
-- Nenhuma regeneração ou regeneração pouco previsível  
+- Nenhuma regeneração ou regeneração pouco previsível
+- Ausência de Controle de Cruzeiro  
 - Uso genérico de *Flux Weakening*  
 - Ausência de perfis distintos de uso  
 - Nenhuma documentação técnica pública  
