@@ -26,9 +26,11 @@
 			5.1.1 [Velocidade da Marcha Ré](#511-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)  
    			5.1.2 [Ajuste fino do Acelerador](#512-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
    			5.1.3 [Controle de Cruizeiro](#513-ativando-o-controle-de-cruzeiro)
-6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
-7. [6](#-6)
-8. [7](#-7)
+6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)
+ 	6.1 [Pedal Function](61-pedal-function)
+	6.2 [Voltage Set](#62-voltage-set)
+8. [6](#-6)
+9. [7](#-7)
 
 ---
 
@@ -151,7 +153,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 **Vamos ao que interessa:**  
 
-### 6.1 - Pedal Function
+### 6.1 Pedal Function
 - (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
 
@@ -159,19 +161,19 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 - Alterar o valor em **Under vdc[V]** de 62 para **64**.  
 	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.
 - Alterar o valor em **Under vdc recover[V]** de 63 para **65**.
-	> M
+	> Recuperação de potência mais suave; evita oscilação em tensão baixa.
 - Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.
-	> M
+	> Redução gradual de potência; melhor eficiência do FOC; menor ripple de corrente.
 - Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.
-	> M
+	> Evita queda abrupta de desempenho em baixa tensão; melhora previsibilidade.
 - Alterar o valor em **Idc min percent[%]** de 20 para **30**.
-	> M
+	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.
 - Alterar o valor em **Li-ion series Q** de 18 para **20**.
-	> M
+	> Correção do número de células em série (20S). Essencial para cálculos internos.
 - Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.
-	> M
+	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).
 - Alterar o valor em **Li-ion capacity[Ah]** de 0 para **66**.
-	> M
+	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.
 
 
 <!--
