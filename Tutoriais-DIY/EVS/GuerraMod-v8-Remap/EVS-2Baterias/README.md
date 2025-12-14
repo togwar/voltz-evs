@@ -1,7 +1,4 @@
 # **CUIDADO!!! EM CONSTRUÇÃO**  
-## VOLTE MAIS TARDE!!
-
-![Descrição da imagem](000.jpg)
 
 # GuerraMod v8 – Voltz EVS (2026)
 
@@ -138,6 +135,12 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 
 
 ## 6. Configuração Avançadas – GuerraMod v8
+
+
+![Descrição da imagem](000.jpg)
+## VOLTE MAIS TARDE!!
+
+
 ### 5.2 Voltage Set
 
 **Configuração original:**
