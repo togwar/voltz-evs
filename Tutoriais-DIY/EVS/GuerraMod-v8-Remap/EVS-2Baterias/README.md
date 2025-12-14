@@ -54,7 +54,7 @@ Aqui também destaco um agradecimento especial ao ex-funcionarios, engenheiros e
 A configuração original da Voltz EVS apresenta as seguintes características:
 
 - Limites de corrente DC pouco restritivos  
-- Nenhuma regeneração ou regeneração pouco previsível
+- Nenhuma regeneração
 - Ausência de Controle de Cruzeiro  
 - Uso genérico de *Flux Weakening*  
 - Ausência de perfis distintos de uso  
