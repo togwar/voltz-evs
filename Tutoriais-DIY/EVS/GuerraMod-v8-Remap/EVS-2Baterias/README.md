@@ -94,8 +94,6 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 	> Inalterado a força e a potência da "marcha ré".  
 	> Essa configuração não oferece risco para a controladora.
 
-		
-![Descrição da imagem](1.png)
 
 ---
 
@@ -106,22 +104,17 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.
 	> Inalterado a força e a potência da "marcha ré".
 	> Essa configuração não oferece risco para a controladora.
-
-![Descrição da imagem](2.png)
-
+		
 
 - Com esses ajustes, a moto passa a entregar sua potência de acordo com o giro do acelerador com 2x mais precisão, resultando em uma maior linearidade.
 
 - Na imagem abaixo, temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
-		
-![Descrição da imagem](3.png)
+
 
 ---
 
 #### 5.1.3. Ativando o Controle de Cruzeiro.
 - O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.  
-	
-![Descrição da imagem](4.png)
 
 	
 - Para ativá-la, com a moto andando em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição que deseja, e precione o botão de ré ("R" na mão esquerda).
@@ -300,3 +293,9 @@ O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **docume
 ---
 
 -->
+
+
+![Descrição da imagem](1.png)
+![Descrição da imagem](2.png)
+![Descrição da imagem](3.png)
+![Descrição da imagem](4.png)
