@@ -140,7 +140,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ![Descrição da imagem](000.jpg)
 ## VOLTE MAIS TARDE!!
 
-
+<!--
 ### 5.2 Voltage Set
 
 **Configuração original:**
@@ -299,3 +299,4 @@ O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **docume
 
 ---
 
+-->
