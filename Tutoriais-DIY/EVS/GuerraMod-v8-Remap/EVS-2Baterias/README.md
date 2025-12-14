@@ -24,7 +24,7 @@
 4. [Filosofia de Calibração](#4-filosofia-de-calibra%C3%A7%C3%A3o) 
 5. [Configuração Base – GuerraMod v8](#5-configura%C3%A7%C3%A3o-base--guerramod-v8)  
 	5.1 [Velocidade da Marcha Ré](#51-altera%C3%A7%C3%B5es-m%C3%ADnimas-para-conforto-e-seguran%C3%A7a)
-		5.1.1 [Velocidade da Marcha Ré](#511-altera%C3%A7%C3%B5es-m%C3%ADnimas-para-conforto-e-seguran%C3%A7a)
+		5.1.1 [Velocidade da Marcha Ré](#511-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)
 6. [6](#-6)
 7. [7](#-7)
 
@@ -89,10 +89,10 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ### 5.1 Alterações Mínimas para conforto e segurança
 
 #### 5.1.1. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
-	- Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**.
-		> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras.  
-		> Inalterado a força e a potência da "marcha ré".  
-		> Essa configuração não oferece risco para a controladora.
+- Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**.
+	> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras.  
+	> Inalterado a força e a potência da "marcha ré".  
+	> Essa configuração não oferece risco para a controladora.
 
 		
 ![Descrição da imagem](1.png)
