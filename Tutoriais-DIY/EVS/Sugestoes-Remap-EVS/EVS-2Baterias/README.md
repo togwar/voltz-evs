@@ -4,7 +4,7 @@
 
 **Versão:** 8.0  
 **Ano:** 2026  
-**Modelo: EVS com duas Baterias
+**Modelo:** EVS com duas Baterias
 
 
 ## 📝 Dicas importantes
