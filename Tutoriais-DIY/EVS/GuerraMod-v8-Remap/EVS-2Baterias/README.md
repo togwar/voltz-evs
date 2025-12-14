@@ -58,6 +58,10 @@ Essas escolhas **não são erros**, mas reflexos de uma filosofia de calibraçã
 
 Premissas adotadas no **GuerraMod v8**:
 
+- Firmware Base compatível
+	- asda
+	- asdad
+	- 3232
 - Motor **in-wheel IPMSM** (sem redução mecânica)  
 - **Corrente DC** como principal fator de stress do sistema  
 - Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
