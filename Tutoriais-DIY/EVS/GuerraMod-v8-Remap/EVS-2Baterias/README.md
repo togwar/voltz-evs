@@ -68,14 +68,14 @@ Essas escolhas **não são erros**, mas reflexos de uma filosofia de calibraçã
 
 Premissas adotadas no **GuerraMod v8**:
 
-- Firmware Base ideal:
+1. Firmware Base ideal:
 	- **A1705_V10000_EVS_IA_130_YM-T9.dat**, powered by APT [saiba mais](https://github.com/togwar/voltz-evs/tree/main/Firmware/APT/evs#%EF%B8%8F-a1705_v10000_evs_ia_130_ym-t9dat---12dez2025)
 	- **OU** A1705_V10000_EVS_130_YM-T7.dat, powered by APT [saiba mais](https://github.com/togwar/voltz-evs/tree/main/Firmware/APT/evs#%EF%B8%8F-a1705_v10000_evs_130_ym-t7dat---12dez2025)
-- Motor **in-wheel IPMSM** (sem redução mecânica)  
-- **Corrente DC** como principal fator de stress do sistema  
-- Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
-- Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
-- *Flux Weakening* tratado apenas como extensão, não como solução  
+2. Motor **in-wheel IPMSM** (sem redução mecânica)  
+3. **Corrente DC** como principal fator de stress do sistema  
+4. Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
+5. Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
+6. *Flux Weakening* tratado apenas como extensão, não como solução  
 
 ---
 
