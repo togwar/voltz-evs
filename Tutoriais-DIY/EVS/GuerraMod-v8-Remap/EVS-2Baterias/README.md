@@ -74,7 +74,7 @@ Premissas adotadas no **GuerraMod v8**:
 - Motor **in-wheel IPMSM** (sem redução mecânica)  
 - **Corrente DC** como principal fator de stress do sistema  
 - Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
-- Bateria Li-ion **20S** (1 pack ou 2 packs )  
+- Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
 - *Flux Weakening* tratado apenas como extensão, não como solução  
 
 ---
@@ -88,7 +88,7 @@ O **GuerraMod v8** se baseia em quatro pilares:
 3. Conforto  
 4. Segurança  
 
-A calibração **não busca performance máxima**, mas **coerência, repetibilidade e estabilidade** no uso real.
+A calibração **não busca performance máxima**, mas **coerência, repetibilidade e estabilidade** no uso real, visando longevidade do conjunto.
 
 ---
 
@@ -98,7 +98,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 
 #### 5.1.1. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
 - Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**.
-	> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras.  
+	> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras. Não faz sentido possuir uma ré a 20km/h.  
 	> Inalterado a força e a potência da "marcha ré".  
 	> Essa configuração não oferece risco para a controladora.
 
