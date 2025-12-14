@@ -26,7 +26,8 @@
 	5.1 [Alterações Mínimas para conforto e segurança](#51-altera%C3%A7%C3%B5es-m%C3%ADnimas-para-conforto-e-seguran%C3%A7a)  
 			5.1.1 [Velocidade da Marcha Ré](#511-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)  
    			5.1.2 [Ajuste fino do Acelerador](#512-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
-   			5.1.3 [Controle de Cruizeiro](#513-ativando-o-controle-de-cruzeiro)  
+   			5.1.3 [Controle de Cruizeiro](#513-ativando-o-controle-de-cruzeiro)
+6. [Configuração Avançadas – GuerraMod v8](#5-configura%C3%A7%C3%A3o-base--guerramod-v8)  
 7. [6](#-6)
 8. [7](#-7)
 
@@ -136,6 +137,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 	> - Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣
 
 
+## 6. Configuração Avançadas – GuerraMod v8
 ### 5.2 Voltage Set
 
 **Configuração original:**
