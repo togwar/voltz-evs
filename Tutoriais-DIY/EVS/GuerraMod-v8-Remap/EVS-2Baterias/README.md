@@ -106,12 +106,16 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ---
 
 #### 5.1.2. Ajuste fino e mais linear do **acelerador com relação ao Torque** (Throttle [V])
-- Alteração do valor de 2,3999 para **3,2500 em PEDAL FUNCTION / Throttle Bst[V]**.
-- Alteração do valor de 3,4999 para **4,1000 em PEDAL FUNCTION / Throttle high[V]**.
-- Alteração do valor de 2,1994 para **3,2800 em PEDAL FUNCTION / Throttle mid[V]**.
-	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.
-	> Inalterado a força e a potência da "marcha ré".
-	> Essa configuração não oferece risco para a controladora.
+- Alteração do valor **de 70 para 75** em PEDAL FUNCTION / **Percentage in mid tref[%]**.    
+- Alteração do valor **de 2,3999 para 3,2500** em PEDAL FUNCTION / **Throttle Bst[V]**.  
+- Alteração do valor **de 3,4999 para 4,1000** em PEDAL FUNCTION / **Throttle high[V]**.  
+- Alteração do valor **de 2,1994 para 3,2800** em PEDAL FUNCTION / **Throttle mid[V]**.  
+- (Opcional) Alteração do valor **de ECO para STD** em PEDAL FUNCTION / **Default M**.
+	> Maior controle na entrega de torque na faixa média do acelerador; afeta sensação de resposta sem alterar potência máxima ou correntes.  
+	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.  
+	> Inalterado a força e a potência da "marcha ré".  
+	> Alteração de qual modo de condução, ECO/STD/TURBO é o padrão ao ligar a moto.  
+	> Essas configurações não oferecem risco para a controladora.
 		
 
 - Com esses ajustes, a moto passa a entregar sua potência de acordo com o giro do acelerador com 2x mais precisão, resultando em uma maior linearidade.
