@@ -9,7 +9,9 @@
 **Status:** Consolidação Técnica Estável  
 **Autor:** Tiago Guerra  
 **Plataforma:** Voltz EVS  
-**Controladora:** APT (original da Voltz EVS)
+**Controladora:** APT (original da Voltz EVS)  
+**BMS:** Original ou Não  
+**TBOX:** Original ou Sem  
 
 ---
 
