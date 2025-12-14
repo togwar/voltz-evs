@@ -1,13 +1,73 @@
-# Sugestões de configurações para controladora APT
+# **CUIDADO!!! EM CONSTRUÇÃO**  
+## VOLTE MAIS TARDE!!
 
-# GuerraMod v8
+# GuerraMod v8 – Voltz EVS (2026)
 
 **Versão:** 8.0  
-**Ano:** 2026  
+**Ano:** 2026
 **Modelo:** EVS com duas Baterias (ou superior)
 
+**Status:** Consolidação Técnica Estável  
+**Autor:** Tiago Guerra  
+**Plataforma:** Voltz EVS  
+**Controladora:** APT (original da Voltz EVS)
 
-## 📝 Dicas importantes
+---
+
+## 1. Introdução
+
+A Voltz EVS representa uma das primeiras tentativas de popularização da mobilidade elétrica sobre duas rodas no Brasil.  
+Apesar do mérito do projeto, a calibração original da controladora APT foi concebida de forma genérica, buscando atender um amplo espectro de cenários, usuários e condições climáticas.
+
+Na prática, isso resultou em uma motocicleta funcional, porém com comportamento pouco refinado, especialmente em uso urbano intenso, rodovias longas e regiões de serra.
+
+As versões anteriores do **GuerraMod** (v3.7, v4.x e v5.x) surgiram como documentação exploratória, registrando hipóteses, tentativas e descobertas empíricas.  
+O **GuerraMod v8** rompe com esse caráter experimental e estabelece uma **configuração técnica consolidada**.
+
+---
+
+## 2. Configuração Original de Fábrica
+
+A configuração original da Voltz EVS apresenta as seguintes características:
+
+- Limites de corrente DC pouco restritivos  
+- Nenhuma regeneração ou regeneração pouco previsível  
+- Uso genérico de *Flux Weakening*  
+- Ausência de perfis distintos de uso  
+- Nenhuma documentação técnica pública  
+
+Essas escolhas **não são erros**, mas reflexos de uma filosofia de calibração **conservadora e genérica**.
+
+---
+
+## 3. Premissas Técnicas do Projeto
+
+Premissas adotadas no **GuerraMod v8**:
+
+- Motor **in-wheel IPMSM** (sem redução mecânica)  
+- **Corrente DC** como principal fator de stress do sistema  
+- Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
+- Bateria Li-ion **20S** (1 pack ou 2 packs )  
+- *Flux Weakening* tratado apenas como extensão, não como solução  
+
+---
+
+## 4. Filosofia de Calibração
+
+O **GuerraMod v8** se baseia em quatro pilares:
+
+1. Previsibilidade  
+2. Durabilidade  
+3. Conforto  
+4. Segurança  
+
+A calibração **não busca performance máxima**, mas **coerência, repetibilidade e estabilidade** no uso real.
+
+---
+
+## 5. Configuração Base – GuerraMod v8
+
+### 5.1 Alterações Mínimas para conforto e segurança
 
 1. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
 	- Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**.
@@ -54,6 +114,162 @@
 	> - Essa configuração não oferece risco para a controladora.
 	> - Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣
 
+
+### 5.2 Voltage Set
+
+**Configuração original:**
+- Under VDC ≈ 62 V  
+- IDC min percent ≈ 20 %
+
+**GuerraMod v8:**
+- Under VDC = 64–65 V  
+- IDC min percent = 30–35 %
+
+**Justificativa:**  
+Redução de stress das células, menor queda abrupta de desempenho e maior previsibilidade.
+
 ---
 
-**EM CONSTRUÇÃO**  
+### 5.3 Current Rotation
+
+**Configuração original:**
+- Max speed = 2500 rpm (valor irreal)  
+- Max Iac pk = 400 A  
+- Boost ativo prolongado  
+
+**GuerraMod v8:**
+- Max speed = 1100 rpm (≈ 130 km/h)  
+- Rated speed @72V = 740 rpm (≈ 88 km/h)  
+- Max Iac pk = 325 A  
+- Boost active sec = 15 s  
+
+**Justificativa:**  
+Respeito ao limite físico do motor e melhor controle térmico do estator.
+
+---
+
+### 5.4 Torque PID
+
+**Configuração original:**
+- Ganhos elevados em alta rotação  
+
+**GuerraMod v8:**
+- Redução seletiva de *Iq kp/ki* em alta rotação  
+
+**Justificativa:**  
+Evitar oscilações, aquecimento e instabilidade próximo ao *Flux Weakening*.
+
+---
+
+### 5.5 Flux Weakening
+
+**Configuração original:**
+- FW genérico, sem critério de aplicação  
+
+**GuerraMod v8:**
+- FW conservador, sem forçar aumento de rotação  
+
+**Justificativa:**  
+Em motor *in-wheel*, FW excessivo gera mais perdas do que ganhos.
+
+---
+
+### 5.6 IAC Set e Pedal Function
+
+**Configuração original:**
+- Resposta genérica e pouco linear  
+
+**GuerraMod v8:**
+- Curva de torque progressiva  
+- Resposta de pedal refinada  
+
+**Justificativa:**  
+Separar sensação de aceleração dos limites elétricos do sistema.
+
+---
+
+## 6. Perfis de Uso
+
+### 6.1 Perfil Cidade
+
+**Objetivo:**
+- Conforto  
+- Controle em baixa velocidade  
+- Regeneração mínima  
+
+**Principais ajustes:**
+- Min reg speed = 300 rpm (≈ 35 km/h)  
+- Max slip reg Q = 0  
+
+---
+
+### 6.2 Perfil Rodovia
+
+**Objetivo:**
+- Estabilidade  
+- Freio motor leve  
+- Menor desgaste mecânico  
+
+**Principais ajustes:**
+- Min reg speed = 400 rpm (≈ 48 km/h)  
+- Max slip reg Q = -300  
+
+---
+
+## 7. Regeneração
+
+A regeneração no **GuerraMod v8** é tratada como **ferramenta auxiliar**, não como substituta do freio mecânico.
+
+**Configuração original:**
+- Regeneração irregular  
+- Pouco previsível  
+
+**GuerraMod v8:**
+- Regeneração progressiva  
+- Corrente limitada  
+- Respeito à capacidade da bateria  
+
+---
+
+## 8. Comparativo Histórico
+
+- **v3.7 / v4.x**
+  - Exploratório  
+  - Empírico  
+
+- **v5.x**
+  - Refinamento prático  
+
+- **v8**
+  - Consolidação técnica  
+  - Baseline definitivo  
+
+---
+
+## 9. Limitações Conhecidas
+
+- Telemetria limitada  
+- Ausência de sensores térmicos detalhados  
+- Dependência do painel original  
+
+---
+
+## 10. Conclusão
+
+O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
+
+---
+
+> ⚠️ **Aviso**  
+> Este projeto não possui vínculo oficial com a Voltz Motors.  
+> O uso das informações aqui descritas é de responsabilidade do usuário.
+
+
+
+
+
+## 📝 Dicas importantes
+
+
+---
+
