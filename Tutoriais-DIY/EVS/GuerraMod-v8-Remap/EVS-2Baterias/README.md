@@ -139,6 +139,9 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 
 
 ## 6. Configuração Intermediária – GuerraMod v8
+![Descrição da imagem](000.jpg)
+## VOLTE MAIS TARDE!!  
+
 
 Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações: A MOTO É LIMITADA PELO SEU EQUIPAMENTO! Ela ja atua no limite, tal limite que resulta em sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; Obviamente que isso depende diretamente do modo de condução e do clima ambiente. **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
 
@@ -148,14 +151,31 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 **Vamos ao que interessa:**  
 
-- (Opcional) Alteração do valor **de 5000 para 5500** em PEDAL FUNCTION / **Acc of F**.
+### 6.1 - Pedal Function
+- (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
 
-![Descrição da imagem](000.jpg)
-## VOLTE MAIS TARDE!!
+### 6.2 Voltage Set
+- Alterar o valor em **Under vdc[V]** de 62 para **64**.  
+	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.
+- Alterar o valor em **Under vdc recover[V]** de 63 para **65**.
+	> M
+- Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.
+	> M
+- Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.
+	> M
+- Alterar o valor em **Idc min percent[%]** de 20 para **30**.
+	> M
+- Alterar o valor em **Li-ion series Q** de 18 para **20**.
+	> M
+- Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.
+	> M
+- Alterar o valor em **Li-ion capacity[Ah]** de 0 para **66**.
+	> M
+
 
 <!--
-### 5.2 Voltage Set
+
 
 **Configuração original:**
 - Under VDC ≈ 62 V  
