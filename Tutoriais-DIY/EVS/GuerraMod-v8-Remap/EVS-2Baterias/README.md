@@ -138,8 +138,17 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 
 
 ## 6. Configuração Intermediária – GuerraMod v8
-- Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações: A MOTO É LIMITADA PELO SEU EQUIPAMENTO! Ela ja atua no limite, tal limite que resulta em sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; Obviamente que isso depende diretamente do modo de condução e do clima ambiente. **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**
-- Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS.
+
+Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações: A MOTO É LIMITADA PELO SEU EQUIPAMENTO! Ela ja atua no limite, tal limite que resulta em sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; Obviamente que isso depende diretamente do modo de condução e do clima ambiente. **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
+
+Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS.
+
+⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha "MUITO CUIDADO", e não sabe o que está fazendo, não altere para um valor deliberado.  
+
+**Vamos ao que interessa:**  
+
+- (Opcional) Alteração do valor **de 5000 para 5500** em PEDAL FUNCTION / **Acc of F**.
+	> Maior controle na entrega de torque na faixa média do acelerador; afeta sensação de resposta sem alterar potência máxima ou correntes.  
 
 ![Descrição da imagem](000.jpg)
 ## VOLTE MAIS TARDE!!
