@@ -37,8 +37,10 @@ Apesar do mérito do projeto, a calibração original da controladora APT foi co
 
 Na prática, isso resultou em uma motocicleta funcional, porém com comportamento pouco refinado, especialmente em uso urbano intenso, rodovias longas e regiões de serra.
 
-As versões anteriores do **GuerraMod** (v3.7, v4.x e v5.x) surgiram como documentação exploratória, registrando hipóteses, tentativas e descobertas empíricas.  
-O **GuerraMod v8** rompe com esse caráter experimental e estabelece uma **configuração técnica consolidada**.
+Essa é uma nova versão aberta ao públíco do **GuerraMod**, que vem para substituir as versões anteriores (v3, v4 e v5).
+
+O GuerraMod surgiu a partir da minha insatisfação por ausência de funcionalidades na EVS e instabilidade, após os pares versões internas exploratória (v1, v2, v6 e v7) que tinham como objetivo documentação exploratória, registrando hipóteses, tentativas e descobertas empíricas.  
+O **GuerraMod v8** rompe com esse caráter experimental e estabelece uma **configuração técnica consolidada**, provavelmente será a versão final, ao longo de 4 anos de estudos e testes.
 
 ---
 
