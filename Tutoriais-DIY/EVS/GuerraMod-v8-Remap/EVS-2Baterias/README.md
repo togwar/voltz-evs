@@ -121,7 +121,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 - Com esses ajustes, a moto passa a entregar sua potência de acordo com o giro do acelerador com 2x mais precisão, resultando em uma maior linearidade.
 
 - Na imagem abaixo, temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
-
+![Descrição da imagem](3.png)
 
 ---
 
@@ -309,5 +309,5 @@ O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **docume
 
 ![Descrição da imagem](1.png)
 ![Descrição da imagem](2.png)
-![Descrição da imagem](3.png)
+
 ![Descrição da imagem](4.png)
