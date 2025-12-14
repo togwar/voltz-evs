@@ -146,9 +146,6 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 
 
 ## 6. Configuração Intermediária – GuerraMod v8
-![Descrição da imagem](000.jpg)
-## VOLTE MAIS TARDE!!  
-
 
 Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações: A MOTO É LIMITADA PELO SEU EQUIPAMENTO! Ela ja atua no limite, tal limite que resulta em sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; Obviamente que isso depende diretamente do modo de condução e do clima ambiente. **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
 
@@ -184,20 +181,21 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ### 6.3 Current Rotation
 
-- Alterar o valor em **Mode 4 idc[A]** de 0 para **1**.  
+- Alterar o valor em **Mode 4 idc[A]** de 80 para **110**.  
 	> Mode 3 idc ≤ Mode 4 idc; Evita clipping; Manter estabilidade térmica.  
-- Alterar o valor em **Hybrid Factor** de 0 para **1**.  
+- Alterar o valor em **Hybrid Factor** de 30 para **35**.  
 	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
-- Alterar o valor em **Mode 4 speed[rpm]** de 0 para **1**.  
+- Alterar o valor em **Mode 4 speed[rpm]** de 2500 para **1100**.  
 	>  Controle interno consistente; Valor atingivel, reflete a realidade da moto. Flux weakening ser usado como extensão, não como muleta.”  
-- Alterar o valor em **Boost active sec[s]** de 0 para **1**.  
+- Alterar o valor em **Boost active sec[s]** de 60 para **15**.  
 	> Tempo reduzido para evitar mascarar aquecimento e preservar estabilidade térmica. Evitar manter a corrente elevada demais.  
-- Alterar o valor em **Max Iac pk[A]** de 0 para **1**.  
+- Alterar o valor em **Max Iac pk[A]** de 400 para **325**.  
 	> Limite de corrente AC ajustado para reduzir calor, ruído eletromagnético e stress no estator e vibração;  
-- Alterar o valor em **Max speed[rpm]** de 0 para **1**.  
+- Alterar o valor em **Max speed[rpm]** de 2500 para **1100**.  
 	> FOC não tente empurrar fluxo além do útil; PID não fique “caçando” torque inexistente; flux weakening opere só onde realmente funciona.  
 
-
+![Descrição da imagem](000.jpg)
+## VOLTE MAIS TARDE!!  
 
 ### 6.4 Torque PID
 
