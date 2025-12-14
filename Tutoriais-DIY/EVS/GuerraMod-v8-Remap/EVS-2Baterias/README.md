@@ -29,10 +29,10 @@
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
  	6.1 [Pedal Function](61-pedal-function)  
 	6.2 [Voltage Set](#62-voltage-set)  
-	6.3 [3](3)  
-	6.4 [3](3)  
-	6.5 [3](3)  
-	6.6 [3](3)  
+	6.3 [Current Rotation](#63-current-rotation)  
+	6.4 [Torque PID](64-torque-pid)  
+	6.5 [Flux Weakening](65-flux-weakening)  
+	6.6 [IAC Set](66-iac-set)  
 	6.7 [3](3)  
 8. [6](#-6)
 9. [7](#-7)
@@ -225,7 +225,7 @@ Em motor *in-wheel*, FW excessivo gera mais perdas do que ganhos.
 
 ---
 
-### 6.6 IAC Set e Pedal Function
+### 6.6 IAC Set
 
 **Configuração original:**
 - Resposta genérica e pouco linear  
