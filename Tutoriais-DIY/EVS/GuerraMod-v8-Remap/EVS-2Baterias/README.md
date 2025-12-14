@@ -4,7 +4,7 @@
 
 **Versão:** 8.0  
 **Ano:** 2026  
-**Modelo: EVS com duas Baterias
+**Modelo:** EVS com duas Baterias (ou superior)
 
 
 ## 📝 Dicas importantes
@@ -16,7 +16,7 @@
 		> Essa configuração não oferece risco para a controladora.
 
 		
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/1.png)
+![Descrição da imagem](1.png)
 
 ---
 
@@ -28,21 +28,21 @@
 		> Inalterado a força e a potência da "marcha ré".
 		> Essa configuração não oferece risco para a controladora.
 
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/2.png)
+![Descrição da imagem](2.png)
 
 
 - Com esses ajustes, a moto passa a entregar sua potência de acordo com o giro do acelerador com 2x mais precisão, resultando em uma maior linearidade.
 
 - Na imagem abaixo, temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
 		
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/3.png)
+![Descrição da imagem](3.png)
 
 ---
 
 3. Ativando o Controle de Cruzeiro.
 	- O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.  
 	
-![Descrição da imagem](https://github.com/togwar/voltz-evs/raw/main/Tutoriais-DIY/Sugestoes-Remap-EVS/4.png)
+![Descrição da imagem](4.png)
 
 	
 - Para ativá-la, com a moto andando em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição que deseja, e precione o botão de ré ("R" na mão esquerda).
