@@ -81,7 +81,7 @@ Premissas adotadas no **GuerraMod v8**:
 4. Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
 5. Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
 6. *Flux Weakening* tratado apenas como extensão, não como solução  
-7. **BLOCOS DE CONFIG**, as alterções são relacionadas em blocos, você só deve ignorar o que está destacado como (Opcional).
+7. **BLOCOS DE CONFIGURAÇÕES**, as alterções são relacionadas em blocos, você só deve ignorar o que está destacado como (Opcional).
 
 ---
 
@@ -149,8 +149,12 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ## 6. Configuração Intermediária – GuerraMod v8
 
 Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações:  
-A MOTO É LIMITADA PELO SEU EQUIPAMENTO!  
-Ela ja atua no limite, tal limite que resulta em sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; Obviamente que isso depende diretamente do modo de condução e do clima ambiente. **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
+
+**A MOTO É LIMITADA PELO SEU EQUIPAMENTO!**  
+
+Ela jÁ atua no limite; Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução e do clima ambiente.)
+
+**Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
 
 Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS.
 
