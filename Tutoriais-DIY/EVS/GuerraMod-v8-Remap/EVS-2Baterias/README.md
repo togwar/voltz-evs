@@ -307,7 +307,7 @@ Em **CURRENT ROT**:
 	> Regen ativo progressivo; força suficiente sem stress térmico.
 
 Em **GTR SETTINGS**:
-- Alterar o valor em **GTR iqref 0[A]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **-20**.✅💾 
 	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
 - Alterar o valor em **GTR iqref 1[%]** de 0 para **-2500**.✅💾 
 	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
