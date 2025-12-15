@@ -362,6 +362,11 @@ Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
 - Alterar o valor em **GTR iqref 12[%]** de 0 para **40**.✅💾 
 	> Zona final de regen; transição suave para corte.  
 
+> ⚠️ **Atenção**  
+> A Regeneração ou Frenagente é proporcional ao modo de condução.  
+> Isso é, **no ECO freia menos**, regenera menos, pois tem menos potência, se **comparado ao Standard**.  
+> Logo, o modo **TURBO é onde o regenerativo é mais intenso**.
+
 
 ---
 
