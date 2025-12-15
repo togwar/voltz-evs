@@ -2,6 +2,7 @@
 **EM CONSTRUÇÃO**  
 ## 📌 Status do Projeto
 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
 ![License](https://img.shields.io/github/license/togwar/voltz-evs)
 ![Issues](https://img.shields.io/github/issues/togwar/voltz-evs)
