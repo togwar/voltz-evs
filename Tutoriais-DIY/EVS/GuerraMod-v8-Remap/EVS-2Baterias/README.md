@@ -247,7 +247,8 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 Um dos assuntos mais cobiçados por todos. E, **totalmente Opcional**; leia atentamente antes de tomar sua decisão...
 
-Para a maioria, não é porque ele irá quebrar as leis da física, e resultar em uma geração de energia avassaladora, ele jamais lhe proporcionará isso.  
+Não é porque ele irá quebrar as leis da física, e resultar em uma geração de energia avassaladora, ele jamais lhe proporcionará isso.  
+
 Mas qual a vantagem de possuir freio regenerativo??  (OBS: Eu nem gosto desse nome, mas é o popular, por isso usei.)  
 
 Dentre as principais vantagens posso listar:  
