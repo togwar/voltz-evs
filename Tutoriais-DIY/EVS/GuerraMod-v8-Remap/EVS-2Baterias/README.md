@@ -2,7 +2,7 @@
 
 **Versão:** 8.0  
 **Ano:** 2026  
-**Modelo:** EVS com duas Baterias (ou superior)  
+**Modelo:** EVS com **DUAS** Baterias (ou superior)  
   
 **Status:** Consolidação Técnica Estável  
 **Autor:** Tiago Guerra  
