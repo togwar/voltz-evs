@@ -240,7 +240,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 - Alterar o valor em **Iqref 6[%]** de 80 para **85**  
 	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
 
-![Descrição da imagem](iac-curve.jpg)
+![Descrição da imagem](iac-curve.png)
 
 
 ---
