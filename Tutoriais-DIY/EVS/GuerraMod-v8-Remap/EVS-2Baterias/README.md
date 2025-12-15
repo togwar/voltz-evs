@@ -383,6 +383,8 @@ Agora que já compreendeu as etapas e os motivos de cada modificação, segue a 
 ![Descrição da imagem](iac.png)
 ![Descrição da imagem](gtr.png)
 
+![Descrição da imagem](guerramod-v8.png)
+
 
 ---
 
