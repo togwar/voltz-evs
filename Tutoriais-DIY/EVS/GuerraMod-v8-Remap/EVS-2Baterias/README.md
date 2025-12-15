@@ -302,9 +302,37 @@ Na configuração original, a regeneração é inexistente ou apresenta comporta
 
 Já no GuerraMod v8, a regeneração passa a atuar de forma progressiva e coerente com a velocidade, com limites bem definidos de corrente e total respeito à capacidade da bateria instalada. O resultado é uma desaceleração mais natural ao soltar o acelerador, maior previsibilidade na pilotagem e melhor integração entre eficiência energética, segurança e conforto.
 
-- Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
-	> Z
+Em CURRENT ROT:
+- Alterar o valor em **Max reg Q** de 0 para **-2500**.✅💾  
+	> Regen ativo progressivo; força suficiente sem stress térmico.
 
+Em GTR SETTINGS:
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **-2500**.✅💾 
+	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
+- Alterar o valor em **GTR iqref 1[%]** de 0 para **-2500**.✅💾 
+	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
+- Alterar o valor em **GTR iqref 2[%]** de 0 para **-2500**.✅💾 
+	> Zona intermediária de regen; equilíbrio entre eficiência e conforto.  
+- Alterar o valor em **GTR iqref 3[%]** de 0 para **-2500**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 4[%]** de 0 para **-2500**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 5[%]** de 0 para **-2500**.✅💾 
+	> Regen consistente em velocidade de cruzeiro; melhora controle em rodovia.  
+- Alterar o valor em **GTR iqref 6[%]** de 0 para **-2500**.✅💾 
+	> Regen elevado e eficiente; adequado para desacelerações prolongadas.  
+- Alterar o valor em **GTR iqref 7[%]** de 0 para **-2500**.✅💾 
+	> Zona de pico de regeneração; maximiza recuperação de energia com segurança.  
+- Alterar o valor em **GTR iqref 8[%]** de 0 para **-2500**.✅💾 
+	> Manutenção do pico de regen; estabilidade térmica e elétrica controlada.  
+- Alterar o valor em **GTR iqref 9[%]** de 0 para **-2500**.✅💾 
+	> Redução gradual do regen em alta velocidade; evita sobretensão.  
+- Alterar o valor em **GTR iqref 10[%]** de 0 para **-2500**.✅💾 
+	> Regen controlado próximo ao limite de cruzeiro; melhora previsibilidade.  
+- Alterar o valor em **GTR iqref 11[%]** de 0 para **-2500**.✅💾 
+	> Regen reduzido em alta rotação; preserva estabilidade do veículo.  
+- Alterar o valor em **GTR iqref 12[%]** de 0 para **-2500**.✅💾 
+	> Zona final de regen; transição suave para corte.  
 
 
 ---
