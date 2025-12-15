@@ -167,7 +167,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 **Vamos ao que interessa:**  
 
 ### 6.1 Pedal Function
-- (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.
+- (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.✅💾
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
 
 
@@ -175,21 +175,21 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ### 6.2 Voltage Set
 
-- Alterar o valor em **Under vdc[V]** de 62 para **64**.  
+- Alterar o valor em **Under vdc[V]** de 62 para **64**.✅  
 	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.  
-- Alterar o valor em **Under vdc recover[V]** de 63 para **65**.  
+- Alterar o valor em **Under vdc recover[V]** de 63 para **65**.✅  
 	> Recuperação de potência mais suave; evita oscilação em tensão baixa.  
-- Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.  
+- Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.✅  
 	> Redução gradual de potência; melhor eficiência do FOC; menor ripple de corrente.  
-- Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.  
+- Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.✅  
 	> Evita queda abrupta de desempenho em baixa tensão; melhora previsibilidade.  
-- Alterar o valor em **Idc min percent[%]** de 20 para **30**.  
+- Alterar o valor em **Idc min percent[%]** de 20 para **30**.✅  
 	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.  
-- Alterar o valor em **Li-ion series Q** de 18 para **20**.  
+- Alterar o valor em **Li-ion series Q** de 18 para **20**.✅  
 	> Correção do número de células em série (20S). Essencial para cálculos internos.  
-- Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.  
+- Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.✅  
 	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).  
-- Alterar o valor em **Li-ion capacity[Ah]** de 0 para **66**.  
+- Alterar o valor em **Li-ion capacity[Ah]** de 0 para **66**.✅💾  
 	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.  
 
 
@@ -197,17 +197,17 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ### 6.3 Current Rotation
 
-- Alterar o valor em **Mode 4 idc[A]** de 80 para **110**.  
+- Alterar o valor em **Mode 4 idc[A]** de 80 para **110**.✅  
 	> Mode 3 idc ≤ Mode 4 idc; Evita clipping; Manter estabilidade térmica.  
-- Alterar o valor em **Hybrid Factor** de 30 para **35**.  
+- Alterar o valor em **Hybrid Factor** de 30 para **35**.✅  
 	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
-- Alterar o valor em **Mode 4 speed[rpm]** de 2500 para **1100**.  
+- Alterar o valor em **Mode 4 speed[rpm]** de 2500 para **1100**.✅  
 	>  Controle interno consistente; Valor atingivel, reflete a realidade da moto. Flux weakening ser usado como extensão, não como muleta.”  
-- Alterar o valor em **Boost active sec[s]** de 60 para **15**.  
+- Alterar o valor em **Boost active sec[s]** de 60 para **15**.✅  
 	> Tempo reduzido para evitar mascarar aquecimento e preservar estabilidade térmica. Evitar manter a corrente elevada demais.  
-- Alterar o valor em **Max Iac pk[A]** de 400 para **325**.  
+- Alterar o valor em **Max Iac pk[A]** de 400 para **325**.✅  
 	> Limite de corrente AC ajustado para reduzir calor, ruído eletromagnético e stress no estator e vibração;  
-- Alterar o valor em **Max speed[rpm]** de 2500 para **1100**.  
+- Alterar o valor em **Max speed[rpm]** de 2500 para **1100**.✅💾  
 	> FOC não tente empurrar fluxo além do útil; PID não fique “caçando” torque inexistente; flux weakening opere só onde realmente funciona.  
 
 
@@ -215,15 +215,15 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ### 6.4 Torque PID
 
-- Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**  
+- Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**.✅  
 	> Ganho proporcional pré-regime; auxilia resposta inicial sem gerar overshoot.
-- Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**  
+- Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**.✅  
 	> Ganho integral pré-regime; corrige erro estático em baixa carga.
-- Alterar o valor em **Iq ki gain 0** de 25 para **40**  
+- Alterar o valor em **Iq ki gain 0** de 25 para **40**.✅  
 	> Ganho integral em regime normal; garante estabilidade de torque em cruzeiro
-- Alterar o valor em **Iq kp gain 3** de 5 para **4**  
+- Alterar o valor em **Iq kp gain 3** de 5 para **4**.✅  
 	> Redução leve do ganho proporcional em alta rotação; mantém resposta e reduz risco de instabilidade térmica e em flux weakening.
-- Alterar o valor em **Iq ki gain 3** de 80 para **60**  
+- Alterar o valor em **Iq ki gain 3** de 80 para **60**.✅💾  
 	> Redução do ganho integral em alta rotação; diminui aquecimento e elimina risco de oscilação em FW.
 
 
@@ -231,11 +231,11 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ### 6.5 IAC Set  
 
-- Alterar o valor em **Iqref 4[%]** de 95 para **100**  
+- Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
 	> Zona de transição para torque médio; melhora dirigibilidade urbana.
-- Alterar o valor em **Iqref 5[%]** de 85 para **90**  
+- Alterar o valor em **Iqref 5[%]** de 85 para **90**.✅  
 	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
-- Alterar o valor em **Iqref 6[%]** de 80 para **85**  
+- Alterar o valor em **Iqref 6[%]** de 80 para **85**.✅💾  
 	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
 
 ![Descrição da imagem](iac-curve.png)
