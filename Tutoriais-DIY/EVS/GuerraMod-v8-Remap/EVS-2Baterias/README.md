@@ -179,12 +179,15 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.  
 - Alterar o valor em **Under vdc recover[V]** de 63 para **65**.✅  
 	> Recuperação de potência mais suave; evita oscilação em tensão baixa.  
+<!--
 - Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.✅  
 	> Redução gradual de potência; melhor eficiência do FOC; menor ripple de corrente.  
+
 - Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.✅  
 	> Evita queda abrupta de desempenho em baixa tensão; melhora previsibilidade.  
 - Alterar o valor em **Idc min percent[%]** de 20 para **30**.✅  
 	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.  
+-->
 - Alterar o valor em **Li-ion series Q** de 18 para **20**.✅  
 	> Correção do número de células em série (20S). Essencial para cálculos internos.  
 - Alterar o valor em **Li-ion Cell HighV[V]** de 41 para **42**.✅  
@@ -273,9 +276,10 @@ Usuários que sentem desconforto com “freio motor forte” no trânsito, ou qu
 **Principais ajustes:**
 - CURRENT ROT / **Min reg speed** = 300 rpm✅💾 (≈ 35 km/h)  
 - CURRENT ROT / **Max slip reg Q** = 0  
+<!--
 - CURRENT ROT / **Acc of regenerate** = 600✅💾
 - CURRENT ROT / **Dec of regenerate** = 700✅💾  
-
+-->
 ---
 
 ### 7.2 Perfil Rodovia
@@ -289,9 +293,10 @@ Usuários que percorrem trajetos intermunicipais, estradas costeiras ou serranas
 **Principais ajustes:**
 - CURRENT ROT / **Min reg speed** = 400 rpm✅💾 (≈ 48 km/h)  
 - CURRENT ROT / **Max slip reg Q** = -300✅💾  
+<!--
 - CURRENT ROT / **Acc of regenerate** = 500✅💾
 - CURRENT ROT / **Dec of regenerate** = 700✅💾
-
+-->
 ---
 
 ## 7.3 Regeneração
@@ -303,11 +308,11 @@ Na configuração original, a regeneração é inexistente ou apresenta comporta
 Já no GuerraMod v8, a regeneração passa a atuar de forma progressiva e coerente com a velocidade, com limites bem definidos de corrente e total respeito à capacidade da bateria instalada. O resultado é uma desaceleração mais natural ao soltar o acelerador, maior previsibilidade na pilotagem e melhor integração entre eficiência energética, segurança e conforto.
 
 Em **CURRENT ROT**:
-- Alterar o valor em **Max reg Q** de 0 para **-2500**.✅💾  
+- Alterar o valor em **Max reg Q** de 0 para **-5000**.✅💾  
 	> Regen ativo progressivo; força suficiente sem stress térmico.
 
 Em **GTR SETTINGS** para **Cidade**:
-- Alterar o valor em **GTR iqref 0[A]** de 0 para **-20**.✅💾 
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **40**.✅💾 
 	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
 - Alterar o valor em **GTR iqref 1[%]** de 0 para **15**.✅💾 
 	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
@@ -335,7 +340,7 @@ Em **GTR SETTINGS** para **Cidade**:
 	> Zona final de regen; transição suave para corte.  
 
 Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
-- Alterar o valor em **GTR iqref 0[A]** de 0 para **-30**.✅💾 
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **60**.✅💾 
 	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
 - Alterar o valor em **GTR iqref 1[%]** de 0 para **20**.✅💾 
 	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
@@ -376,6 +381,8 @@ O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **docume
 
 Agora que já compreendeu as etapas e os motivos de cada modificação, segue a relação dos ScreenShot com destaque das alterações aqui citadas (Perfil Cidade).
 
+**EM CONSTRUÇÃO**
+<!--
 ![Descrição da imagem](pedal.png)
 ![Descrição da imagem](voltage.png)
 ![Descrição da imagem](current.png)
@@ -384,7 +391,7 @@ Agora que já compreendeu as etapas e os motivos de cada modificação, segue a 
 ![Descrição da imagem](gtr.png)
 
 ![Descrição da imagem](guerramod-v8.png)
-
+-->
 
 ---
 
