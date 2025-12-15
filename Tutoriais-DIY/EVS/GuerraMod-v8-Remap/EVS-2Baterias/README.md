@@ -374,7 +374,14 @@ Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
 
 O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
 
+Agora que já compreendeu as etapas e os motivos de cada modificação, segue a relação dos ScreenShot com destaque das alterações aqui citadas (Perfil Cidade).
 
+![Descrição da imagem](pedal.png)
+![Descrição da imagem](voltage.png)
+![Descrição da imagem](current.png)
+![Descrição da imagem](torque.png)
+![Descrição da imagem](iac.png)
+![Descrição da imagem](gtr.png)
 
 
 ---
@@ -382,4 +389,3 @@ O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **docume
 > ⚠️ **Aviso**  
 > Este projeto não possui vínculo oficial com a Voltz Motors.  
 > O uso das informações aqui descritas é de responsabilidade do usuário.
-
