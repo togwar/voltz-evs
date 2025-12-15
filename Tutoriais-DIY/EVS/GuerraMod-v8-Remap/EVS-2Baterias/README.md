@@ -32,8 +32,11 @@
 	6.3 [Current Rotation](#63-current-rotation)  
 	6.4 [Torque PID](#64-torque-pid)  
 	6.5 [IAC Set](#65-iac-set)  
-7. [6](#-6)
-8. [7](#-7)
+7. [Freio Regenerativo](#7-freio-regenerativo)
+    7.1 [Perfil Cidade](#71-perfil-cidade)  
+	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
+	7.3 [Regeneração](#73-regenera%C3%A7%C3%A3o)  
+8. [Conclusão e Resumo](#8-conclus%C3%A3o-e-resumo)
 
 ---
 
