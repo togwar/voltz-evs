@@ -30,7 +30,7 @@
 	6.3 [Current Rotation](#63-current-rotation)  
 	6.4 [Torque PID](#64-torque-pid)  
 	6.5 [IAC Set](#65-iac-set)  
-7. [Freio Regenerativo](#7-freio-regenerativo)
+7. [Freio Regenerativo](#7-freio-regenerativo)  
     7.1 [Perfil Cidade](#71-perfil-cidade)  
 	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
 	7.3 [Regeneração](#73-regenera%C3%A7%C3%A3o)  
@@ -255,7 +255,7 @@ Dentre as principais vantagens posso listar:
 1. **Conforto**... Sensação de freio motor;  
 2. **Controle** e segurança em curvas, principalmente em declives.  
 3. **Ferramenta auxiliar**, não como substituta do freio mecânico.  
-4. **Econômia**... NÃO! De manutenção! Principalmente dos **díscos de freio** e **pastilhas**.  
+4. **Econômia**... De manutenção! Principalmente dos **díscos de freio** e **pastilhas**.  
 5. **Autonomia**, em "último lugar", ele proporciona em média real e geral, algo entre de 7% a 15% dependendo de inúmeros fatores.
 
 Agora que desbravamos um dos principais vantagens do "Freio Regenerativo", se acredita que ele é funcional, continue, pois **agora precisa se decidir, em qual perfil** você se enquadra melhor, e **escolha apenas um.**
