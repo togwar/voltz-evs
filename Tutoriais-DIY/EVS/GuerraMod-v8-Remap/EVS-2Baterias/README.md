@@ -243,11 +243,21 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
-![Descrição da imagem](000.jpg)
-## VOLTE MAIS TARDE!!  
-
-
 ## 7. Freio Regenerativo
+
+Um dos assuntos mais cobiçados por todos. E, **totalmente Opcional**; leia atentamente antes de tomar sua decisão...
+
+Para a maioria, não é porque ele irá quebrar as leis da física, e resultar em uma geração de energia avassaladora, ele jamais lhe proporcionará isso.  
+Mas qual a vantagem de possuir freio regenerativo??  (OBS: Eu nem gosto desse nome, mas é o popular, por isso usei.)  
+
+Dentre as principais vantagens posso listar:  
+1. **Conforto**... Sensação de freio motor;  
+2. **Controle** e segurança em curvas, principalmente em declives.  
+3. **Ferramenta auxiliar**, não como substituta do freio mecânico.  
+4. **Econômia**... NÃO! De manutenção! Principalmente dos **díscos de freio** e **pastilhas**.  
+5. **Autonomia**, em "último lugar", ele proporciona em média real e geral, algo entre de 7% a 15% dependendo de inúmeros fatores.
+
+Agora que desbravamos um dos principais vantagens do "Freio Regenerativo", se acredita que ele é funcional, continue, pois **agora precisa se decidir, em qual perfil** você se enquadra melhor, e **escolha apenas um.**
 
 ### 7.1 Perfil Cidade
 
