@@ -302,11 +302,11 @@ Na configuração original, a regeneração é inexistente ou apresenta comporta
 
 Já no GuerraMod v8, a regeneração passa a atuar de forma progressiva e coerente com a velocidade, com limites bem definidos de corrente e total respeito à capacidade da bateria instalada. O resultado é uma desaceleração mais natural ao soltar o acelerador, maior previsibilidade na pilotagem e melhor integração entre eficiência energética, segurança e conforto.
 
-Em CURRENT ROT:
+Em **CURRENT ROT**:
 - Alterar o valor em **Max reg Q** de 0 para **-2500**.✅💾  
 	> Regen ativo progressivo; força suficiente sem stress térmico.
 
-Em GTR SETTINGS:
+Em **GTR SETTINGS**:
 - Alterar o valor em **GTR iqref 0[A]** de 0 para **-2500**.✅💾 
 	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
 - Alterar o valor em **GTR iqref 1[%]** de 0 para **-2500**.✅💾 
