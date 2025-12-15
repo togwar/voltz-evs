@@ -271,8 +271,10 @@ A configuração de freio regenerativo neste perfil prioriza conforto e previsib
 Usuários que sentem desconforto com “freio motor forte” no trânsito, ou que preferem uma condução mais solta e natural, tendem a se identificar com este perfil.  
 
 **Principais ajustes:**
-- CURRENT ROT / **Min reg speed** = 300 rpm (≈ 35 km/h)  
+- CURRENT ROT / **Min reg speed** = 300 rpm✅💾 (≈ 35 km/h)  
 - CURRENT ROT / **Max slip reg Q** = 0  
+- CURRENT ROT / **Acc of regenerate** = 600✅💾
+- CURRENT ROT / **Dec of regenerate** = 700✅💾  
 
 ---
 
@@ -285,23 +287,25 @@ A configuração de freio regenerativo aqui atua como um freio motor eletrônico
 Usuários que percorrem trajetos intermunicipais, estradas costeiras ou serranas, e que valorizam uma moto mais “assentada” ao soltar o acelerador, tendem a se identificar com este perfil.
 
 **Principais ajustes:**
-- CURRENT ROT / **Min reg speed** = 400 rpm (≈ 48 km/h)  
-- CURRENT ROT / **Max slip reg Q** = -300  
+- CURRENT ROT / **Min reg speed** = 400 rpm✅💾 (≈ 48 km/h)  
+- CURRENT ROT / **Max slip reg Q** = -300✅💾  
+- CURRENT ROT / **Acc of regenerate** = 500✅💾
+- CURRENT ROT / **Dec of regenerate** = 700✅💾
 
 ---
 
 ## 7.3 Regeneração
 
-A regeneração no **GuerraMod v8** é tratada como **ferramenta auxiliar**, não como substituta do freio mecânico.
+No GuerraMod v8, a regeneração é tratada como uma ferramenta auxiliar de controle e eficiência, e não como substituta do sistema de freio mecânico. Seu papel principal é contribuir para a estabilidade do veículo, reduzir o desgaste de componentes mecânicos e recuperar energia de forma segura, sem comprometer o conforto ou a durabilidade do conjunto elétrico.
 
-**Configuração original:**
-- Regeneração irregular  
-- Pouco previsível  
+Na configuração original, a regeneração é inexistente ou apresenta comportamento irregular, com atuação pouco previsível e sem critérios claros de limitação de corrente, o que dificulta o controle fino da desaceleração em diferentes cenários de uso.
 
-**GuerraMod v8:**
-- Regeneração progressiva  
-- Corrente limitada  
-- Respeito à capacidade da bateria  
+Já no GuerraMod v8, a regeneração passa a atuar de forma progressiva e coerente com a velocidade, com limites bem definidos de corrente e total respeito à capacidade da bateria instalada. O resultado é uma desaceleração mais natural ao soltar o acelerador, maior previsibilidade na pilotagem e melhor integração entre eficiência energética, segurança e conforto.
+
+- Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
+	> Z
+
+
 
 ---
 
