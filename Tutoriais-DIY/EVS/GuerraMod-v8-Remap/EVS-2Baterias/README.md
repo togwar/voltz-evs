@@ -152,13 +152,13 @@ Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos tes
 
 **A MOTO É LIMITADA PELO SEU EQUIPAMENTO!**  
 
-Ela jÁ atua no limite; Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução e do clima ambiente.)
+Ela já atua no limite; Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução e do clima ambiente.)
 
 **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
 
 Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS.
 
-⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha "MUITO CUIDADO", e não sabe o que está fazendo, não altere para um valor deliberado.  
+⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha **"MUITO CUIDADO"**, e não sabe o que está fazendo, não altere para um valor deliberado.  
 
 
 ---
@@ -228,10 +228,6 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
-
-![Descrição da imagem](000.jpg)
-## VOLTE MAIS TARDE!!  
-
 ### 6.5 IAC Set  
 
 - Alterar o valor em **Iqref 4[%]** de 95 para **100**  
@@ -244,14 +240,15 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 ![Descrição da imagem](iac-curve.jpg)
 
 
-
-<!--
-
 ---
 
-## 6. Perfis de Uso
+![Descrição da imagem](000.jpg)
+## VOLTE MAIS TARDE!!  
 
-### 6.1 Perfil Cidade
+
+## 7. Freio Regenerativo
+
+### 7.1 Perfil Cidade
 
 **Objetivo:**
 - Conforto  
@@ -264,7 +261,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
-### 6.2 Perfil Rodovia
+### 7.2 Perfil Rodovia
 
 **Objetivo:**
 - Estabilidade  
@@ -277,7 +274,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
-## 7. Regeneração
+## 7.3 Regeneração
 
 A regeneração no **GuerraMod v8** é tratada como **ferramenta auxiliar**, não como substituta do freio mecânico.
 
@@ -292,30 +289,7 @@ A regeneração no **GuerraMod v8** é tratada como **ferramenta auxiliar**, nã
 
 ---
 
-## 8. Comparativo Histórico
-
-- **v3.7 / v4.x**
-  - Exploratório  
-  - Empírico  
-
-- **v5.x**
-  - Refinamento prático  
-
-- **v8**
-  - Consolidação técnica  
-  - Baseline definitivo  
-
----
-
-## 9. Limitações Conhecidas
-
-- Telemetria limitada  
-- Ausência de sensores térmicos detalhados  
-- Dependência do painel original  
-
----
-
-## 10. Conclusão
+## 8. Conclusão e Resumo
 
 O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
 
@@ -324,18 +298,6 @@ O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **docume
 > ⚠️ **Aviso**  
 > Este projeto não possui vínculo oficial com a Voltz Motors.  
 > O uso das informações aqui descritas é de responsabilidade do usuário.
-
-
-
-
-
-## 📝 Dicas importantes
-
-
----
-
--->
-
 
 ![Descrição da imagem](1.png)
 ![Descrição da imagem](2.png)
