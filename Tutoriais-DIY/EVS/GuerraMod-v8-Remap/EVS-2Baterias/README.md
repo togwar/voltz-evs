@@ -31,11 +31,9 @@
 	6.2 [Voltage Set](#62-voltage-set)  
 	6.3 [Current Rotation](#63-current-rotation)  
 	6.4 [Torque PID](#64-torque-pid)  
-	6.5 [Flux Weakening](#65-flux-weakening)  
-	6.6 [IAC Set](#66-iac-set)  
-	6.7 [3](3)  
-8. [6](#-6)
-9. [7](#-7)
+	6.5 [IAC Set](#65-iac-set)  
+7. [6](#-6)
+8. [7](#-7)
 
 ---
 
@@ -226,33 +224,20 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
+
 ![Descrição da imagem](000.jpg)
 ## VOLTE MAIS TARDE!!  
 
-### 6.5 Flux Weakening
+### 6.5 IAC Set  
 
-**Configuração original:**
-- FW genérico, sem critério de aplicação  
+- Alterar o valor em **Iqref 4[%]** de 95 para **100**  
+	> Zona de transição para torque médio; melhora dirigibilidade urbana.
+- Alterar o valor em **Iqref 5[%]** de 85 para **90**  
+	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
+- Alterar o valor em **Iqref 6[%]** de 80 para **85**  
+	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
 
-**GuerraMod v8:**
-- FW conservador, sem forçar aumento de rotação  
-
-**Justificativa:**  
-Em motor *in-wheel*, FW excessivo gera mais perdas do que ganhos.
-
----
-
-### 6.6 IAC Set
-
-**Configuração original:**
-- Resposta genérica e pouco linear  
-
-**GuerraMod v8:**
-- Curva de torque progressiva  
-- Resposta de pedal refinada  
-
-**Justificativa:**  
-Separar sensação de aceleração dos limites elétricos do sistema.
+![Descrição da imagem](iac-curve.jpg)
 
 
 
