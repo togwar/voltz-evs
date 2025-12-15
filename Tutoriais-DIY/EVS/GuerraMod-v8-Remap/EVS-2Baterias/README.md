@@ -306,32 +306,60 @@ Em **CURRENT ROT**:
 - Alterar o valor em **Max reg Q** de 0 para **-2500**.✅💾  
 	> Regen ativo progressivo; força suficiente sem stress térmico.
 
-Em **GTR SETTINGS**:
+Em **GTR SETTINGS** para **Cidade**:
 - Alterar o valor em **GTR iqref 0[A]** de 0 para **-20**.✅💾 
 	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
-- Alterar o valor em **GTR iqref 1[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 1[%]** de 0 para **15**.✅💾 
 	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
-- Alterar o valor em **GTR iqref 2[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 2[%]** de 0 para **25**.✅💾 
 	> Zona intermediária de regen; equilíbrio entre eficiência e conforto.  
-- Alterar o valor em **GTR iqref 3[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 3[%]** de 0 para **35**.✅💾 
 	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
-- Alterar o valor em **GTR iqref 4[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 4[%]** de 0 para **50**.✅💾 
 	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
-- Alterar o valor em **GTR iqref 5[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 5[%]** de 0 para **65**.✅💾 
 	> Regen consistente em velocidade de cruzeiro; melhora controle em rodovia.  
-- Alterar o valor em **GTR iqref 6[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 6[%]** de 0 para **80**.✅💾 
 	> Regen elevado e eficiente; adequado para desacelerações prolongadas.  
-- Alterar o valor em **GTR iqref 7[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 7[%]** de 0 para **90**.✅💾 
 	> Zona de pico de regeneração; maximiza recuperação de energia com segurança.  
-- Alterar o valor em **GTR iqref 8[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 8[%]** de 0 para **90**.✅💾 
 	> Manutenção do pico de regen; estabilidade térmica e elétrica controlada.  
-- Alterar o valor em **GTR iqref 9[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 9[%]** de 0 para **80**.✅💾 
 	> Redução gradual do regen em alta velocidade; evita sobretensão.  
-- Alterar o valor em **GTR iqref 10[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 10[%]** de 0 para **65**.✅💾 
 	> Regen controlado próximo ao limite de cruzeiro; melhora previsibilidade.  
-- Alterar o valor em **GTR iqref 11[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 11[%]** de 0 para **50**.✅💾 
 	> Regen reduzido em alta rotação; preserva estabilidade do veículo.  
-- Alterar o valor em **GTR iqref 12[%]** de 0 para **-2500**.✅💾 
+- Alterar o valor em **GTR iqref 12[%]** de 0 para **35**.✅💾 
+	> Zona final de regen; transição suave para corte.  
+
+Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **-30**.✅💾 
+	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
+- Alterar o valor em **GTR iqref 1[%]** de 0 para **20**.✅💾 
+	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
+- Alterar o valor em **GTR iqref 2[%]** de 0 para **30**.✅💾 
+	> Zona intermediária de regen; equilíbrio entre eficiência e conforto.  
+- Alterar o valor em **GTR iqref 3[%]** de 0 para **40**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 4[%]** de 0 para **55**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 5[%]** de 0 para **70**.✅💾 
+	> Regen consistente em velocidade de cruzeiro; melhora controle em rodovia.  
+- Alterar o valor em **GTR iqref 6[%]** de 0 para **85**.✅💾 
+	> Regen elevado e eficiente; adequado para desacelerações prolongadas.  
+- Alterar o valor em **GTR iqref 7[%]** de 0 para **100**.✅💾 
+	> Zona de pico de regeneração; maximiza recuperação de energia com segurança.  
+- Alterar o valor em **GTR iqref 8[%]** de 0 para **100**.✅💾 
+	> Manutenção do pico de regen; estabilidade térmica e elétrica controlada.  
+- Alterar o valor em **GTR iqref 9[%]** de 0 para **85**.✅💾 
+	> Redução gradual do regen em alta velocidade; evita sobretensão.  
+- Alterar o valor em **GTR iqref 10[%]** de 0 para **70**.✅💾 
+	> Regen controlado próximo ao limite de cruzeiro; melhora previsibilidade.  
+- Alterar o valor em **GTR iqref 11[%]** de 0 para **55**.✅💾 
+	> Regen reduzido em alta rotação; preserva estabilidade do veículo.  
+- Alterar o valor em **GTR iqref 12[%]** de 0 para **40**.✅💾 
 	> Zona final de regen; transição suave para corte.  
 
 
@@ -341,13 +369,12 @@ Em **GTR SETTINGS**:
 
 O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
 
+
+
+
 ---
 
 > ⚠️ **Aviso**  
 > Este projeto não possui vínculo oficial com a Voltz Motors.  
 > O uso das informações aqui descritas é de responsabilidade do usuário.
 
-![Descrição da imagem](1.png)
-![Descrição da imagem](2.png)
-
-![Descrição da imagem](4.png)
