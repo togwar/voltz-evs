@@ -244,8 +244,10 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 ---
 
 ## 7. Freio Regenerativo
+⚠**Atenção**: As [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8) são imprecindíveis para o funcionamento adequado deste tópico, se não fez, volte e execute primeiramente todas as configurações.  
+⚠⚠**Atenção**: LEMBRE-SE é por sua conta em risco, isso é o que **EU USO** fique à vontade de **copiar**; Um erro aqui (não inventa moda de aumentar o número por conta própria) e você poderá queimar equipamentos na sua moto, não altere nenhuma configuração sem ter a precisão no valor que está definindo, e se essa configuração não refletirá em outras.  
 
-Um dos assuntos mais cobiçados por todos. E, **totalmente Opcional**; leia atentamente antes de tomar sua decisão...
+Um dos assuntos mais cobiçados por todos; Porém, **totalmente Opcional**; leia atentamente antes de tomar sua decisão...  
 
 Não é porque ele irá quebrar as leis da física, e resultar em uma geração de energia avassaladora, ele jamais lhe proporcionará isso.  
 
@@ -256,33 +258,35 @@ Dentre as principais vantagens posso listar:
 2. **Controle** e segurança em curvas, principalmente em declives.  
 3. **Ferramenta auxiliar**, não como substituta do freio mecânico.  
 4. **Econômia**... De manutenção! Principalmente dos **díscos de freio** e **pastilhas**.  
-5. **Autonomia**, em "último lugar", ele proporciona em média real e geral, algo entre de 7% a 15% dependendo de inúmeros fatores.
+5. **Autonomia**, em "último lugar", ele proporciona em média real e geral, algo entre de 7% a 15% dependendo de inúmeros fatores.  
 
-Agora que desbravamos um dos principais vantagens do "Freio Regenerativo", se acredita que ele é funcional, continue, pois **agora precisa se decidir, em qual perfil** você se enquadra melhor, e **escolha apenas um.**
+Agora que desbravamos um dos principais vantagens do "Freio Regenerativo", se acredita que ele é funcional, continue, pois **agora precisa se decidir, em qual perfil** você se enquadra melhor, e **escolha apenas um.**  
 
 ### 7.1 Perfil Cidade
 
-**Objetivo:**
-- Conforto  
-- Controle em baixa velocidade  
-- Regeneração mínima  
+Este perfil é indicado para usuários que utilizam a Voltz EVS predominantemente em ambiente urbano, com tráfego intenso, paradas frequentes e variações constantes de velocidade. É comum circular **entre 30 e 60 km/h**, com **acelerações curtas e desacelerações repetidas** em semáforos, cruzamentos, lombadas e corredores.  
+
+A configuração de freio regenerativo neste perfil prioriza conforto e previsibilidade, evitando que a moto desacelere de forma brusca ao soltar o acelerador. O objetivo não é maximizar a recuperação de energia, mas sim manter a pilotagem fluida, reduzir fadiga e facilitar manobras em baixa velocidade.  
+
+Usuários que sentem desconforto com “freio motor forte” no trânsito, ou que preferem uma condução mais solta e natural, tendem a se identificar com este perfil.  
 
 **Principais ajustes:**
-- Min reg speed = 300 rpm (≈ 35 km/h)  
-- Max slip reg Q = 0  
+- CURRENT ROT / **Min reg speed** = 300 rpm (≈ 35 km/h)  
+- CURRENT ROT / **Max slip reg Q** = 0  
 
 ---
 
 ### 7.2 Perfil Rodovia
 
-**Objetivo:**
-- Estabilidade  
-- Freio motor leve  
-- Menor desgaste mecânico  
+Este perfil é indicado para usuários que trafegam com frequência em vias rápidas, rodovias ou trechos longos de serra, mantendo velocidades mais estáveis, normalmente **entre 60 e 90 km/h**, com **períodos prolongados sem acelerações** bruscas.
+
+A configuração de freio regenerativo aqui atua como um freio motor eletrônico leve, ajudando a controlar a velocidade em descidas, curvas longas e reduções graduais, além de reduzir o desgaste do freio mecânico. Diferente do uso urbano, o objetivo passa a ser estabilidade e controle, não apenas conforto.
+
+Usuários que percorrem trajetos intermunicipais, estradas costeiras ou serranas, e que valorizam uma moto mais “assentada” ao soltar o acelerador, tendem a se identificar com este perfil.
 
 **Principais ajustes:**
-- Min reg speed = 400 rpm (≈ 48 km/h)  
-- Max slip reg Q = -300  
+- CURRENT ROT / Min reg speed = 400 rpm (≈ 48 km/h)  
+- CURRENT ROT / Max slip reg Q = -300  
 
 ---
 
