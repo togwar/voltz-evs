@@ -104,7 +104,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ### 5.1 Alterações Mínimas para conforto e segurança
 
 #### 5.1.1. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
-- (Opcional) Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**.
+- (Opcional) Alteração do valor de -150 para **-43 em CURRENT ROT / Backward speed[rpm]**. ✅💾  
 	> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras. Não faz sentido possuir uma ré a 20km/h.  
 	> Inalterado a força e a potência da "marcha ré".  
 	> Essa configuração não oferece risco para a controladora.
@@ -113,11 +113,11 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ---
 
 #### 5.1.2. Ajuste fino e mais linear do **acelerador com relação ao Torque** (Throttle [V])
-- (Opcional) Alteração do valor **de 70 para 75** em PEDAL FUNCTION / **Percentage in mid tref[%]**.    
-- Alteração do valor **de 2,3999 para 3,2500** em PEDAL FUNCTION / **Throttle Bst[V]**.  
-- Alteração do valor **de 3,4999 para 4,1000** em PEDAL FUNCTION / **Throttle high[V]**.  
-- Alteração do valor **de 2,1994 para 3,2800** em PEDAL FUNCTION / **Throttle mid[V]**.  
-- (Opcional) Alteração do valor **de ECO para STD** em PEDAL FUNCTION / **Default M**.
+- (Opcional) Alteração do valor **de 70 para 75** em PEDAL FUNCTION / **Percentage in mid tref[%]**.✅  
+- Alteração do valor **de 2,3999 para 3,2500** em PEDAL FUNCTION / **Throttle Bst[V]**.✅  
+- Alteração do valor **de 3,4999 para 4,1000** em PEDAL FUNCTION / **Throttle high[V]**.✅  
+- Alteração do valor **de 2,1994 para 3,2800** em PEDAL FUNCTION / **Throttle mid[V]**.✅💾  
+- (Opcional) Alteração do valor **de ECO para STD** em PEDAL FUNCTION / **Default M**.✅💾  
 	> Maior controle na entrega de torque na faixa média do acelerador; afeta sensação de resposta sem alterar potência máxima ou correntes.  
 	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.  
 	> Inalterado a força e a potência da "marcha ré".  
@@ -134,7 +134,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ---
 
 #### 5.1.3. Ativando o Controle de Cruzeiro.
-- O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.  
+- O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu **PEDAL FUNCTION / Cruise Enable**.✅💾  
 - Para ativá-la, com a moto andando em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição que deseja, e precione o botão de ré ("R" na mão esquerda).
 - Talvez você sinta uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou encoste no freio (aparecer o "P" no painel).
 - ⚠**Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
@@ -285,8 +285,8 @@ A configuração de freio regenerativo aqui atua como um freio motor eletrônico
 Usuários que percorrem trajetos intermunicipais, estradas costeiras ou serranas, e que valorizam uma moto mais “assentada” ao soltar o acelerador, tendem a se identificar com este perfil.
 
 **Principais ajustes:**
-- CURRENT ROT / Min reg speed = 400 rpm (≈ 48 km/h)  
-- CURRENT ROT / Max slip reg Q = -300  
+- CURRENT ROT / **Min reg speed** = 400 rpm (≈ 48 km/h)  
+- CURRENT ROT / **Max slip reg Q** = -300  
 
 ---
 
