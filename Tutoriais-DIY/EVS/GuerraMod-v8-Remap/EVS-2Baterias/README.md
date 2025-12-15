@@ -244,8 +244,8 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 ---
 
 ## 7. Freio Regenerativo
-⚠**Atenção**: As [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8) são imprecindíveis para o funcionamento adequado deste tópico, se não fez, volte e execute primeiramente todas as configurações.  
-⚠⚠**Atenção**: LEMBRE-SE é por sua conta em risco, isso é o que **EU USO** fique à vontade de **copiar**; Um erro aqui (não inventa moda de aumentar o número por conta própria) e você poderá queimar equipamentos na sua moto, não altere nenhuma configuração sem ter a precisão no valor que está definindo, e se essa configuração não refletirá em outras.  
+⚠️**Atenção**: As [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8) são imprecindíveis para o funcionamento adequado deste tópico, se não fez, volte e execute primeiramente todas as configurações.  
+⚠️⚠️**Atenção**: LEMBRE-SE é por sua conta em risco, isso é o que **EU USO** fique à vontade de **copiar**; Um erro aqui (não inventa moda de aumentar o número por conta própria) e você poderá queimar equipamentos na sua moto, não altere nenhuma configuração sem ter a precisão no valor que está definindo, e se essa configuração não refletirá em outras.  
 
 Um dos assuntos mais cobiçados por todos; Porém, **totalmente Opcional**; leia atentamente antes de tomar sua decisão...  
 
@@ -389,5 +389,6 @@ Agora que já compreendeu as etapas e os motivos de cada modificação, segue a 
 ---
 
 > ⚠️ **Aviso**  
-> Este projeto não possui vínculo oficial com a Voltz Motors.  
+> Este projeto não possui vínculo oficial com a Voltz Motors.
+> Essas são as configurações que uso a na minha moto Voltz EVS 2021.  
 > O uso das informações aqui descritas é de responsabilidade do usuário.
