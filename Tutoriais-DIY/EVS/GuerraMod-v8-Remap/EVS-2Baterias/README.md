@@ -1,4 +1,4 @@
-# GuerraMod v8 – Projeto Voltz EVS (2026)
+⁸# GuerraMod v8 – Projeto Voltz EVS (2026)
 
 **Versão:** 8.0  (15/12/2025)  
 **Ano:** 2026  
@@ -198,9 +198,8 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
-### 6.3 Current Rotation
-
-- Alterar o valor em **Mode 4 idc[A]** de 80 para **110**.✅  
+### 6.3 Current Rotation  
+- Alterar o valor em **Mode 4 idc[A]** de 80 para **100**.✅  
 	> Mode 3 idc ≤ Mode 4 idc; Evita clipping; Manter estabilidade térmica.  
 - Alterar o valor em **Hybrid Factor** de 30 para **35**.✅  
 	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
