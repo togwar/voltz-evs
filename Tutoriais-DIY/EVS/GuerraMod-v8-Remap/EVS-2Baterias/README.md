@@ -131,6 +131,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 - Na imagem abaixo, temos um gráfico comparando a configuração original da moto (em AZUL) com a alteração propósta (em VERDE).
 ![Descrição da imagem](3.png)
 
+
 ---
 
 #### 5.1.3. Ativando o Controle de Cruzeiro.
@@ -145,6 +146,8 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 	> - Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣
 
 
+---
+
 ## 6. Configuração Intermediária – GuerraMod v8
 
 Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações:  
@@ -155,11 +158,17 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha "MUITO CUIDADO", e não sabe o que está fazendo, não altere para um valor deliberado.  
 
+
+---
+
 **Vamos ao que interessa:**  
 
 ### 6.1 Pedal Function
 - (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
+
+
+---
 
 ### 6.2 Voltage Set
 
@@ -181,6 +190,8 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.  
 
 
+---
+
 ### 6.3 Current Rotation
 
 - Alterar o valor em **Mode 4 idc[A]** de 80 para **110**.  
@@ -196,21 +207,27 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 - Alterar o valor em **Max speed[rpm]** de 2500 para **1100**.  
 	> FOC não tente empurrar fluxo além do útil; PID não fique “caçando” torque inexistente; flux weakening opere só onde realmente funciona.  
 
-![Descrição da imagem](000.jpg)
-## VOLTE MAIS TARDE!!  
+
+---
 
 ### 6.4 Torque PID
 
-**Configuração original:**
-- Ganhos elevados em alta rotação  
+- Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**  
+	> Ganho proporcional pré-regime; auxilia resposta inicial sem gerar overshoot.
+- Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**  
+	> Ganho integral pré-regime; corrige erro estático em baixa carga.
+- Alterar o valor em **Iq ki gain 0** de 25 para **40**  
+	> Ganho integral em regime normal; garante estabilidade de torque em cruzeiro
+- Alterar o valor em **Iq kp gain 3** de 5 para **4**  
+	> Redução leve do ganho proporcional em alta rotação; mantém resposta e reduz risco de instabilidade térmica e em flux weakening.
+- Alterar o valor em **Iq ki gain 3** de 80 para **60**  
+	> Redução do ganho integral em alta rotação; diminui aquecimento e elimina risco de oscilação em FW.
 
-**GuerraMod v8:**
-- Redução seletiva de *Iq kp/ki* em alta rotação  
-
-**Justificativa:**  
-Evitar oscilações, aquecimento e instabilidade próximo ao *Flux Weakening*.
 
 ---
+
+![Descrição da imagem](000.jpg)
+## VOLTE MAIS TARDE!!  
 
 ### 6.5 Flux Weakening
 
