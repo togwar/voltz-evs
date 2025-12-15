@@ -1,6 +1,6 @@
 # GuerraMod v8 – Projeto Voltz EVS (2026)
 
-**Versão:** 8.0  
+**Versão:** 8.0  (15/12/2025)
 **Ano:** 2026  
 **Modelo:** EVS com **DUAS** Baterias (ou superior)  
   
