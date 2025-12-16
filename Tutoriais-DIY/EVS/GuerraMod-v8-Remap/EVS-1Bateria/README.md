@@ -167,7 +167,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 ---
 
 **Vamos ao que interessa:**  
-
+<!--
 ### 6.1 Pedal Function
 - (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.✅💾
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
@@ -365,7 +365,7 @@ Agora que já compreendeu as etapas e os motivos de cada modificação, segue a 
 
 
 ---
-
+-->
 > ⚠️ **Aviso**  
 > Este projeto não possui vínculo oficial com a Voltz Motors.
 > Essas são as configurações que uso a na minha moto Voltz EVS 2021.  
