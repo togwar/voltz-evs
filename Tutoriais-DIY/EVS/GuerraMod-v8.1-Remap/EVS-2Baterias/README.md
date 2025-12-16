@@ -108,9 +108,9 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 - Alteração do valor "irreal" de 2500 para **1100** em CURRENT ROT / **Max speed[rpm]**. ✅
 	> Velocidade máxima teórica da moto é de 140km/h, 2500 rpm representaria aproximadamente 297km/h 🤣.  
 	> Sabemos que a moto não chega a 120km/h de "velocidade real", isso é devido a capacidade de descarga das baterias e a controladora (sem contar as leis da física).  
-	> O valor foi ajustado para 130km/h, um meio termo, que resulta em aproximadamente 1100 rpm.
-	> FOC não tente empurrar fluxo além do útil;
-	> PID não fique “caçando” torque inexistente;
+	> O valor foi ajustado para 130km/h, um meio termo, que resulta em aproximadamente 1100 rpm.  
+	> FOC não tente empurrar fluxo além do útil;  
+	> PID não fique “caçando” torque inexistente;  
 	> Flux Weakening opera só onde realmente funciona.  
 	
 - Alteração do valor "irreal" de 2500 para **1100** em CURRENT ROT / **Max 4 speed[rpm]**. ✅💾  
@@ -138,7 +138,6 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 - (Opcional) Alteração do valor **de ECO para STD** em PEDAL FUNCTION / **Default M**.✅💾  
 	> Maior controle na entrega de torque na faixa média do acelerador; afeta sensação de resposta sem alterar potência máxima ou correntes.  
 	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.  
-	> Inalterado a força e a potência da "marcha ré".  
 	> Alteração de qual modo de condução, ECO/STD/TURBO é o padrão ao ligar a moto.  
 	> Essas configurações não oferecem risco para a controladora.
 		
@@ -155,12 +154,12 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 - O Cruise Control é uma função nativa da controladora APT, para ativá-la, no menu PEDAL FUNCTION / **Cruise Enable**.✅💾  
 	> Para ativá-la, com a moto andando em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição que deseja, e precione o botão de ré ("R" na mão esquerda).
 	> Talvez você sinta uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou encoste no freio (aparecer o "P" no painel).
-	>⚠**Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
+	⚠️**Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
 
-	> - Essa função veio desativada pela Voltz na família EVS.😡  
-	> - Essa função permite a moto manter acelerando em **uma potência** (não velocidade) constante fixa de acordo com o momento que você ativou ela.
-	> - Essa configuração não oferece risco para a controladora.
-	> - Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣
+	> Essa função veio desativada pela Voltz na família EVS.😡  
+	> Essa função permite a moto manter acelerando em **uma potência** (não velocidade) constante fixa de acordo com o momento que você ativou ela.  
+	> Essa configuração não oferece risco para a controladora.  
+	> Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣  
 
 
 ---
@@ -170,7 +169,7 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 	> Correção do número de células em série (20S). Essencial para cálculos internos.  
 - Alterar o valor em **VOLTAGE SET / Li-ion Cell HighV[V]** de 41 para **42**.✅  
 	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).  
-	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.
+	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.  
 - Alterar o valor em **VOLTAGE SET / Li-ion capacity[Ah]** de 0 para **66**.✅💾  
 	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.  
 - Alterar o valor em **Current Rot set / Mode 4 idc[A]** de 80 para **100**.✅  
