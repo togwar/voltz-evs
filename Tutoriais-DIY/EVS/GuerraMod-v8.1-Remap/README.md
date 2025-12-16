@@ -2,7 +2,7 @@
 
 # GuerraMod v8 – Voltz EVS
 
-**Versão:** 8.0  
+**Versão:** 8.X  
 **Ano:** 2026  
 
 ## Introdução
