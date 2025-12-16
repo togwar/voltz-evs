@@ -1,4 +1,6 @@
-⁸# GuerraMod v8 – Projeto Voltz EVS (2026)
+**EM CONSUTRUÇÃO!!! VOLTE MAIS TERDE!!! AINDA ESTAMOS EFETUANDO ALGUNS AJUSTES NAS CONFIGURAÇÕES!
+
+# GuerraMod v8 – Projeto Voltz EVS (2026)
 
 **Versão:** 8.0  (15/12/2025)  
 **Ano:** 2026  
