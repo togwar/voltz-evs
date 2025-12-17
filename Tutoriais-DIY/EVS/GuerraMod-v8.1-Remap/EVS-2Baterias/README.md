@@ -104,6 +104,10 @@ A calibração **não busca performance máxima**, mas **coerência, repetibilid
 ---
 
 ## 5. Configuração Base – GuerraMod v8
+Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
+> Quando encontrar apenas ✅, você pode apenas definir o valor e não obrigatoriamente precisa salvar.
+> Quando encontrar na sequência ✅💾, você deverá definir o valor de alteração e clicar em "Write".  
+
 
 ### 5.1 Alterações Mínimas para conforto e segurança
 
