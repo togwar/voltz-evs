@@ -361,14 +361,14 @@ O IAC existe para:
 
 Ele **permite** que o Max reg Q seja alcançado **de forma controlada**.  
 
-7. Regra prática para APT + Voltz EVS
+**7. Regra prática para APT + Voltz EVS**
 ✔️ IAC mais alto em **zonas de Iqref médias**  
 ✔️ IAC menor em **zonas de Iqref mais altas**  
 ✔️ Curva progressiva > valor absoluto  
 
 ❌ Tudo em 100% = moto nervosa, instável e ineficiente
 
-8. Conclusão
+**8. Conclusão**
 Configurar todo o IAC Set em 100%:
 - Não melhora regen de forma inteligente  
 - Não respeita o FOC  
@@ -376,7 +376,7 @@ Configurar todo o IAC Set em 100%:
 - Compromete segurança, conforto e durabilidade
 - Remove a modulação
 - Transforma o torque em degrau
-- Piora regen, não melhora
+- Piora regen, não melhora  
 👉 Isso vale tanto para aceleração quanto para regeneração.
 
 
