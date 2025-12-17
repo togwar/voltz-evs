@@ -27,10 +27,9 @@
    			5.1.3 [Ajuste fino do Acelerador](#513-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
    			5.1.4 [Controle de Cruizeiro](#514-ativando-o-controle-de-cruzeiro)  
 			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)  
-6. EM BREVE...
-<!--
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
- 	6.1 [Pedal Function](#61-pedal-function)  
+<!--
+	6.1 [Pedal Function](#61-pedal-function)  
 	6.2 [Voltage Set](#62-voltage-set)  
 	6.3 [Current Rotation](#63-current-rotation)  
 	6.4 [Torque PID](#64-torque-pid)  
@@ -166,8 +165,9 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 - (Opcional)👀 Ativação da função em PEDAL FUNCTION / **Cruise Enable**.✅💾
 Para ativá-la, com a moto ligada e em movimento:
 	>  Em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição / potência que deseja, e precione o botão de ré ("R" na mão esquerda).
-	> Talvez você sinta uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou toque no freio (até aparecer o "P" no painel).  
-	⚠️**Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
+	> Talvez você sinta uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou toque no freio (até aparecer o "P" no painel).
+
+⚠️**Atenção:** Caso salve o controle de cruzeiro em um modo inferior, **exemplo 90% do ECO**, e se você **alterar para STD**, a moto **continuará** com o controle de cruzeiro **ativo**, porém ganhará a **força extra** do modo Standard. O inverso também se aplica.  
 
 
 #### 5.1.5. Outras correções.  
@@ -201,18 +201,15 @@ Para ativá-la, com a moto ligada e em movimento:
   	> Evitar manter a corrente elevada demais.  
 
 
-**TO BE CONTINUE**
-
-<!--
-
+---
 
 ## 6. Configuração Intermediária – GuerraMod v8
-
 Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações:  
 
 **A MOTO É LIMITADA PELO SEU EQUIPAMENTO!**  
 
-Ela já atua no limite; Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução e do clima ambiente.)
+Ela já atua no limite; Principalmente se estivermos falando das versões com a BMS original.  
+Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
 
 **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos.**  
 
@@ -227,7 +224,8 @@ ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO 
 
 
 **Vamos ao que interessa:**  
-
+**TO BE CONTINUE**
+<!--
 ### 6.1 Pedal Function
 - (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.✅💾
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
