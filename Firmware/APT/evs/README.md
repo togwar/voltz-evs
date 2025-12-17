@@ -18,7 +18,7 @@ Firmwares específicas para as motos EVS, **Originais do fabricante APT**, e des
 
 ---
 
-## ⚙️ A1705_V10000_EVS_IA_130_YM-T9.dat - 12/DEZ/2025
+## ⚙️ A1705_V10000_EVS_IA_130_YM-T10.dat - 17/DEZ/2025
 **NÃO RECOMENDADA** para quem possui **apenas uma bateria**.  
 
 **DESCRIÇÃO**: A firmware sem limitações e convergente!  
@@ -38,7 +38,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
 - Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
-- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_IA_130_YM_T9.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_IA_130_YM_T9</strong>
+- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_IA_130_YM_T10.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_IA_130_YM_T9</strong>
 
 
 ⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
