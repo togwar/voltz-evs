@@ -213,7 +213,7 @@ Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos tes
 - Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
 
 **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos. (principalmente a bateria/celulas e a BMS)**  
-> Quer fazer upgrade (mudanças físicas) de equipamento na sua moto?
+> Quer fazer **upgrade (mudanças físicas)** de equipamento na sua moto?
 1. Aumente a quantidade de bateria original Voltz EVS. Exemplo: de 1 para 2 baterias; de 2 para 3...
 2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso). 
 3. Troque a(s) BMS(s). (Requerido, escolha correta da BMS, cuidado e paciência).
@@ -258,15 +258,144 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 
 ### 6.2 IAC Set  
+Aqui iremos alterar **exclusivamente** os parâmetros **Iqref [%]**, saiba, o IAC Set não aumentam corrente máxima.  
+Eles definem quanto do **Iq** permitido é aplicado em cada faixa de velocidade / modo interno.  
+
+Pense assim:  
+**IAC Set = curva de entrega do torque**  
+
+Não é potência bruta.  
+**É como a potência aparece.**  
+
 
 - Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
 	> Zona de transição para torque médio; melhora dirigibilidade urbana.
-- Alterar o valor em **Iqref 5[%]** de 85 para **90**.✅  
+- Alterar o valor em **Iqref 5[%]** de 85 para **95**.✅  
 	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
-- Alterar o valor em **Iqref 6[%]** de 80 para **85**.✅💾  
+- Alterar o valor em **Iqref 6[%]** de 80 para **90**.✅  
 	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
+- Alterar o valor em **Iqref 7[%]** de 80 para **85**.✅    
+	> Zona de torque elevado; resposta consistente sem exigir pico excessivo de corrente.
+ - Alterar o valor em **Iqref 8[%]** de 80 para **80**.✅  
+	> Torque elevado em velocidade de cruzeiro; melhora sensação de motor cheio.
+- Alterar o valor em **Iqref 9[%]** de 80 para **75**.✅  
+	> Redução gradual de torque em alta velocidade; evita aquecimento excessivo.
+ - Alterar o valor em **Iqref 10[%]** de 80 para **60**.✅  
+	> Controle de torque em alta velocidade; prioriza estabilidade e eficiência.
+ - Alterar o valor em **Iqref 11[%]** de 80 para **50**.✅  
+	> Torque reduzido próximo ao limite de velocidade; protege motor e controladora.
+ - Alterar o valor em **Iqref 11[%]** de 80 para **40**.✅💾  
+	> Zona final de torque; limita esforço em rotações elevadas.
 
+Como ficou a curva com as mudanças.
 ![Descrição da imagem](iac-curve.png)
+
+⚠**Atenção**: IAC Set — Por que **NÃO** configurar tudo em 100%  
+De forma **técnica e prática**, por que configurar **todos os parâmetros do IAC Set em 100%** é um erro comum — especialmente em sistemas com **controladora APT + motor in-wheel IPMSM**, como na **Voltz EVS**.  
+
+O objetivo aqui **não é reduzir desempenho**, mas **extrair regen eficiente, previsível e utilizável**, sem comprometer estabilidade, segurança ou durabilidade.  
+
+**1. O que é o IAC Set (de verdade)**  
+
+O **IAC Set** não é um “botão de força”.  
+Ele define **quanto controle o FOC tem sobre o Iq (corrente de torque)** em cada zona de operação, funcionando como:  
+- Limitador dinâmico de torque  
+- Modulador de resposta  
+- Camada de estabilidade do sistema  
+
+Ou seja:  
+> O IAC **não cria torque**, ele **autoriza** o quanto dele pode ser aplicado.  
+
+**2. Por que 100% em tudo parece uma boa ideia (mas não é)**
+
+É comum pensar:  
+> “Se IAC libera Iq, então 100% = máximo torque e máximo regen”  
+Na prática, isso **remove o refinamento do controle** e força o sistema a operar sempre no limite, mesmo quando **não faz sentido físico ou dinâmico**.  
+
+**3. Regen forte ≠ Regen abrupto**  
+Regen é **torque negativo** aplicado pelo **mesmo loop que acelera a moto**.  
+
+Com tudo em 100%:  
+- O torque negativo entra rápido demais  
+- Não há progressividade  
+- A roda tende a “segurar” bruscamente  
+
+Resultado percebido pelo piloto:  
+- Trancos  
+- Instabilidade  
+- Sensação de travamento da roda traseira  
+- Risco real em piso molhado ou irregular  
+
+**4. Impacto direto no FOC (Field Oriented Control)**  
+No FOC:  
+- **Iq** → produz torque  
+- **Id** → produz fluxo magnético  
+
+Quando o IAC permite 100% de Iq em todas as zonas:  
+- O loop de torque passa a competir com:  
+  - controle de fluxo  
+  - controle térmico  
+  - controle de tensão  
+- A estabilidade do sistema cai  
+
+Isso gera:  
+- Oscilação de corrente  
+- Ruído de controle  
+- Menor eficiência elétrica  
+
+**5. Stress térmico e elétrico sem ganho real**  
+Mesmo que a bateria suporte:  
+- Estator aquece mais  
+- MOSFETs trabalham mais próximos do limite  
+- Corrente AC RMS aumenta  
+
+Tudo isso **sem ganho proporcional**.  
+> 100% não entrega 100% mais eficiência  
+> entrega **100% mais stress**  
+
+
+**6. O papel correto do IAC no regen**
+O IAC existe para:  
+- Modular a entrada do torque negativo  
+- Tornar o regen utilizável  
+- Preservar estabilidade e conforto  
+
+Ele **permite** que o Max reg Q seja alcançado **de forma controlada**.  
+
+7. Regra prática para APT + Voltz EVS
+✔️ IAC mais alto em **zonas de Iqref médias**  
+✔️ IAC menor em **zonas de Iqref mais altas**  
+✔️ Curva progressiva > valor absoluto  
+
+❌ Tudo em 100% = moto nervosa, instável e ineficiente
+
+8. Conclusão
+Configurar todo o IAC Set em 100%:
+- Não melhora regen de forma inteligente  
+- Não respeita o FOC  
+- Não respeita a física do motor in-wheel  
+- Compromete segurança, conforto e durabilidade
+- Remove a modulação
+- Transforma o torque em degrau
+- Piora regen, não melhora
+👉 Isso vale tanto para aceleração quanto para regeneração.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **TO BE CONTINUE**
 <!--
@@ -363,6 +492,9 @@ Usuários que percorrem trajetos intermunicipais, estradas costeiras ou serranas
 ---
 
 ## 7.3 Regeneração
+> **Regen bom não é o mais forte.**  
+> **É o mais utilizável.**
+
 
 No GuerraMod v8, a regeneração é tratada como uma ferramenta auxiliar de controle e eficiência, e não como substituta do sistema de freio mecânico. Seu papel principal é contribuir para a estabilidade do veículo, reduzir o desgaste de componentes mecânicos e recuperar energia de forma segura, sem comprometer o conforto ou a durabilidade do conjunto elétrico.
 
