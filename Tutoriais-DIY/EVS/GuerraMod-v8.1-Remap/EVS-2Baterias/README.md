@@ -28,12 +28,13 @@
    			5.1.4 [Controle de Cruizeiro](#514-ativando-o-controle-de-cruzeiro)  
 			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)  
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
+	6.1 [Torque PID](#61-torque-pid)  
+	6.2 [IAC Set](#62-iac-set)  
 <!--
 	6.1 [Pedal Function](#61-pedal-function)  
 	6.2 [Voltage Set](#62-voltage-set)  
 	6.3 [Current Rotation](#63-current-rotation)  
-	6.4 [Torque PID](#64-torque-pid)  
-	6.5 [IAC Set](#65-iac-set)  
+
 7. [Freio Regenerativo](#7-freio-regenerativo)  
     7.1 [Perfil Cidade](#71-perfil-cidade)  
 	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
@@ -208,12 +209,12 @@ Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos tes
 
 **A MOTO É LIMITADA PELO SEU EQUIPAMENTO!**  
 
-- Ela já atua no limite; Principalmente se estivermos falando das versões com a BMS original.  
+- Ela já **atua no limite**; Principalmente se estivermos falando das versões com a BMS original.  
 - Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
 
 **Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos. (principalmente a bateria/celulas e a BMS)**  
-> Quer fazer upgrade de equipamento na sua moto?
-1. Aumente a quantidade de bateria original Voltz EVS. Exemplo 1 para 2, 2 para 3...
+> Quer fazer upgrade (mudanças físicas) de equipamento na sua moto?
+1. Aumente a quantidade de bateria original Voltz EVS. Exemplo: de 1 para 2 baterias; de 2 para 3...
 2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso). 
 3. Troque a(s) BMS(s). (Requerido, escolha correta da BMS, cuidado e paciência).
 4. Troque a controladora com uma condizente com a descarga da sua bateria e/ou da BMS. (não adianta ter controladora forte se sua bateria não alimenta ela "com segurança" ou irá destruir a saúde da sua bateria).
@@ -223,12 +224,50 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 ⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha **"MUITO CUIDADO"**, e não sabe o que está fazendo, não altere para um valor deliberado.  
 
 
----
-
-
-
-
 **Vamos ao que interessa:**  
+
+### 6.1 Torque PID
+⚠**Atenção**: Não confunda "Iq" coluna da esquerda, com "Id" coluna da direita.  
+
+- **Iq:** Quadrature current (corrente de torque)  
+	> 👉 Iq = “força na roda” (empurra ou segura)
+	> É a corrente que gera força/empuxo  
+	> Quanto maior o Iq, maior o torque (acelera ou freia no regen)  
+	> Atua diretamente na sensação de puxar ou segurar a moto  
+	> Regen e aceleração são basicamente controle de Iq  
+ 
+
+- **Id:** Direct / magnetizing current (corrente de fluxo)
+	> 👉 Id = “ajuste o motor para empurrar melhor" 
+   	> É a corrente que controla o campo magnético
+ 	> Não gera torque direto
+ 	> Usada para eficiência, estabilidade e flux weakening (alta velocidade)
+ 	> Valores errados aumentam perdas e aquecimento
+
+
+- Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**.✅  
+	> Ganho proporcional pré-regime; auxilia resposta inicial sem gerar overshoot.
+- Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**.✅  
+	> Ganho integral pré-regime; corrige erro estático em baixa carga.
+- Alterar o valor em **Iq ki gain 0** de 25 para **40**.✅  
+	> Ganho integral em regime normal; garante estabilidade de torque em cruzeiro
+- Alterar o valor em **Iq kp gain 3** de 5 para **4**.✅  
+	> Redução leve do ganho proporcional em alta rotação; mantém resposta e reduz risco de instabilidade térmica e em flux weakening.
+- Alterar o valor em **Iq ki gain 3** de 80 para **60**.✅💾  
+	> Redução do ganho integral em alta rotação; diminui aquecimento e elimina risco de oscilação em FW.
+
+
+### 6.2 IAC Set  
+
+- Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
+	> Zona de transição para torque médio; melhora dirigibilidade urbana.
+- Alterar o valor em **Iqref 5[%]** de 85 para **90**.✅  
+	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
+- Alterar o valor em **Iqref 6[%]** de 80 para **85**.✅💾  
+	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
+
+![Descrição da imagem](iac-curve.png)
+
 **TO BE CONTINUE**
 <!--
 ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO ATOA! PARE DE FAZER CAGADA!
@@ -265,32 +304,7 @@ ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO 
 
 ---
 
-### 6.4 Torque PID
 
-- Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**.✅  
-	> Ganho proporcional pré-regime; auxilia resposta inicial sem gerar overshoot.
-- Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**.✅  
-	> Ganho integral pré-regime; corrige erro estático em baixa carga.
-- Alterar o valor em **Iq ki gain 0** de 25 para **40**.✅  
-	> Ganho integral em regime normal; garante estabilidade de torque em cruzeiro
-- Alterar o valor em **Iq kp gain 3** de 5 para **4**.✅  
-	> Redução leve do ganho proporcional em alta rotação; mantém resposta e reduz risco de instabilidade térmica e em flux weakening.
-- Alterar o valor em **Iq ki gain 3** de 80 para **60**.✅💾  
-	> Redução do ganho integral em alta rotação; diminui aquecimento e elimina risco de oscilação em FW.
-
-
----
-
-### 6.5 IAC Set  
-
-- Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
-	> Zona de transição para torque médio; melhora dirigibilidade urbana.
-- Alterar o valor em **Iqref 5[%]** de 85 para **90**.✅  
-	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
-- Alterar o valor em **Iqref 6[%]** de 80 para **85**.✅💾  
-	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
-
-![Descrição da imagem](iac-curve.png)
 
 
 ---
