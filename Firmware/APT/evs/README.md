@@ -1,4 +1,4 @@
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)  
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
 # Firmwares APT - VERSÃO VOLTZ EVS.
 ⚠⚠⚠ **ATENÇÃO:** EXCLUSIVA para EVS, **NÃO utilizar na EVS Work**. ⚠⚠⚠  
 
