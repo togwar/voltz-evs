@@ -225,12 +225,14 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ---
 
-ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO ATOA! PARE DE FAZER CAGADA!
+
 
 
 **Vamos ao que interessa:**  
 **TO BE CONTINUE**
 <!--
+ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO ATOA! PARE DE FAZER CAGADA!
+
 ### 6.1 Pedal Function
 - (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.✅💾
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
