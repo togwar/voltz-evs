@@ -21,11 +21,12 @@
 4. [Filosofia de Calibração](#4-filosofia-de-calibra%C3%A7%C3%A3o) 
 5. [Configuração Base – GuerraMod v8](#5-configura%C3%A7%C3%A3o-base--guerramod-v8)  
 	5.1 [Alterações Mínimas para conforto e segurança](#51-altera%C3%A7%C3%B5es-m%C3%ADnimas-para-conforto-e-seguran%C3%A7a)  
-			5.1.1 [Velocidade máxima real da motocicleta](#aaa)  
-			5.1.2 [Velocidade da Marcha Ré](#511-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)  
-   			5.1.3 [Ajuste fino do Acelerador](#512-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
-   			5.1.4 [Controle de Cruizeiro](#513-ativando-o-controle-de-cruzeiro)  
-			5.1.5 [Outras Correções](#aaa)
+			5.1.1 [Velocidade máxima real da motocicleta](#511-ajuste-do-limite-de-velocidade-da-motocicleta-max-speedrpm-e-max-4-speedrpm)  
+			5.1.2 [Velocidade da Marcha Ré](#512-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)  
+   			5.1.3 [Ajuste fino do Acelerador](#513-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
+   			5.1.4 [Controle de Cruizeiro](#514-ativando-o-controle-de-cruzeiro)  
+			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)
+<!--
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
  	6.1 [Pedal Function](#61-pedal-function)  
 	6.2 [Voltage Set](#62-voltage-set)  
@@ -37,7 +38,7 @@
 	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
 	7.3 [Regeneração](#73-regenera%C3%A7%C3%A3o)  
 8. [Conclusão e Resumo](#8-conclus%C3%A3o-e-resumo)
-
+-->
 ---
 
 ## 1. Introdução
