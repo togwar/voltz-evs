@@ -77,7 +77,7 @@ Essas escolhas **não são erros**, mas reflexos de uma filosofia de calibraçã
 Premissas adotadas no **GuerraMod v8**:
 
 1. Firmware Base ideal:
-	- A1705_V10000_EVS_130_YM-T7.dat, powered by APT [saiba mais](https://github.com/togwar/voltz-evs/tree/main/Firmware/APT/evs#%EF%B8%8F-a1705_v10000_evs_130_ym-t7dat---12dez2025)
+	- **A1705_V10000_EVS_130_YM-T7.dat**, powered by APT [saiba mais](https://github.com/togwar/voltz-evs/tree/main/Firmware/APT/evs#%EF%B8%8F-a1705_v10000_evs_130_ym-t7dat---12dez2025)
 2. Motor **in-wheel IPMSM** (sem redução mecânica)  
 3. **Corrente DC** como principal fator de stress do sistema  
 4. Rotação física máxima ≈ **1100 rpm** (≈ **130 km/h**)  
