@@ -380,23 +380,11 @@ Configurar todo o IAC Set em 100%:
 👉 Isso vale tanto para aceleração quanto para regeneração.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **TO BE CONTINUE**
+
+
+
+
 <!--
 ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO ATOA! PARE DE FAZER CAGADA!
 
@@ -421,21 +409,11 @@ ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO 
 	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.  
 
 
----
-
 ### 6.3 Current Rotation  
 
 - Alterar o valor em **Max Iac pk[A]** de 400 para **325**.✅  
 	> Limite de corrente AC ajustado para reduzir calor, ruído eletromagnético e stress no estator e vibração;  
 
-
-
----
-
-
-
-
----
 
 ## 7. Freio Regenerativo
 ⚠️**Atenção**: As [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8) são imprecindíveis para o funcionamento adequado deste tópico, se não fez, volte e execute primeiramente todas as configurações.  
