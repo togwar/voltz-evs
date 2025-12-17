@@ -182,8 +182,8 @@ Para ativá-la, com a moto ligada e em movimento:
 	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.  
 
 - Alterar o valor em **VOLTAGE SET / Li-ion capacity[Ah]** de 0 para **66**.✅💾  
-	> 33 por bateria.  
- 	> Capacidade nominal (+margem de segurança) configurada para referência interna e telemetria.  
+	> Capacidade nominal (+margem de segurança) configurada para referência interna e telemetria.
+ 	> Sempre arredonde para baixo; exemplo "33" por bateria da EVS.  
 
 **Current Rot set:**
 - Alterar o valor em **Current Rot set / Mode 4 idc[A]** de 80 para **100**.✅  
