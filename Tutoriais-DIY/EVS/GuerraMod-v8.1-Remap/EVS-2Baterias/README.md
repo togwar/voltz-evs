@@ -179,18 +179,26 @@ Para ativá-la, com a moto ligada e em movimento:
 
 - Alterar o valor em **VOLTAGE SET / Li-ion Cell HighV[V]** de 41 para **42**.✅  
 	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).  
-	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.
+	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.  
 
 - Alterar o valor em **VOLTAGE SET / Li-ion capacity[Ah]** de 0 para **66**.✅💾  
-	> 33 por bateria. Capacidade nominal configurada para referência interna e telemetria.  
+	> 33 por bateria.  
+ 	> Capacidade nominal (+margem de segurança) configurada para referência interna e telemetria.  
 
 **Current Rot set:**
 - Alterar o valor em **Current Rot set / Mode 4 idc[A]** de 80 para **100**.✅  
-	> Mode 3 idc ≤ Mode 4 idc; Evita clipping; Manter estabilidade térmica.  
+	> Mode 3 idc ≤ Mode 4 idc;  
+ 	> Evita clipping;
+ 	> Manter estabilidade térmica.
+
 - Alterar o valor em **Current Rot set / Hybrid Factor** de 30 para **35**.✅  
-	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
-- Alterar o valor em **Current Rot set / Boost active sec[s]** de 60 para **15**.✅  
-	> Tempo reduzido para evitar mascarar aquecimento e preservar estabilidade térmica. Evitar manter a corrente elevada demais.  
+	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.
+ 
+- (Opcional)👀 Alterar o valor em **Current Rot set / Boost active sec[s]** de 60 para **15**.✅  
+	> Recomendado para regiões quentes.
+ 	> Tempo reduzido para evitar mascarar aquecimento.  
+ 	> Preservar a estabilidade térmica.  
+  	> Evitar manter a corrente elevada demais.  
 
 
 **TO BE CONTINUE**
