@@ -3,11 +3,12 @@
 **Versão:** 8.1  (16/12/2025)  
 **Ano:** 2026  
 **Modelo:** EVS com **DUAS** Baterias (ou superior)  
-  
+
 **Status:** Consolidação Técnica Estável  
 **Autor:** Tiago Guerra  
 **Plataforma:** Voltz EVS  
 **Controladora:** APT (original da Voltz EVS)  
+**Potência:** 72v@130A ≈ 9.360 W
 **BMS:** Original ou Não  
 **TBOX:** Original ou Sem  
 
