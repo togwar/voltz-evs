@@ -145,14 +145,14 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 
 - (Opcional)👀 Alteração do valor **de 70 para 75** em PEDAL FUNCTION / **Percentage in mid tref[%]**.✅
 	> Maior controle na entrega de torque na faixa média do acelerador;  
- 	> **Afeta na sensação** de resposta da moto; 
+ 	> **Afeta na sensação** de resposta da moto;  
 	> Não alterar potência máxima ou correntes.  
 - (Opcional)👀 Alteração do valor **de 2,3999 para 3,2500** em PEDAL FUNCTION / **Throttle Bst[V]**.✅  
 - (Opcional)👀 Alteração do valor **de 3,4999 para 4,1000** em PEDAL FUNCTION / **Throttle high[V]**.✅  
-- (Opcional)👀 Alteração do valor **de 2,1994 para 3,2800** em PEDAL FUNCTION / **Throttle mid[V]**.✅💾
+- (Opcional)👀 Alteração do valor **de 2,1994 para 3,2800** em PEDAL FUNCTION / **Throttle mid[V]**.✅💾  
   	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.  
 - (Opcional)👀 Alteração do valor **de ECO para STD** em PEDAL FUNCTION / **Default M**.✅💾  
-	> Alteração de qual modo de condução, ECO/STD/TURBO é o padrão ao ligar a moto.
+	> Alteração de qual modo de condução, ECO/STD/TURBO é o padrão ao ligar a moto.  
 
 - No gráfico abaixo, compara a configuração original da moto (em AZUL) vs. a alteração propósta (em VERDE).
 ![Descrição da imagem](curva-acelerador.png)
@@ -170,9 +170,9 @@ Para ativá-la, com a moto ligada e em movimento:
 	⚠️**Atenção**: Caso salve o controle de cruzeiro em um modo inferior, exemplo 90% do ECO, e se você alterar o modo de condução, a moto continuará com o controle de cruzeiro ativo, porém ganhará a força extra do modo Standard. O inverso também se aplica.
 
 
-#### 5.1.5. Outras correções.
+#### 5.1.5. Outras correções.  
 
-**VOLTAGE SET:**
+**VOLTAGE SET:**  
 - Alterar o valor em **VOLTAGE SET / Li-ion series Q** de 18 para **20**.✅  
 	> Correção do número de células em série (20S).  
  	> Essencial para cálculos internos.  
@@ -182,20 +182,20 @@ Para ativá-la, com a moto ligada e em movimento:
 	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.  
 
 - Alterar o valor em **VOLTAGE SET / Li-ion capacity[Ah]** de 0 para **66**.✅💾  
-	> Capacidade nominal (+margem de segurança) configurada para referência interna e telemetria.
+	> Capacidade nominal (+margem de segurança) configurada para referência interna e telemetria.  
  	> Sempre arredonde para baixo; exemplo "33" por bateria da EVS.  
 
-**Current Rot set:**
+**Current Rot set:**  
 - Alterar o valor em **Current Rot set / Mode 4 idc[A]** de 80 para **100**.✅  
 	> Mode 3 idc ≤ Mode 4 idc;  
- 	> Evita clipping;
- 	> Manter estabilidade térmica.
+ 	> Evita clipping;  
+ 	> Manter estabilidade térmica.  
 
 - Alterar o valor em **Current Rot set / Hybrid Factor** de 30 para **35**.✅  
-	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.
+	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
  
 - (Opcional)👀 Alterar o valor em **Current Rot set / Boost active sec[s]** de 60 para **15**.✅  
-	> Recomendado para regiões quentes.
+	> Recomendado para regiões quentes.  
  	> Tempo reduzido para evitar mascarar aquecimento.  
  	> Preservar a estabilidade térmica.  
   	> Evitar manter a corrente elevada demais.  
