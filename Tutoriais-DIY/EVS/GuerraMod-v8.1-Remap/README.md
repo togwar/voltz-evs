@@ -1,6 +1,4 @@
-# Sugestões de configurações para controladora APT
-
-# GuerraMod v8 – Voltz EVS
+# GuerraMod v8 – Voltz EVS ![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
 
 **Versão:** 8.X  
 **Ano:** 2026  
