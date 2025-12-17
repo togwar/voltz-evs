@@ -287,7 +287,7 @@ Não é potência bruta.
  - Alterar o valor em **Iqref 11[%]** de 80 para **40**.✅💾  
 	> Zona final de torque; limita esforço em rotações elevadas.
 
-Como ficou a curva com as mudanças.
+Como ficou a curva com as mudanças.  
 ![Descrição da imagem](iac-curve.png)
 
 ⚠**Atenção**: IAC Set — Por que **NÃO** configurar tudo em 100%  
