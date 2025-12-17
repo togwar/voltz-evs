@@ -267,24 +267,23 @@ Pense assim:
 Não é potência bruta.  
 **É como a potência aparece.**  
 
-
 - Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
 	> Zona de transição para torque médio; melhora dirigibilidade urbana.
 - Alterar o valor em **Iqref 5[%]** de 85 para **95**.✅  
 	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
 - Alterar o valor em **Iqref 6[%]** de 80 para **90**.✅  
 	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
-- Alterar o valor em **Iqref 7[%]** de 80 para **85**.✅    
+- Alterar o valor em **Iqref 7[%]** de 75 para **85**.✅    
 	> Zona de torque elevado; resposta consistente sem exigir pico excessivo de corrente.
- - Alterar o valor em **Iqref 8[%]** de 80 para **80**.✅  
+ - Alterar o valor em **Iqref 8[%]** de 70 para **80**.✅  
 	> Torque elevado em velocidade de cruzeiro; melhora sensação de motor cheio.
-- Alterar o valor em **Iqref 9[%]** de 80 para **75**.✅  
+- Alterar o valor em **Iqref 9[%]** de 60 para **75**.✅  
 	> Redução gradual de torque em alta velocidade; evita aquecimento excessivo.
- - Alterar o valor em **Iqref 10[%]** de 80 para **60**.✅  
+ - Alterar o valor em **Iqref 10[%]** de 50 para **60**.✅  
 	> Controle de torque em alta velocidade; prioriza estabilidade e eficiência.
- - Alterar o valor em **Iqref 11[%]** de 80 para **50**.✅  
+ - Alterar o valor em **Iqref 11[%]** de 45 para **50**.✅  
 	> Torque reduzido próximo ao limite de velocidade; protege motor e controladora.
- - Alterar o valor em **Iqref 11[%]** de 80 para **40**.✅💾  
+ - Alterar o valor em **Iqref 11[%]** de 35 para **40**.✅💾  
 	> Zona final de torque; limita esforço em rotações elevadas.
 
 Como ficou a curva com as mudanças.  
