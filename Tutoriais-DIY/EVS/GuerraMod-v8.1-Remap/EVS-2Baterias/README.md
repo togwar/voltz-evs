@@ -1,4 +1,4 @@
-# GuerraMod v8 – Projeto Voltz EVS (2026)
+# GuerraMod v8 – Projeto Voltz EVS (2026) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
 
 **Versão:** 8.1  (16/12/2025)  
 **Ano:** 2026  
