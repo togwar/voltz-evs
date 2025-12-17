@@ -8,7 +8,7 @@
 **Autor:** Tiago Guerra  
 **Plataforma:** Voltz EVS  
 **Controladora:** APT (original da Voltz EVS)  
-**Potência:** 72v@130A ≈ 9.360 W
+**Potência:** 72v@130A ≈ 9.360 W  
 **BMS:** Original ou Não  
 **TBOX:** Original ou Sem  
 
