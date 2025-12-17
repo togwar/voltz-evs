@@ -230,19 +230,19 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 ⚠**Atenção**: Não confunda "Iq" coluna da esquerda, com "Id" coluna da direita.  
 
 - **Iq:** Quadrature current (corrente de torque)  
-	> 👉 Iq = “força na roda” (empurra ou segura)
+	> 👉 **Iq = “força na roda”** (empurra ou segura)  
 	> É a corrente que gera força/empuxo  
 	> Quanto maior o Iq, maior o torque (acelera ou freia no regen)  
 	> Atua diretamente na sensação de puxar ou segurar a moto  
 	> Regen e aceleração são basicamente controle de Iq  
  
 
-- **Id:** Direct / magnetizing current (corrente de fluxo)
-	> 👉 Id = “ajuste o motor para empurrar melhor" 
-   	> É a corrente que controla o campo magnético
- 	> Não gera torque direto
- 	> Usada para eficiência, estabilidade e flux weakening (alta velocidade)
- 	> Valores errados aumentam perdas e aquecimento
+- **Id:** Direct / magnetizing current (corrente de fluxo)  
+	> 👉 **Id = “ajuste o motor para empurrar melhor"**  
+   	> É a corrente que controla o campo magnético  
+ 	> Não gera torque direto  
+ 	> Usada para eficiência, estabilidade e flux weakening (alta velocidade)  
+ 	> Valores errados aumentam perdas e aquecimento  
 
 
 - Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**.✅  
