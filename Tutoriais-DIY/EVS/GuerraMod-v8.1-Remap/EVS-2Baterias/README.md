@@ -26,7 +26,8 @@
 			5.1.2 [Velocidade da Marcha Ré](#512-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)  
    			5.1.3 [Ajuste fino do Acelerador](#513-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
    			5.1.4 [Controle de Cruizeiro](#514-ativando-o-controle-de-cruzeiro)  
-			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)
+			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)  
+6. EM BREVE...
 <!--
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
  	6.1 [Pedal Function](#61-pedal-function)  
