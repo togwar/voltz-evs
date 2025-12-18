@@ -178,30 +178,27 @@ Caso seja a primeira vez usando o cabo RS232, você precisará instalar os drive
 
 ## 📥 Download dos Arquivos Necessários
 
-Baixe o pacote completo:
+Pacote completo APT/MCU Monitoring System:  
+https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Monitoring%20System/EV_DriveManager_V3.0.3.2111019EN_A.zip
 
-https://www.mediafire.com/file/qp3jqa59ml69mdg/REMAP.rar/file
+Aplicativo APT/MCU Upgrade System:  
+https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe
 
 Após baixar:
 
 1. Descompacte o arquivo.
-2. Entre na pasta **REMAP**.
-3. Abra **REPROGRAMAR EVS WORK**  
-   *(Embora o nome seja “EVS WORK”, os drivers servem para EVS e EVS WORK)*.
-4. Abra a pasta **INSTALAÇÃO**.
+2. Entre na pasta **EV_DriveManager_V3.0.3.2111019EN_A**.
+3. Abra a pasta **config**  
+
 
 ## ▶️ Instale os arquivos na seguinte ordem:
 
-1. `A Parte1`
-2. `A Parte2`
-3. `A Parte3`
-4. `A Parte4`
+1. Execute o arquivo de configuração **For windows x64 and x86.bat**.
+> **Execute como administrador:** clique com o botão direito → *Executar como administrador*
 
-> **Execute todos como administrador:** clique com o botão direito → *Executar como administrador*
 
 Após a instalação, você terá:
 
-- Drivers do cabo instalados  
 - Programa de REMAP funcionando  
 
 ---
