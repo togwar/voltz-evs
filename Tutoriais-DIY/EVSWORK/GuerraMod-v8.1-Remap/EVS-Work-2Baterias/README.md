@@ -254,12 +254,12 @@ Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos tes
 - Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
 
 **Concluíndo, não há como fazer sua Voltz EVS Work virar uma 1000cc, tão pouco uma 300cc, nem mesmo uma EVS (monobraço), sem trocar/modificar equipamentos. (principalmente o motor e a bateria/celulas e a BMS)**  
-> Quer fazer **upgrade (mudanças físicas)** de equipamento na sua moto?
-1. Aumente a quantidade de bateria original Voltz EVS Work. Exemplo: de 1 para 2 baterias; de 2 para 3...
-2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso). 
-3. Troque a(s) BMS(s). (Requerido, escolha correta da BMS, cuidado e paciência).
-4. Troque a controladora com uma condizente com a descarga da sua bateria e/ou da BMS. (não adianta ter controladora forte se sua bateria não alimenta ela "com segurança" ou irá destruir a saúde da sua bateria).
-5. Troque o motor.
+> Quer fazer **upgrade (mudanças físicas)** de equipamento na sua moto?  
+1. Aumente a quantidade de bateria original Voltz EVS Work. Exemplo: de 1 para 2 baterias; de 2 para 3...  
+2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso).   
+3. Troque a(s) BMS(s). (Requerido, escolha correta da BMS, cuidado e paciência).  
+4. Troque a controladora com uma condizente com a descarga da sua bateria e/ou da BMS. (não adianta ter controladora forte se sua bateria não alimenta ela "com segurança" ou irá destruir a saúde da sua bateria).  
+5. Troque o motor.  
 
 Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS Work.
 
