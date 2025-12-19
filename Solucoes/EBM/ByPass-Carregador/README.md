@@ -23,7 +23,7 @@ Ele emite a comunicação de autorização de carregamento entre outras funçõe
 
 ## 🧰 Pré-requisitos
 
-- Equipamento vendido separadamente pela empresa "EBM Eletronic".
+- Equipamento desenvolvido, construido artesanalmente e vendido separadamente pela empresa "EBM Eletronic".
 
 ## ⏱️ Momentos importantes do vídeo
 
