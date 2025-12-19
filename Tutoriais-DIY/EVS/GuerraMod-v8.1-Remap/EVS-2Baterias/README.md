@@ -39,8 +39,10 @@
     7.1 [Perfil Cidade](#71-perfil-cidade)  
 	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
 	7.3 [Regeneração](#73-regenera%C3%A7%C3%A3o)  
-8. [Conclusão e Resumo](#8-conclus%C3%A3o-e-resumo)
+
 -->
+8. [Conclusão e Resumo](#8-conclus%C3%A3o-e-resumo)
+
 ---
 
 ## 1. Introdução
@@ -397,7 +399,6 @@ ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO 
 - (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.✅💾
 	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
 
-
 ---
 
 ### 6.2 Voltage Set
@@ -556,10 +557,48 @@ Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
 
 O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
 
-Agora que já compreendeu as etapas e os motivos de cada modificação, segue a relação dos ScreenShot com destaque das alterações aqui citadas (Perfil Cidade).
+Agora que **já compreendeu as etapas e os motivos de cada modificação**, segue a relação das configurações que falamos nesse tutorial, de forma repetida, visando um resumo direto e centralizado (para quem desejar reconfigurar futuramente).
 
-**EM CONSTRUÇÃO**
+**VOLTAGE SET**
+	1. Li-ion series Q = 20
+	2. Li-ion Cell HighV[V] = 42
+	3. Li-ion capacity[Ah] = 66
 
+**CURRENT ROT**
+	1. Max speed[rpm] = 1100
+	2. Max 4 speed[rpm] = 1100
+	3. Backward speed[rpm] = -43
+	4. Mode 4 idc[A]  = 100
+	5. Hybrid Factor = 35
+	6. Boost active sec[s] = 15
+	
+**PEDAL FUNCTION**
+	1. Percentage in mid tref[%] = 75 (Opcional)
+	2. Throttle Bst[V] = 3,25 (Opcional)
+	3. Throttle high[V] = 4,1 (Opcional)
+	4. Throttle mid[V] = 3,28 (Opcional)
+	5. Default M = STD (Opcional)
+	6. Cruise Enable (Opcional)
+	
+**Torque PID**
+	1. Iq kp gain 0 pre = 2
+	2. Id kp gain 0 pre = 2
+	3. Iq ki gain 0 pre = 40
+	4. Iq ki gain 0 = 40
+	5. Iq kp gain 3 = 4
+	6. Iq ki gain 3 = 60
+	
+**IAC Set**
+	1. Iqref 4[%] = 100
+	2. Iqref 5[%] = 95
+	3. Iqref 6[%] = 90
+	4. Iqref 7[%] = 85
+	5. Iqref 8[%] = 80
+	6. Iqref 9[%] = 75
+	7. Iqref 10[%] = 60
+	8. Iqref 11[%] = 50
+	9. Iqref 12[%] = 40
+<!--
 ![Descrição da imagem](pedal.png)
 ![Descrição da imagem](voltage.png)
 ![Descrição da imagem](current.png)
