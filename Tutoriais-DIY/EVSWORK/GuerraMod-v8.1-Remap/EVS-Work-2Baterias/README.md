@@ -149,9 +149,9 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 	> 👉 A diferença térmica é enorme
 
 - ⚠️**Atenção:** Conferir se o sensor de temperatura está correto MOTOR PARAMETER / **Motor Tsensor type**, ele deve estar configurado como **PTC_1k**.
-	> Verifique se na tela principal, se "Motor T[Deg]" está marcando algum valor diferente de "0".
+	> Verifique se na tela principal, se **Motor T[Deg]** está marcando algum valor diferente de **0**.
 	![Descrição da imagem](home-temperature.png)
-	> Se estiver apontando como "0" pode ser um sensor inexistente configurado, o que seria um erro.
+	> **Se estiver apontando como "0"** pode ser um sensor inexistente configurado, **o que seria um erro de configuração!**
 	> Altere o sensor de temperatura padrão da EVS Work é o **PTC_1k**.
 
 #### 5.1.2. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
