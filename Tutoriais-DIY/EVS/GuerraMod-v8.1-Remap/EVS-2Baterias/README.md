@@ -302,7 +302,7 @@ De forma **técnica e prática**, por que configurar **todos os parâmetros do I
 
 O objetivo aqui **não é reduzir desempenho**, mas **extrair regen eficiente, previsível e utilizável**, sem comprometer estabilidade, segurança ou durabilidade.  
 
-**1. O que é o IAC Set (de verdade)**  
+**6.2.1. O que é o IAC Set (de verdade)**  
 
 O **IAC Set** não é um “botão de força”.  
 Ele define **quanto controle o FOC tem sobre o Iq (corrente de torque)** em cada zona de operação, funcionando como:  
@@ -313,13 +313,13 @@ Ele define **quanto controle o FOC tem sobre o Iq (corrente de torque)** em cada
 Ou seja:  
 > O IAC **não cria torque**, ele **autoriza** o quanto dele pode ser aplicado.  
 
-**2. Por que 100% em tudo parece uma boa ideia (mas não é)**
+**6.2.2. Por que 100% em tudo parece uma boa ideia (mas não é)**
 
 É comum pensar:  
 > “Se IAC libera Iq, então 100% = máximo torque e máximo regen”  
 Na prática, isso **remove o refinamento do controle** e força o sistema a operar sempre no limite, mesmo quando **não faz sentido físico ou dinâmico**.  
 
-**3. Regen forte ≠ Regen abrupto**  
+**6.2.3. Regen forte ≠ Regen abrupto**  
 Regen é **torque negativo** aplicado pelo **mesmo loop que acelera a moto**.  
 
 Com tudo em 100%:  
@@ -333,7 +333,7 @@ Resultado percebido pelo piloto:
 - Sensação de travamento da roda traseira  
 - Risco real em piso molhado ou irregular  
 
-**4. Impacto direto no FOC (Field Oriented Control)**  
+**6.2.4. Impacto direto no FOC (Field Oriented Control)**  
 No FOC:  
 - **Iq** → produz torque  
 - **Id** → produz fluxo magnético  
@@ -350,7 +350,7 @@ Isso gera:
 - Ruído de controle  
 - Menor eficiência elétrica  
 
-**5. Stress térmico e elétrico sem ganho real**  
+**6.2.5. Stress térmico e elétrico sem ganho real**  
 Mesmo que a bateria suporte:  
 - Estator aquece mais  
 - MOSFETs trabalham mais próximos do limite  
@@ -361,7 +361,7 @@ Tudo isso **sem ganho proporcional**.
 > entrega **100% mais stress**  
 
 
-**6. O papel correto do IAC no regen**
+**6.2.6. O papel correto do IAC no regen**
 O IAC existe para:  
 - Modular a entrada do torque negativo  
 - Tornar o regen utilizável  
@@ -369,14 +369,14 @@ O IAC existe para:
 
 Ele **permite** que o Max reg Q seja alcançado **de forma controlada**.  
 
-**7. Regra prática para APT + Voltz EVS**
+**6.2.7. Regra prática para APT + Voltz EVS**
 ✔️ IAC mais alto em **zonas de Iqref médias**  
 ✔️ IAC menor em **zonas de Iqref mais altas**  
 ✔️ Curva progressiva > valor absoluto  
 
 ❌ Tudo em 100% = moto nervosa, instável e ineficiente
 
-**8. Conclusão**
+**6.2.8. Conclusão**
 Configurar todo o IAC Set em 100%:
 - Não melhora regen de forma inteligente  
 - Não respeita o FOC  
