@@ -1,0 +1,637 @@
+#EM CONSUTRÇÃO - VOLTE MAIS TARDE!!!
+
+# GuerraMod v8 – Projeto Voltz EVS (2026) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
+
+**Versão:** 8.1  (16/12/2025)  
+**Ano:** 2026  
+**Modelo:** EVS Work com **DUAS** Baterias (ou superior)  
+
+**Status:** Consolidação Técnica Estável  
+**Autor:** Tiago Guerra  
+**Plataforma:** Voltz EVS Work  
+**Controladora:** APT (original da Voltz EVS Work)  
+**Potência:** 72v@130A ≈ 9.360 W  
+**BMS:** Original ou Não  
+**TBOX:** Original ou Sem  
+
+**Motociclistas testadores:** ...
+
+---
+
+## 📚 Sumário
+
+1. [Introdução](#1-introdu%C3%A7%C3%A3o)
+2. [Configuração Original de Fábrica](#2-configura%C3%A7%C3%A3o-original-de-f%C3%A1brica)
+3. [Premissas Técnicas do Projeto](#3-premissas-t%C3%A9cnicas-do-projeto)
+4. [Filosofia de Calibração](#4-filosofia-de-calibra%C3%A7%C3%A3o) 
+5. [Configuração Base – GuerraMod v8](#5-configura%C3%A7%C3%A3o-base--guerramod-v8)  
+	5.1 [Alterações Mínimas para conforto e segurança](#51-altera%C3%A7%C3%B5es-m%C3%ADnimas-para-conforto-e-seguran%C3%A7a)  
+			5.1.1 [Velocidade máxima real da motocicleta](#511-ajuste-do-limite-de-velocidade-da-motocicleta-max-speedrpm-e-max-4-speedrpm)  
+			5.1.2 [Velocidade da Marcha Ré](#512-ajuste-do-limite-de-velocidade-da-marcha-r%C3%A9-backward-speedrpm)  
+   			5.1.3 [Ajuste fino do Acelerador](#513-ajuste-fino-e-mais-linear-do-acelerador-com-rela%C3%A7%C3%A3o-ao-torque-throttle-v)  
+   			5.1.4 [Controle de Cruizeiro](#514-ativando-o-controle-de-cruzeiro)  
+			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)  
+6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
+	6.1 [Torque PID](#61-torque-pid)  
+	6.2 [IAC Set](#62-iac-set)
+   
+<!--
+	6.3 [Pedal Function](#61-pedal-function)  
+	6.4 [Voltage Set](#62-voltage-set)  
+	6.5 [Current Rotation](#63-current-rotation)  
+
+7. [Freio Regenerativo](#7-freio-regenerativo)  
+    7.1 [Perfil Cidade](#71-perfil-cidade)  
+	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
+	7.3 [Regeneração](#73-regenera%C3%A7%C3%A3o)  
+-->
+
+8. [Conclusão e Resumo](#8-conclus%C3%A3o-e-resumo)
+
+---
+
+## 1. Introdução
+
+A Voltz EVS representa uma das primeiras tentativas de popularização da mobilidade elétrica sobre duas rodas no Brasil.  
+Apesar do mérito do projeto, a calibração original da controladora APT foi concebida de forma genérica, buscando atender um amplo espectro de cenários, usuários e condições climáticas.
+
+Na prática, isso resultou em uma motocicleta funcional, porém com comportamento pouco refinado, especialmente em uso urbano intenso, rodovias longas e regiões de serra.
+
+Essa é uma nova versão aberta ao públíco do **GuerraMod**, que vem para substituir as versões anteriores (v3, v4 e v5).
+
+O GuerraMod surgiu a partir da minha insatisfação por ausência de funcionalidades na EVS e instabilidade, após os pares de versões internas exploratória (v1/v2 e v6/v7) que tinham como objetivo documentação, registrando hipóteses, tentativas e descobertas empíricas. Cada uma dessas versões foram contabilizados minimamente 1.000 km de testes por versão.  
+  
+O **GuerraMod v8.X** rompe com esse caráter experimental e estabelece uma **configuração técnica consolidada**, provavelmente será a versão final, ao longo de 4 anos de estudos e descobertas, em sua maioria as cegas e por iniciativa própria.  
+
+Aqui também destaco um agradecimento especial ao ex-funcionarios, engenheiros e mecânicos da Voltz que participaram deste projeto desde a sua concepção, e nessa fase final com a participação dos engenheiros da APT no double check teórico desta revisão final.
+
+---
+
+## 2. Configuração Original de Fábrica
+
+A configuração original da Voltz EVS Work apresenta as seguintes características:
+
+- Sobrecarga de corrente de fase   
+- Limites de corrente DC pouco restritivos  
+- Nenhuma regeneração
+- Ausência de Controle de Cruzeiro  
+- Uso genérico de *Flux Weakening*  
+- Ausência de perfis distintos de uso  
+- Nenhuma documentação técnica pública  
+
+Essas escolhas **não são erros**, mas reflexos de uma filosofia de calibração **conservadora e genérica**.
+
+---
+
+## 3. Premissas Técnicas do Projeto
+
+Premissas adotadas no **GuerraMod v8**:
+
+1. Firmware Base ideal:
+	- **A1705_V10000_EVSW_130_QS-NT-T24.dat**, powered by APT [saiba mais](https://github.com/togwar/voltz-evs/tree/main/Firmware/APT/evs-work#%EF%B8%8F-a1705_v10000_evsw_130_qs-nt-t24dat---12dez2025)
+2. Motor **in-wheel IPMSM** (sem redução mecânica)  
+3. **Corrente de Fase** como principal fator de problemas para a EVS Work. A configuração original é para pico elétrico tolerável por poucos segundos, porém sem considerar: uso contínuo, carga real, ventilação limitada, duty cycle urbano; ou seja, 400 A é “ele aguenta”, mas não “trabalha bem”.  
+4. Rotação física máxima ≈ **800 rpm** (≈ **95 km/h**)  
+5. Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
+6. *Flux Weakening* tratado apenas como extensão, não como solução.  
+7. O poder de descarga e carga das BMS originais da baterias são os principais limitantes.  
+8. **BLOCOS DE CONFIGURAÇÕES**, as alterções são relacionadas em blocos, você só deve ignorar o que está destacado como (Opcional).
+
+---
+
+## 4. Filosofia de Calibração
+
+O **GuerraMod v8.X** se baseia em quatro pilares:
+
+1. Previsibilidade  
+2. Durabilidade  
+3. Conforto  
+4. Segurança  
+
+A calibração **não busca performance máxima**, mas **coerência, repetibilidade e estabilidade** no uso real, visando longevidade do conjunto, PRINCIPALMENTE das baterias.
+
+---
+
+## 5. Configuração Base – GuerraMod v8
+Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.  
+> Quando encontrar apenas ✅, você pode apenas definir o valor e não obrigatoriamente precisa salvar.  
+> Quando encontrar na sequência ✅💾, você deverá definir o valor de alteração e clicar em "Write".
+> Leia primeiro atentamente as configurações para certificar se concorda com as mudanças.
+> As configurações abaixo são as que uso no meu dia-a-dia a mais de 2 anos.
+
+
+### 5.1 Alterações Mínimas para conforto e segurança
+> Todas as configurações deste tópico não oferecem risco para a controladora ou aumenta o esforço nas baterias.  
+
+#### 5.1.1. Ajuste do "**Limite de velocidade e corrente de fase do motor e sensor de temperatura**" Max speed[rpm] e Max 4 speed[rpm], (Max Iac pk[A] e Motor Tsensor type.)
+> **Justificativa:**  
+> Velocidade máxima teórica da moto é de 100km/h (no ar); 2500 rpm representaria aproximadamente 297km/h 🤣.  
+> Sabemos que a moto não chega a 90km/h de "velocidade real", isso é devido a capacidade do motor e a controladora (sem contar as leis da física).  
+> O valor foi ajustado para 95km/h, um meio termo, que resulta em aproximadamente 800 rpm.  
+
+- Alteração do valor "irreal" de 2500 para **800** em CURRENT ROT / **Max speed[rpm]**. ✅  
+	> FOC não tente empurrar fluxo além do útil;  
+	> PID não fique “caçando” torque inexistente;  
+	> Flux Weakening opera só onde realmente funciona.  
+	
+- Alteração do valor "irreal" de 2500 para **800** em CURRENT ROT / **Max 4 speed[rpm]**. ✅  
+	> Controle interno consistente; 
+	> Valor atingivel, reflete a realidade da moto. 
+	> Flux Weakening ser usado como extensão, não como muleta.” 
+
+- Alteração do valor "inapropriado" de 400 para **325** em CURRENT ROT / **Max Iac pk[A]**. ✅💾  
+	> ↓ corrente RMS
+	> ↓ perdas I²R
+	> ↓ aquecimento do estator
+	> Torque ainda suficiente
+	> Potência útil quase igual (em uso real)
+	> 👉 A diferença de desempenho é pequena
+	> 👉 A diferença térmica é enorme
+
+- ⚠️**Atenção:** Conferir se o sensor de temperatura está correto MOTOR PARAMETER / **Motor Tsensor type**, ele deve estar configurado como **PTC_1k**.
+	> Verifique se na tela principal, se "Motor T[Deg]" está marcando algum valor diferente de "0".
+	![Descrição da imagem](home-temperature.png)
+	> Se estiver apontando como "0" pode ser um sensor inexistente configurado, o que seria um erro.
+	> Altere o sensor de temperatura padrão da EVS Work é o **PTC_1k**.
+
+#### 5.1.2. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
+> Não faz sentido possuir uma ré a 20km/h.  
+
+- Alteração do valor de -150 para **-43** em Current Rot set / **Backward speed[rpm]**. ✅💾  
+	> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras.  
+	> Inalterado a força e a potência da "marcha ré".  
+
+
+#### 5.1.3. Ajuste fino e mais linear do **acelerador com relação ao Torque** (Throttle [V])
+> Com esses ajustes, a moto passa a entregar sua potência de acordo com o giro do acelerador com 2x mais precisão, resultando em uma maior linearidade.
+
+- (Opcional)👀 Alteração do valor **de 70 para 75** em PEDAL FUNCTION / **Percentage in mid tref[%]**.✅
+	> Maior controle na entrega de torque na faixa média do acelerador;  
+ 	> **Afeta na sensação** de resposta da moto;  
+	> Não alterar potência máxima ou correntes.  
+- (Opcional)👀 Alteração do valor **de 2,3999 para 3,2500** em PEDAL FUNCTION / **Throttle Bst[V]**.✅  
+- (Opcional)👀 Alteração do valor **de 3,4999 para 4,1000** em PEDAL FUNCTION / **Throttle high[V]**.✅  
+- (Opcional)👀 Alteração do valor **de 2,1994 para 3,2800** em PEDAL FUNCTION / **Throttle mid[V]**.✅💾  
+  	> Ajuste fino de como o acelerador fica mais responsivo para o controle da moto em acelerações, agora o poder fica na mão do condutor.  
+- (Opcional)👀 Alteração do valor **de ECO para STD** em PEDAL FUNCTION / **Default M**.✅💾  
+	> Alteração de qual modo de condução, ECO/STD/TURBO é o padrão ao ligar a moto.  
+
+- No gráfico abaixo, compara a configuração original da moto (em AZUL) vs. a alteração propósta (em VERDE).
+![Descrição da imagem](curva-acelerador.png)
+
+
+#### 5.1.4. Ativando o Controle de Cruzeiro.
+> O Cruise Control é uma função nativa da controladora APT, porém por padrão desligada nas motos EVS.😡  
+> Essa função permite a moto manter acelerando em **uma potência** (não velocidade) constante fixa de acordo com o potenciômetro (acelerador).  
+> Segurança e Responsabilidade no trânsito: Não habilite essa função para ficar andando sem as mãos na moto, **exceto se você trabalha em um círco** ou é profissional de entreterimento. 🤣  
+
+- (Opcional)👀 Ativação da função em PEDAL FUNCTION / **Cruise Enable**.✅💾
+Para ativá-la, com a moto ligada e em movimento:
+	>  Em uma **velocidade superiror** a 30 km/h, **mantenha fixo, preciso e estável o acelerador**, mantendo a moto acelerando na posição / potência que deseja, e precione o botão de ré ("R" na mão esquerda).
+	> Talvez você sinta uma sutil acelerada, e pode soltar o acelerador que ela irá manter, até que você acelere ela novamente ou toque no freio (até aparecer o "P" no painel).
+
+⚠️**Atenção:** Caso salve o controle de cruzeiro em um modo inferior, **exemplo 90% do ECO**, e se você **alterar para STD**, a moto **continuará** com o controle de cruzeiro **ativo**, porém ganhará a **força extra** do modo Standard. O inverso também se aplica.  
+
+
+#### 5.1.5. Outras correções.  
+
+**VOLTAGE SET:**  
+- Alterar o valor em **VOLTAGE SET / Li-ion series Q** de 18 para **20**.✅  
+	> Correção do número de células em série (20S).  
+ 	> Essencial para cálculos internos.  
+
+- Alterar o valor em **VOLTAGE SET / Li-ion Cell HighV[V]** de 41 para **42**.✅  
+	> Alinhamento com Vdc full reg (84 V) e Highest vdc for reg (84,5 V).  
+	> Por mais que conhecido que a BMS Interrompe a carga à 83 volts esse número é o correto para os cálculos internas do conjunto.  
+
+- Alterar o valor em **VOLTAGE SET / Li-ion capacity[Ah]** de 0 para **66**.✅💾  
+	> Capacidade nominal (+margem de segurança) configurada para referência interna e telemetria.  
+ 	> Sempre arredonde para baixo; exemplo "33" por bateria da EVS.  
+
+**Current Rot set:**  
+- Alterar o valor em **Current Rot set / Mode 4 idc[A]** de 80 para **100**.✅  
+	> Mode 3 idc ≤ Mode 4 idc;  
+ 	> Evita clipping;  
+ 	> Manter estabilidade térmica.  
+
+- Alterar o valor em **Current Rot set / Hybrid Factor** de 30 para **35**.✅  
+	> 35 otimiza resposta em média/alta velocidade sem comprometer suavidade.  
+ 
+- (Opcional)👀 Alterar o valor em **Current Rot set / Boost active sec[s]** de 60 para **15**.✅  
+	> Recomendado para regiões quentes.  
+ 	> Tempo reduzido para evitar mascarar aquecimento.  
+ 	> Preservar a estabilidade térmica.  
+  	> Evitar manter a corrente elevada demais.  
+
+
+---
+
+## 6. Configuração Intermediária – GuerraMod v8
+Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos testes com os mais de 30 voluntários pelo Brasil, que usaram minhas configurações:  
+
+**A MOTO É LIMITADA PELO SEU EQUIPAMENTO!**  
+
+- Ela já **atua no limite**; Principalmente se estivermos falando das versões com a BMS original.  
+- Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
+
+**Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos. (principalmente a bateria/celulas e a BMS)**  
+> Quer fazer **upgrade (mudanças físicas)** de equipamento na sua moto?
+1. Aumente a quantidade de bateria original Voltz EVS. Exemplo: de 1 para 2 baterias; de 2 para 3...
+2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso). 
+3. Troque a(s) BMS(s). (Requerido, escolha correta da BMS, cuidado e paciência).
+4. Troque a controladora com uma condizente com a descarga da sua bateria e/ou da BMS. (não adianta ter controladora forte se sua bateria não alimenta ela "com segurança" ou irá destruir a saúde da sua bateria).
+
+Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS.
+
+⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha **"MUITO CUIDADO"**, e não sabe o que está fazendo, não altere para um valor deliberado.  
+
+
+**Vamos ao que interessa:**  
+
+### 6.1 Torque PID
+⚠**Atenção**: Não confunda "Iq" coluna da esquerda, com "Id" coluna da direita.  
+🧠**O Segredo!**: Nessas configurações que fica o **ajuste fino da moto**, aqui é onde você **estabiliza ou desestabiliza** a moto; Com "um numeral", onde separa o **estavél do instavel**, é o local mais complexo e mais facil de errar, e se não faz idéia, **não altere nada deliberadamente**, pois a probabilidade de errar é enorme.
+
+- **Iq:** Quadrature current (corrente de torque)  
+	> 👉 **Iq = “força na roda”** (empurra ou segura)  
+	> É a corrente que gera força/empuxo  
+	> Quanto maior o Iq, maior o torque (acelera ou freia no regen)  
+	> Atua diretamente na sensação de puxar ou segurar a moto  
+	> Regen e aceleração são basicamente controle de Iq  
+ 
+
+- **Id:** Direct / magnetizing current (corrente de fluxo)  
+	> 👉 **Id = “ajuste o motor para empurrar melhor"**  
+   	> É a corrente que controla o campo magnético  
+ 	> Não gera torque direto  
+ 	> Usada para eficiência, estabilidade e flux weakening (alta velocidade)  
+ 	> Valores errados aumentam perdas e aquecimento  
+
+
+- Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**.✅  
+	> Ganho proporcional do controle de torque; Atua antes de qualquer suavização; Auxilia resposta inicial sem gerar overshoot.
+ - Alterar o valor em **Id kp gain 0 pre** de 1 para **2**.✅  
+	> Ganho proporcional do controle de fluxo; Afeta estabilidade, ruído e eficiência; Não gera torque direto.
+- Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**.✅  
+	> Ganho integral pré-regime; corrige erro estático em baixa carga.
+- Alterar o valor em **Iq ki gain 0** de 25 para **40**.✅  
+	> Ganho integral em regime normal; garante estabilidade de torque em cruzeiro
+- Alterar o valor em **Iq kp gain 3** de 5 para **4**.✅  
+	> Redução leve do ganho proporcional em alta rotação; mantém resposta e reduz risco de instabilidade térmica e em flux weakening.
+- Alterar o valor em **Iq ki gain 3** de 80 para **60**.✅💾  
+	> Redução do ganho integral em alta rotação; diminui aquecimento e elimina risco de oscilação em FW.
+
+
+### 6.2 IAC Set  
+⚠**Atenção**: CUIDADO! **NÃO** configurar tudo em 100%, mais detalhes abaixo...
+
+Aqui iremos alterar **exclusivamente** os parâmetros **Iqref [%]**, saiba, o IAC Set não aumentam corrente máxima.  
+Eles definem quanto do **Iq** permitido é aplicado em cada faixa de velocidade / modo interno.  
+
+Pense assim:  
+**IAC Set = curva de entrega do torque**  
+
+Não é potência bruta.  
+**É como a potência aparece.**  
+
+- Alterar o valor em **Iqref 4[%]** de 95 para **100**.✅  
+	> Zona de transição para torque médio; melhora dirigibilidade urbana.
+- Alterar o valor em **Iqref 5[%]** de 85 para **95**.✅  
+	> Mapeamento de torque médio; adequado para tráfego contínuo e retomadas suaves.
+- Alterar o valor em **Iqref 6[%]** de 80 para **90**.✅  
+	> Faixa de torque médio-alto; equilíbrio entre desempenho e eficiência térmica.
+- Alterar o valor em **Iqref 7[%]** de 75 para **85**.✅    
+	> Zona de torque elevado; resposta consistente sem exigir pico excessivo de corrente.
+ - Alterar o valor em **Iqref 8[%]** de 70 para **80**.✅  
+	> Torque elevado em velocidade de cruzeiro; melhora sensação de motor cheio.
+- Alterar o valor em **Iqref 9[%]** de 60 para **75**.✅  
+	> Redução gradual de torque em alta velocidade; evita aquecimento excessivo.
+ - Alterar o valor em **Iqref 10[%]** de 50 para **60**.✅  
+	> Controle de torque em alta velocidade; prioriza estabilidade e eficiência.
+ - Alterar o valor em **Iqref 11[%]** de 45 para **50**.✅  
+	> Torque reduzido próximo ao limite de velocidade; protege motor e controladora.
+ - Alterar o valor em **Iqref 11[%]** de 35 para **40**.✅💾  
+	> Zona final de torque; limita esforço em rotações elevadas.
+
+Como ficou a curva com as mudanças.  
+![Descrição da imagem](iac-curve.png)
+
+⚠**Atenção**: IAC Set — Por que **NÃO** configurar tudo em 100%  
+De forma **técnica e prática**, por que configurar **todos os parâmetros do IAC Set em 100%** é um erro comum — especialmente em sistemas com **controladora APT + motor in-wheel IPMSM**, como na **Voltz EVS**.  
+
+O objetivo aqui **não é reduzir desempenho**, mas **extrair regen eficiente, previsível e utilizável**, sem comprometer estabilidade, segurança ou durabilidade.  
+
+**6.2.1. O que é o IAC Set (de verdade)**  
+
+O **IAC Set** não é um “botão de força”.  
+Ele define **quanto controle o FOC tem sobre o Iq (corrente de torque)** em cada zona de operação, funcionando como:  
+- Limitador dinâmico de torque  
+- Modulador de resposta  
+- Camada de estabilidade do sistema  
+
+Ou seja:  
+> O IAC **não cria torque**, ele **autoriza** o quanto dele pode ser aplicado.  
+
+**6.2.2. Por que 100% em tudo parece uma boa ideia (mas não é)**
+
+É comum pensar:  
+> “Se IAC libera Iq, então 100% = máximo torque e máximo regen”  
+Na prática, isso **remove o refinamento do controle** e força o sistema a operar sempre no limite, mesmo quando **não faz sentido físico ou dinâmico**.  
+
+**6.2.3. Regen forte ≠ Regen abrupto**  
+Regen é **torque negativo** aplicado pelo **mesmo loop que acelera a moto**.  
+
+Com tudo em 100%:  
+- O torque negativo entra rápido demais  
+- Não há progressividade  
+- A roda tende a “segurar” bruscamente  
+
+Resultado percebido pelo piloto:  
+- Trancos  
+- Instabilidade  
+- Sensação de travamento da roda traseira  
+- Risco real em piso molhado ou irregular  
+
+**6.2.4. Impacto direto no FOC (Field Oriented Control)**  
+No FOC:  
+- **Iq** → produz torque  
+- **Id** → produz fluxo magnético  
+
+Quando o IAC permite 100% de Iq em todas as zonas:  
+- O loop de torque passa a competir com:  
+  - controle de fluxo  
+  - controle térmico  
+  - controle de tensão  
+- A estabilidade do sistema cai  
+
+Isso gera:  
+- Oscilação de corrente  
+- Ruído de controle  
+- Menor eficiência elétrica  
+
+**6.2.5. Stress térmico e elétrico sem ganho real**  
+Mesmo que a bateria suporte:  
+- Estator aquece mais  
+- MOSFETs trabalham mais próximos do limite  
+- Corrente AC RMS aumenta  
+
+Tudo isso **sem ganho proporcional**.  
+> 100% não entrega 100% mais eficiência  
+> entrega **100% mais stress**  
+
+
+**6.2.6. O papel correto do IAC no regen**
+O IAC existe para:  
+- Modular a entrada do torque negativo  
+- Tornar o regen utilizável  
+- Preservar estabilidade e conforto  
+
+Ele **permite** que o Max reg Q seja alcançado **de forma controlada**.  
+
+**6.2.7. Regra prática para APT + Voltz EVS**
+✔️ IAC mais alto em **zonas de Iqref médias**  
+✔️ IAC menor em **zonas de Iqref mais altas**  
+✔️ Curva progressiva > valor absoluto  
+
+❌ Tudo em 100% = moto nervosa, instável e ineficiente
+
+**6.2.8. Conclusão**
+Configurar todo o IAC Set em 100%:
+- Não melhora regen de forma inteligente  
+- Não respeita o FOC  
+- Não respeita a física do motor in-wheel  
+- Compromete segurança, conforto e durabilidade
+- Remove a modulação
+- Transforma o torque em degrau
+- Piora regen, não melhora  
+👉 Isso vale tanto para aceleração quanto para regeneração.
+
+
+**EM CONSTRUÇÃO...**
+
+
+<!--
+ATENÇÃO ESPERTALHÃO QUE ESTÁ OLHANDO O CÓDIGO... ISSO NÃO ESTÁ COMENTADO ATOA! PARE DE FAZER CAGADA!
+
+### 6.1 Pedal Function
+- (Opcional) Alteração do valor **de 5000 para 5500** em **Acc of F**.✅💾
+	> Aumento da taxa de aceleração do acelerador frontal; melhora resposta em retomadas e uso em rodovia sem aumentar potência máxima.   
+
+---
+
+### 6.2 Voltage Set
+
+- Alterar o valor em **Under vdc[V]** de 62 para **64**.✅  
+	> Menor stress das células; menor aquecimento interno; aumento da vida útil do pack.  
+- Alterar o valor em **Under vdc recover[V]** de 63 para **65**.✅  
+	> Recuperação de potência mais suave; evita oscilação em tensão baixa.  
+- Alterar o valor em **Vdc of idc limit[V]** de 65 para **67**.✅  
+	> Redução gradual de potência; melhor eficiência do FOC; menor ripple de corrente.  
+- Alterar o valor em **Vdc of idc min[V]** de 62 para **64**.✅  
+	> Evita queda abrupta de desempenho em baixa tensão; melhora previsibilidade.  
+- Alterar o valor em **Idc min percent[%]** de 20 para **30**.✅  
+	> Evita sensação de “moto morrendo”; mantém controle em baixa tensão.  
+
+
+### 6.3 Current Rotation  
+
+- Alterar o valor em **Max Iac pk[A]** de 400 para **325**.✅  
+	> Limite de corrente AC ajustado para reduzir calor, ruído eletromagnético e stress no estator e vibração;  
+
+
+## 7. Freio Regenerativo
+⚠️**Atenção**: As [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8) são imprecindíveis para o funcionamento adequado deste tópico, se não fez, volte e execute primeiramente todas as configurações.  
+⚠️⚠️**Atenção**: LEMBRE-SE é por sua conta em risco, isso é o que **EU USO** fique à vontade de **copiar**; Um erro aqui (não inventa moda de aumentar o número por conta própria) e você poderá queimar equipamentos na sua moto, não altere nenhuma configuração sem ter a precisão no valor que está definindo, e se essa configuração não refletirá em outras.  
+
+Um dos assuntos mais cobiçados por todos; Porém, **totalmente Opcional**; leia atentamente antes de tomar sua decisão...  
+
+Não é porque ele irá quebrar as leis da física, e resultar em uma geração de energia avassaladora, ele jamais lhe proporcionará isso.  
+
+Mas qual a vantagem de possuir freio regenerativo??  (OBS: Eu nem gosto desse nome, mas é o popular, por isso usei.)  
+
+Dentre as principais vantagens posso listar:  
+1. **Conforto**... Sensação de freio motor;  
+2. **Controle** e segurança em curvas, principalmente em declives.  
+3. **Ferramenta auxiliar**, não como substituta do freio mecânico.  
+4. **Econômia**... De manutenção! Principalmente dos **díscos de freio** e **pastilhas**.  
+5. **Autonomia**, em "último lugar", ele proporciona em média real e geral, algo entre de 7% a 15% dependendo de inúmeros fatores.  
+
+Agora que desbravamos um dos principais vantagens do "Freio Regenerativo", se acredita que ele é funcional, continue, pois **agora precisa se decidir, em qual perfil** você se enquadra melhor, e **escolha apenas um.**  
+
+### 7.1 Perfil Cidade
+
+Este perfil é indicado para usuários que utilizam a Voltz EVS predominantemente em ambiente urbano, com tráfego intenso, paradas frequentes e variações constantes de velocidade. É comum circular **entre 30 e 60 km/h**, com **acelerações curtas e desacelerações repetidas** em semáforos, cruzamentos, lombadas e corredores.  
+
+A configuração de freio regenerativo neste perfil prioriza conforto e previsibilidade, evitando que a moto desacelere de forma brusca ao soltar o acelerador. O objetivo não é maximizar a recuperação de energia, mas sim manter a pilotagem fluida, reduzir fadiga e facilitar manobras em baixa velocidade.  
+
+Usuários que sentem desconforto com “freio motor forte” no trânsito, ou que preferem uma condução mais solta e natural, tendem a se identificar com este perfil.  
+
+**Principais ajustes:**
+- CURRENT ROT / **Min reg speed** = 300 rpm✅💾 (≈ 35 km/h)  
+- CURRENT ROT / **Max slip reg Q** = 0  
+
+- CURRENT ROT / **Acc of regenerate** = 600✅💾
+- CURRENT ROT / **Dec of regenerate** = 700✅💾  
+
+---
+
+### 7.2 Perfil Rodovia
+
+Este perfil é indicado para usuários que trafegam com frequência em vias rápidas, rodovias ou trechos longos de serra, mantendo velocidades mais estáveis, normalmente **entre 60 e 90 km/h**, com **períodos prolongados sem acelerações** bruscas.
+
+A configuração de freio regenerativo aqui atua como um freio motor eletrônico leve, ajudando a controlar a velocidade em descidas, curvas longas e reduções graduais, além de reduzir o desgaste do freio mecânico. Diferente do uso urbano, o objetivo passa a ser estabilidade e controle, não apenas conforto.
+
+Usuários que percorrem trajetos intermunicipais, estradas costeiras ou serranas, e que valorizam uma moto mais “assentada” ao soltar o acelerador, tendem a se identificar com este perfil.
+
+**Principais ajustes:**
+- CURRENT ROT / **Min reg speed** = 400 rpm✅💾 (≈ 48 km/h)  
+- CURRENT ROT / **Max slip reg Q** = -300✅💾  
+
+- CURRENT ROT / **Acc of regenerate** = 500✅💾
+- CURRENT ROT / **Dec of regenerate** = 700✅💾
+
+---
+
+## 7.3 Regeneração
+> **Regen bom não é o mais forte.**  
+> **É o mais utilizável.**
+
+
+No GuerraMod v8, a regeneração é tratada como uma ferramenta auxiliar de controle e eficiência, e não como substituta do sistema de freio mecânico. Seu papel principal é contribuir para a estabilidade do veículo, reduzir o desgaste de componentes mecânicos e recuperar energia de forma segura, sem comprometer o conforto ou a durabilidade do conjunto elétrico.
+
+Na configuração original, a regeneração é inexistente ou apresenta comportamento irregular, com atuação pouco previsível e sem critérios claros de limitação de corrente, o que dificulta o controle fino da desaceleração em diferentes cenários de uso.
+
+Já no GuerraMod v8, a regeneração passa a atuar de forma progressiva e coerente com a velocidade, com limites bem definidos de corrente e total respeito à capacidade da bateria instalada. O resultado é uma desaceleração mais natural ao soltar o acelerador, maior previsibilidade na pilotagem e melhor integração entre eficiência energética, segurança e conforto.
+
+Em **CURRENT ROT**:
+- Alterar o valor em **Max reg Q** de 0 para **-5000**.✅💾  
+	> Regen ativo progressivo; força suficiente sem stress térmico.
+
+Em **GTR SETTINGS** para **Cidade**:
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **40**.✅💾 
+	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
+- Alterar o valor em **GTR iqref 1[%]** de 0 para **15**.✅💾 
+	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
+- Alterar o valor em **GTR iqref 2[%]** de 0 para **25**.✅💾 
+	> Zona intermediária de regen; equilíbrio entre eficiência e conforto.  
+- Alterar o valor em **GTR iqref 3[%]** de 0 para **35**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 4[%]** de 0 para **50**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 5[%]** de 0 para **65**.✅💾 
+	> Regen consistente em velocidade de cruzeiro; melhora controle em rodovia.  
+- Alterar o valor em **GTR iqref 6[%]** de 0 para **80**.✅💾 
+	> Regen elevado e eficiente; adequado para desacelerações prolongadas.  
+- Alterar o valor em **GTR iqref 7[%]** de 0 para **90**.✅💾 
+	> Zona de pico de regeneração; maximiza recuperação de energia com segurança.  
+- Alterar o valor em **GTR iqref 8[%]** de 0 para **90**.✅💾 
+	> Manutenção do pico de regen; estabilidade térmica e elétrica controlada.  
+- Alterar o valor em **GTR iqref 9[%]** de 0 para **80**.✅💾 
+	> Redução gradual do regen em alta velocidade; evita sobretensão.  
+- Alterar o valor em **GTR iqref 10[%]** de 0 para **65**.✅💾 
+	> Regen controlado próximo ao limite de cruzeiro; melhora previsibilidade.  
+- Alterar o valor em **GTR iqref 11[%]** de 0 para **50**.✅💾 
+	> Regen reduzido em alta rotação; preserva estabilidade do veículo.  
+- Alterar o valor em **GTR iqref 12[%]** de 0 para **35**.✅💾 
+	> Zona final de regen; transição suave para corte.  
+
+Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
+- Alterar o valor em **GTR iqref 0[A]** de 0 para **60**.✅💾 
+	> Corrente base de torque regenerativo; valor negativo define intensidade do regen.  
+- Alterar o valor em **GTR iqref 1[%]** de 0 para **20**.✅💾 
+	> Regen progressivo em baixa rotação; melhora controle em desaceleração leve.  
+- Alterar o valor em **GTR iqref 2[%]** de 0 para **30**.✅💾 
+	> Zona intermediária de regen; equilíbrio entre eficiência e conforto.  
+- Alterar o valor em **GTR iqref 3[%]** de 0 para **40**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 4[%]** de 0 para **55**.✅💾 
+	> Regen moderado em velocidade média; reduz uso do freio mecânico.  
+- Alterar o valor em **GTR iqref 5[%]** de 0 para **70**.✅💾 
+	> Regen consistente em velocidade de cruzeiro; melhora controle em rodovia.  
+- Alterar o valor em **GTR iqref 6[%]** de 0 para **85**.✅💾 
+	> Regen elevado e eficiente; adequado para desacelerações prolongadas.  
+- Alterar o valor em **GTR iqref 7[%]** de 0 para **100**.✅💾 
+	> Zona de pico de regeneração; maximiza recuperação de energia com segurança.  
+- Alterar o valor em **GTR iqref 8[%]** de 0 para **100**.✅💾 
+	> Manutenção do pico de regen; estabilidade térmica e elétrica controlada.  
+- Alterar o valor em **GTR iqref 9[%]** de 0 para **85**.✅💾 
+	> Redução gradual do regen em alta velocidade; evita sobretensão.  
+- Alterar o valor em **GTR iqref 10[%]** de 0 para **70**.✅💾 
+	> Regen controlado próximo ao limite de cruzeiro; melhora previsibilidade.  
+- Alterar o valor em **GTR iqref 11[%]** de 0 para **55**.✅💾 
+	> Regen reduzido em alta rotação; preserva estabilidade do veículo.  
+- Alterar o valor em **GTR iqref 12[%]** de 0 para **40**.✅💾 
+	> Zona final de regen; transição suave para corte.  
+
+> ⚠️ **Atenção**  
+> A Regeneração ou Frenagente é proporcional ao modo de condução.  
+> Isso é, **no ECO freia menos**, regenera menos, pois tem menos potência, se **comparado ao Standard**.  
+> Logo, o modo **TURBO é onde o regenerativo é mais intenso**.
+
+-->
+---
+
+## 8. Conclusão e Resumo
+
+O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
+
+Agora que **já compreendeu as etapas e os motivos de cada modificação**, segue a relação das configurações que falamos nesse tutorial, de forma repetida, visando um resumo direto e centralizado (para quem desejar reconfigurar futuramente).
+
+**VOLTAGE SET**  
+	1. Li-ion series Q = 20  
+	2. Li-ion Cell HighV[V] = 42  
+	3. Li-ion capacity[Ah] = 66  
+
+**CURRENT ROT**  
+	1. Max speed[rpm] = 800  
+	2. Max 4 speed[rpm] = 800  
+	3. Backward speed[rpm] = -43  
+	4. Mode 4 idc[A]  = 100  
+	5. Hybrid Factor = 35  
+	6. Boost active sec[s] = 15  
+	
+**PEDAL FUNCTION**  
+	1. Percentage in mid tref[%] = 75 (Opcional)  
+	2. Throttle Bst[V] = 3,25 (Opcional)  
+	3. Throttle high[V] = 4,1 (Opcional)  
+	4. Throttle mid[V] = 3,28 (Opcional)  
+	5. Default M = STD (Opcional)  
+	6. Cruise Enable (Opcional)  
+	
+**Torque PID**  
+	1. Iq kp gain 0 pre = 2  
+	2. Id kp gain 0 pre = 2  
+	3. Iq ki gain 0 pre = 40  
+	4. Iq ki gain 0 = 40  
+	5. Iq kp gain 3 = 4  
+	6. Iq ki gain 3 = 60  
+	
+**IAC Set**  
+	1. Iqref 4[%] = 100  
+	2. Iqref 5[%] = 95  
+	3. Iqref 6[%] = 90  
+	4. Iqref 7[%] = 85  
+	5. Iqref 8[%] = 80  
+	6. Iqref 9[%] = 75  
+	7. Iqref 10[%] = 60  
+	8. Iqref 11[%] = 50  
+	9. Iqref 12[%] = 40  
+
+
+<!--
+![Descrição da imagem](pedal.png)
+![Descrição da imagem](voltage.png)
+![Descrição da imagem](current.png)
+![Descrição da imagem](torque.png)
+![Descrição da imagem](iac.png)
+![Descrição da imagem](gtr.png)
+
+![Descrição da imagem](guerramod-v8.png)
+-->
+
+---
+
+> ⚠️ **Aviso**  
+> Este projeto não possui vínculo oficial com a Voltz Motors.
+> Essas são as configurações que uso a na minha moto Voltz EVS 2021.  
+> O uso das informações aqui descritas é de responsabilidade do usuário.
