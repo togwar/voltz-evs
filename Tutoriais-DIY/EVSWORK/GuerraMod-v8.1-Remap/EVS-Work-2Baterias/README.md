@@ -14,7 +14,7 @@
 **BMS:** Original ou Não  
 **TBOX:** Original ou Sem  
 
-**Motociclistas testadores:** ...
+**Motociclistas testadores:** Luiz Eduardo, ...
 
 ---
 
@@ -53,7 +53,7 @@
 ## 1. Introdução
 
 A Voltz EVS Work representa uma das primeiras tentativas de popularização da mobilidade elétrica sobre duas rodas no Brasil.  
-Apesar do mérito do projeto, a calibração original da controladora APT foi concebida de forma genérica, buscando atender um amplo espectro de cenários, usuários e condições climáticas.
+Apesar do mérito do projeto, a calibração original da controladora APT foi concebida de forma genérica (e com erros), buscando atender um amplo espectro de cenários, usuários e condições climáticas.
 
 Na prática, isso resultou em uma motocicleta funcional, porém com comportamento pouco refinado, especialmente em uso urbano intenso, rodovias longas e regiões de serra.
 
@@ -139,7 +139,27 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 	> Valor atingivel, reflete a realidade da moto. 
 	> Flux Weakening ser usado como extensão, não como muleta.” 
 
-- Alteração do valor "inapropriado" de 400 para **325** em CURRENT ROT / **Max Iac pk[A]**. ✅💾  
+- (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Forward angle offset[Deg]**. ✅  
+- (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Backward angle offset[Deg]**. ✅💾
+	> **Não se trata de um erro da VOLTZ.**
+ 	> A diferença afeta: torque, aquecimento, eficiência  
+	> Use −60° = valor mais eficiente e alinhado ao motor real  
+		> ✔️ Sistema já demonstrou tendência a aquecimento com corrente alta
+		> ✔️ Motor não apresenta ruído estranho, tranco ou falha de partida  
+ 		> ✔️ Uso real (Work) exige torque sustentado, não pico curto
+	> Use −50° = valor conservador (robustez) e seguro  
+ 		> ❌ Instabilidade em baixa rotação  
+		> ❌ Trancos na transição tração ↔ regen  
+		> ❌ Sensibilidade excessiva a carga / peso  
+		> ❌ Uso extremamente severo com operadores diferentes (robustez > eficiência)  
+
+- ⚠️**Atenção:** Conferir se o sensor de temperatura está correto MOTOR PARAMETER / **Motor Tsensor type**, ele deve estar configurado como **PTC_1k**.
+	> Verifique se na tela principal, se **Motor T[Deg]** está marcando algum valor diferente de **0**.
+	![Descrição da imagem](home-temperature.png)
+	> **Se estiver apontando como "0"** pode ser um sensor inexistente configurado, **o que seria um erro de configuração!**
+	> Altere o sensor de temperatura padrão da EVS Work é o **PTC_1k**.
+
+- (Opcional)👀 Alteração do valor "inapropriado" de 400 para **325** em CURRENT ROT / **Max Iac pk[A]**. ✅💾  
 	> **↓** corrente RMS  
 	> **↓** perdas I²R  
 	> **↓** aquecimento do estator  
@@ -148,11 +168,6 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 	> 👉 A diferença de desempenho é pequena  
 	> 👉 A diferença térmica é enorme  
 
-- ⚠️**Atenção:** Conferir se o sensor de temperatura está correto MOTOR PARAMETER / **Motor Tsensor type**, ele deve estar configurado como **PTC_1k**.
-	> Verifique se na tela principal, se **Motor T[Deg]** está marcando algum valor diferente de **0**.
-	![Descrição da imagem](home-temperature.png)
-	> **Se estiver apontando como "0"** pode ser um sensor inexistente configurado, **o que seria um erro de configuração!**
-	> Altere o sensor de temperatura padrão da EVS Work é o **PTC_1k**.
 
 #### 5.1.2. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
 > Não faz sentido possuir uma ré a 20km/h.  
