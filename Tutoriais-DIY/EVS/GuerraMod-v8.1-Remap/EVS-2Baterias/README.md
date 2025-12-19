@@ -246,7 +246,9 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 
 - Alterar o valor em **Iq kp gain 0 pre** de 1 para **2**.✅  
-	> Ganho proporcional pré-regime; auxilia resposta inicial sem gerar overshoot.
+	> Ganho proporcional do controle de torque; Atua antes de qualquer suavização; Auxilia resposta inicial sem gerar overshoot.
+ - Alterar o valor em **Id kp gain 0 pre** de 1 para **2**.✅  
+	> Ganho proporcional do controle de fluxo; Afeta estabilidade, ruído e eficiência; Não gera torque direto.
 - Alterar o valor em **Iq ki gain 0 pre** de 25 para **40**.✅  
 	> Ganho integral pré-regime; corrige erro estático em baixa carga.
 - Alterar o valor em **Iq ki gain 0** de 25 para **40**.✅  
