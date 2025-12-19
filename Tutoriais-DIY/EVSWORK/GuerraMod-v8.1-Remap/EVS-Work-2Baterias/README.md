@@ -162,7 +162,8 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 	> **Se estiver apontando como "0"** pode ser um sensor inexistente configurado, **o que seria um erro de configuração!**  
 	> Altere o sensor de temperatura padrão da EVS Work é o **PTC_1k**.  
 
-- (Opcional)👀 Alteração do valor "inapropriado" de 400 para **325** em CURRENT ROT / **Max Iac pk[A]**. ✅💾  
+- (Opcional)👀 Alteração do valor de 400 para **325** em CURRENT ROT / **Max Iac pk[A]**. ✅💾  
+	Use essa configuração em caso mais conservadora para a controladora, principalmente em regiões quentes.
 	> **↓** corrente RMS  
 	> **↓** perdas I²R  
 	> **↓** aquecimento do estator  
