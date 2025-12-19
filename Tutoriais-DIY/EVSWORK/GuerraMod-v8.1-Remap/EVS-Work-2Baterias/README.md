@@ -1,6 +1,6 @@
 #EM CONSUTRÇÃO - VOLTE MAIS TARDE!!!
 
-# GuerraMod v8 – Projeto Voltz EVS (2026) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
+# GuerraMod v8 – Projeto Voltz EVS Work (2026) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
 
 **Versão:** 8.1  (16/12/2025)  
 **Ano:** 2026  
@@ -52,7 +52,7 @@
 
 ## 1. Introdução
 
-A Voltz EVS representa uma das primeiras tentativas de popularização da mobilidade elétrica sobre duas rodas no Brasil.  
+A Voltz EVS Work representa uma das primeiras tentativas de popularização da mobilidade elétrica sobre duas rodas no Brasil.  
 Apesar do mérito do projeto, a calibração original da controladora APT foi concebida de forma genérica, buscando atender um amplo espectro de cenários, usuários e condições climáticas.
 
 Na prática, isso resultou em uma motocicleta funcional, porém com comportamento pouco refinado, especialmente em uso urbano intenso, rodovias longas e regiões de serra.
@@ -234,14 +234,15 @@ Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos tes
 - Ela já **atua no limite**; Principalmente se estivermos falando das versões com a BMS original.  
 - Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
 
-**Concluíndo, não há como fazer sua Voltz EVS virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos. (principalmente a bateria/celulas e a BMS)**  
+**Concluíndo, não há como fazer sua Voltz EVS Work virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos. (principalmente a bateria/celulas e a BMS)**  
 > Quer fazer **upgrade (mudanças físicas)** de equipamento na sua moto?
-1. Aumente a quantidade de bateria original Voltz EVS. Exemplo: de 1 para 2 baterias; de 2 para 3...
+1. Aumente a quantidade de bateria original Voltz EVS Work. Exemplo: de 1 para 2 baterias; de 2 para 3...
 2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso). 
 3. Troque a(s) BMS(s). (Requerido, escolha correta da BMS, cuidado e paciência).
 4. Troque a controladora com uma condizente com a descarga da sua bateria e/ou da BMS. (não adianta ter controladora forte se sua bateria não alimenta ela "com segurança" ou irá destruir a saúde da sua bateria).
+5. Troque o motor.
 
-Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS.
+Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar parametros que **corrigem, aprimoram e aumentam o conforto de pilotagem**, visando **longevidade e estabilidade**, de acordo com o conjunto de equipamentos que existe na moto Voltz EVS Work.
 
 ⚠**Atenção**: Não altere os valores deliberadamente, as configurações abaixo podem haver relação com N outros parametros, uma mudança que pode parecer simples de "mudar uma potência" pode refletir em todo o conjunto e cálculos que a controladora faz para manter a moto funcionando em sua plenitude, tenha **"MUITO CUIDADO"**, e não sabe o que está fazendo, não altere para um valor deliberado.  
 
@@ -317,7 +318,7 @@ Como ficou a curva com as mudanças.
 ![Descrição da imagem](iac-curve.png)
 
 ⚠**Atenção**: IAC Set — Por que **NÃO** configurar tudo em 100%  
-De forma **técnica e prática**, por que configurar **todos os parâmetros do IAC Set em 100%** é um erro comum — especialmente em sistemas com **controladora APT + motor in-wheel IPMSM**, como na **Voltz EVS**.  
+De forma **técnica e prática**, por que configurar **todos os parâmetros do IAC Set em 100%** é um erro comum — especialmente em sistemas com **controladora APT + motor in-wheel IPMSM**, como na **Voltz EVS Work**.  
 
 O objetivo aqui **não é reduzir desempenho**, mas **extrair regen eficiente, previsível e utilizável**, sem comprometer estabilidade, segurança ou durabilidade.  
 
@@ -388,7 +389,7 @@ O IAC existe para:
 
 Ele **permite** que o Max reg Q seja alcançado **de forma controlada**.  
 
-**6.2.7. Regra prática para APT + Voltz EVS**
+**6.2.7. Regra prática para APT + Voltz EVS Work**
 ✔️ IAC mais alto em **zonas de Iqref médias**  
 ✔️ IAC menor em **zonas de Iqref mais altas**  
 ✔️ Curva progressiva > valor absoluto  
@@ -460,7 +461,7 @@ Agora que desbravamos um dos principais vantagens do "Freio Regenerativo", se ac
 
 ### 7.1 Perfil Cidade
 
-Este perfil é indicado para usuários que utilizam a Voltz EVS predominantemente em ambiente urbano, com tráfego intenso, paradas frequentes e variações constantes de velocidade. É comum circular **entre 30 e 60 km/h**, com **acelerações curtas e desacelerações repetidas** em semáforos, cruzamentos, lombadas e corredores.  
+Este perfil é indicado para usuários que utilizam a Voltz EVS Work predominantemente em ambiente urbano, com tráfego intenso, paradas frequentes e variações constantes de velocidade. É comum circular **entre 30 e 60 km/h**, com **acelerações curtas e desacelerações repetidas** em semáforos, cruzamentos, lombadas e corredores.  
 
 A configuração de freio regenerativo neste perfil prioriza conforto e previsibilidade, evitando que a moto desacelere de forma brusca ao soltar o acelerador. O objetivo não é maximizar a recuperação de energia, mas sim manter a pilotagem fluida, reduzir fadiga e facilitar manobras em baixa velocidade.  
 
@@ -573,7 +574,7 @@ Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
 
 ## 8. Conclusão e Resumo
 
-O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS**.
+O **GuerraMod v8** encerra o ciclo de experimentação e estabelece uma **documentação técnica madura**, aplicável e defensável para a plataforma **Voltz EVS Work**.
 
 Agora que **já compreendeu as etapas e os motivos de cada modificação**, segue a relação das configurações que falamos nesse tutorial, de forma repetida, visando um resumo direto e centralizado (para quem desejar reconfigurar futuramente).
 
@@ -633,5 +634,5 @@ Agora que **já compreendeu as etapas e os motivos de cada modificação**, segu
 
 > ⚠️ **Aviso**  
 > Este projeto não possui vínculo oficial com a Voltz Motors.
-> Essas são as configurações que uso a na minha moto Voltz EVS 2021.  
+> Essas são as configurações que uso a na minha moto Voltz EVS Work 2021.  
 > O uso das informações aqui descritas é de responsabilidade do usuário.
