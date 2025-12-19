@@ -140,17 +140,20 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 	> Flux Weakening ser usado como extensão, não como muleta.” 
 
 - (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Forward angle offset[Deg]**. ✅  
-- (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Backward angle offset[Deg]**. ✅💾
+- (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Backward angle offset[Deg]**. ✅💾  
 	> **Não se trata de um erro da VOLTZ.**  
  	> A diferença afeta: torque, aquecimento, eficiência  
-	> **Use −60°** = valor mais eficiente e alinhado ao motor real  
+	> **Use −60°** (é o valor tecnicamente correto para eficiência e controle térmico) = valor mais eficiente e alinhado ao motor real  
 		> ✔️ Sistema já demonstrou tendência a aquecimento com corrente alta  
 		> ✔️ Motor não apresenta ruído estranho, tranco ou falha de partida  
  		> ✔️ Uso real (Work) exige torque sustentado, não pico curto  
-	> **Use −50°** = valor conservador (robustez) e seguro  
+	> **Use −50°** (é apenas um valor conservador de fábrica) = valor conservador (robustez) e seguro  
  		> ❌ Instabilidade em baixa rotação  
 		> ❌ Sensibilidade excessiva a carga / peso  
 		> ❌ Uso extremamente severo com operadores diferentes (robustez > eficiência)  
+ 	> Sugestão final:  
+ 		> Defina -60, Se não houver comportamento anômalo, fica em −60° e não mexe mais.  
+		> Se aparecer qualquer sintoma estranho: volte para −50°.  
 
 - ⚠️**Atenção:** Conferir se o sensor de temperatura está correto MOTOR PARAMETER / **Motor Tsensor type**, ele deve estar configurado como **PTC_1k**.
 	> Verifique se na tela principal, se **Motor T[Deg]** está marcando algum valor diferente de **0**.
