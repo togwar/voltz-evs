@@ -90,7 +90,7 @@ Premissas adotadas no **GuerraMod v8**:
 1. Firmware Base ideal:
 	- **A1705_V10000_EVSW_130_QS-NT-T24.dat**, powered by APT [saiba mais](https://github.com/togwar/voltz-evs/tree/main/Firmware/APT/evs-work#%EF%B8%8F-a1705_v10000_evsw_130_qs-nt-t24dat---12dez2025)
 2. Motor **in-wheel IPMSM** (sem redução mecânica)  
-3. **Corrente de Fase** como principal fator de problemas para a EVS Work. A configuração original é para pico elétrico tolerável por poucos segundos, porém sem considerar: uso contínuo, carga real, ventilação limitada, duty cycle urbano; ou seja, 400 A é “ele aguenta”, mas não “trabalha bem”.  
+3. **Corrente de Fase** como principal fator de problemas para a EVS Work. A configuração original é para pico elétrico tolerável por poucos segundos, porém sem considerar: uso contínuo, carga real, ventilação limitada, duty cycle urbano; ou seja, 400 A, "é... ela aguenta”, mas “não trabalha bem”.  
 4. Rotação física máxima ≈ **800 rpm** (≈ **95 km/h**)  
 5. Bateria Li-ion **20S** (2 packs ou mais) (versão de 1 bateria em breve)  
 6. *Flux Weakening* tratado apenas como extensão, não como solução.  
