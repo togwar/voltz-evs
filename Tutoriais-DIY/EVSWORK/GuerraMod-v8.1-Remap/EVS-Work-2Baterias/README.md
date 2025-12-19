@@ -141,15 +141,14 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 
 - (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Forward angle offset[Deg]**. ✅  
 - (Opcional)👀 Alteração do valor de -50 para **-60** em MOTOR PARAMETER / **Backward angle offset[Deg]**. ✅💾
-	> **Não se trata de um erro da VOLTZ.**
+	> **Não se trata de um erro da VOLTZ.**  
  	> A diferença afeta: torque, aquecimento, eficiência  
 	> Use −60° = valor mais eficiente e alinhado ao motor real  
-		> ✔️ Sistema já demonstrou tendência a aquecimento com corrente alta
+		> ✔️ Sistema já demonstrou tendência a aquecimento com corrente alta  
 		> ✔️ Motor não apresenta ruído estranho, tranco ou falha de partida  
- 		> ✔️ Uso real (Work) exige torque sustentado, não pico curto
+ 		> ✔️ Uso real (Work) exige torque sustentado, não pico curto  
 	> Use −50° = valor conservador (robustez) e seguro  
  		> ❌ Instabilidade em baixa rotação  
-		> ❌ Trancos na transição tração ↔ regen  
 		> ❌ Sensibilidade excessiva a carga / peso  
 		> ❌ Uso extremamente severo com operadores diferentes (robustez > eficiência)  
 
