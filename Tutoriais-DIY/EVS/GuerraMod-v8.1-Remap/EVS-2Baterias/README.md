@@ -12,6 +12,8 @@
 **BMS:** Original ou Não  
 **TBOX:** Original ou Sem  
 
+**Motociclistas testadores:** Davidson, FM6000, Ismael.SJ, T.Guerra, W.BORNE.
+
 ---
 
 ## 📚 Sumário
