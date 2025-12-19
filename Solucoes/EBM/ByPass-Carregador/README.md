@@ -1,6 +1,3 @@
-
-
-**EM CONSTRUÇÃO**  
 # ByPass do Carregador para EVS
 
 # EU QUERO!!! https://forms.gle/Ka8GFxxT43yjCXXs7
