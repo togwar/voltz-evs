@@ -228,6 +228,7 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 ### 6.1 Torque PID
 ⚠**Atenção**: Não confunda "Iq" coluna da esquerda, com "Id" coluna da direita.  
+🧠**O Segredo!**: Nessas configurações que fica o **ajuste fino da moto**, aqui é onde você **estabiliza ou desestabiliza** a moto; Com "um numeral", onde separa o **estavél do instavel**, é o local mais complexo e mais facil de errar, e se não faz idéia, **não altere nada deliberadamente**, pois a probabilidade de errar é enorme.
 
 - **Iq:** Quadrature current (corrente de torque)  
 	> 👉 **Iq = “força na roda”** (empurra ou segura)  
