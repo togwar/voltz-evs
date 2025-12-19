@@ -29,18 +29,19 @@
 			5.1.5 [Outras Correções](#515-outras-corre%C3%A7%C3%B5es)  
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
 	6.1 [Torque PID](#61-torque-pid)  
-	6.2 [IAC Set](#62-iac-set)  
+	6.2 [IAC Set](#62-iac-set)
+   
 <!--
-	6.1 [Pedal Function](#61-pedal-function)  
-	6.2 [Voltage Set](#62-voltage-set)  
-	6.3 [Current Rotation](#63-current-rotation)  
+	6.3 [Pedal Function](#61-pedal-function)  
+	6.4 [Voltage Set](#62-voltage-set)  
+	6.5 [Current Rotation](#63-current-rotation)  
 
 7. [Freio Regenerativo](#7-freio-regenerativo)  
     7.1 [Perfil Cidade](#71-perfil-cidade)  
 	7.2 [Perfil Rodovia](#72-perfil-rodovia)  
 	7.3 [Regeneração](#73-regenera%C3%A7%C3%A3o)  
-
 -->
+
 8. [Conclusão e Resumo](#8-conclus%C3%A3o-e-resumo)
 
 ---
@@ -387,9 +388,7 @@ Configurar todo o IAC Set em 100%:
 👉 Isso vale tanto para aceleração quanto para regeneração.
 
 
-**TO BE CONTINUE**
-
-
+**EM CONSTRUÇÃO...**
 
 
 <!--
@@ -550,7 +549,7 @@ Em **GTR SETTINGS** para **Rodovia** (Regen mais intenso):
 > Isso é, **no ECO freia menos**, regenera menos, pois tem menos potência, se **comparado ao Standard**.  
 > Logo, o modo **TURBO é onde o regenerativo é mais intenso**.
 
-
+-->
 ---
 
 ## 8. Conclusão e Resumo
