@@ -260,6 +260,8 @@ Agora partiremos para ajustes intermediarios que irão alterar a moto, e ajustar
 
 
 ### 6.2 IAC Set  
+⚠**Atenção**: CUIDADO! **NÃO** configurar tudo em 100%, mais detalhes abaixo...
+
 Aqui iremos alterar **exclusivamente** os parâmetros **Iqref [%]**, saiba, o IAC Set não aumentam corrente máxima.  
 Eles definem quanto do **Iq** permitido é aplicado em cada faixa de velocidade / modo interno.  
 
