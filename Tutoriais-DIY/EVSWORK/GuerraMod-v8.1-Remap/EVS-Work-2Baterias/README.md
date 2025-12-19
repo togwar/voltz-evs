@@ -140,13 +140,13 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 	> Flux Weakening ser usado como extensão, não como muleta.” 
 
 - Alteração do valor "inapropriado" de 400 para **325** em CURRENT ROT / **Max Iac pk[A]**. ✅💾  
-	> ↓ corrente RMS
-	> ↓ perdas I²R
-	> ↓ aquecimento do estator
-	> Torque ainda suficiente
-	> Potência útil quase igual (em uso real)
-	> 👉 A diferença de desempenho é pequena
-	> 👉 A diferença térmica é enorme
+	> ↓ corrente RMS  
+	> ↓ perdas I²R  
+	> ↓ aquecimento do estator  
+	> Torque ainda suficiente  
+	> Potência útil quase igual (em uso real)  
+	> 👉 A diferença de desempenho é pequena  
+	> 👉 A diferença térmica é enorme  
 
 - ⚠️**Atenção:** Conferir se o sensor de temperatura está correto MOTOR PARAMETER / **Motor Tsensor type**, ele deve estar configurado como **PTC_1k**.
 	> Verifique se na tela principal, se **Motor T[Deg]** está marcando algum valor diferente de **0**.
