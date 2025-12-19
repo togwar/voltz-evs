@@ -617,7 +617,12 @@ Agora que **já compreendeu as etapas e os motivos de cada modificação**, segu
 	4. Throttle mid[V] = 3,28 (Opcional)  
 	5. Default M = STD (Opcional)  
 	6. Cruise Enable (Opcional)  
-	
+
+**MOTOR PARAMETER**  
+Forward angle offset[Deg] = -60  
+Backward angle offset[Deg] = -60  
+Motor Tsensor type = PTC_1k  
+
 **Torque PID**  
 	1. Iq kp gain 0 pre = 2  
 	2. Id kp gain 0 pre = 2  
