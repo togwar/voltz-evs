@@ -135,7 +135,7 @@ Tenha atenção aos ícones ✅ e 💾 ao longo das alterações propostas.
 #### 5.1.2. Ajuste do "**Limite de velocidade da marcha ré**" (Backward speed[rpm])
 > Não faz sentido possuir uma ré a 20km/h.  
 
-- (Opcional)👀 Alteração do valor de -150 para **-43** em Current Rot set / **Backward speed[rpm]**. ✅💾  
+- Alteração do valor de -150 para **-43** em Current Rot set / **Backward speed[rpm]**. ✅💾  
 	> Velocidade máxima real (5km/h), muito mais segura e confortável para manobras.  
 	> Inalterado a força e a potência da "marcha ré".  
 
