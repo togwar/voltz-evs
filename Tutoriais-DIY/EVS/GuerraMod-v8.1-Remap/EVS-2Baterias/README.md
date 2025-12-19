@@ -16,7 +16,9 @@
 
 **Feedbacks curtos:** 
 FM6000 - Curitiba: "A moto está padrão..." A moto não mais limita a potência, mesmo no meu teste onde fui até 6% de bateria... gostei, muito bom...  
+
 Ismael - São Jose dos Pinhais/PR: "Na questão da estabilidade, uma melhora na pilotagem, com resposta melhor... retomadas... e passou a consumir menos..." bem satisfeito, aconcelho"  
+
 Rafaell - São Luis/MA: "Ficou muito melhor que a original"; "ficou mais redonda e esperta"; "Antes travava a controladora por superaquecimento, agora não..." "recomendo, melhora bastante"  
  
 
