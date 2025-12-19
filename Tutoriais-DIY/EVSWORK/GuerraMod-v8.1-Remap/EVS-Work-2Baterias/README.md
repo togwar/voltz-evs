@@ -252,7 +252,7 @@ Antes de proceguir-mos deixo claro, pois foi o que mais escutei ao longo dos tes
 - Ela já **atua no limite**; Principalmente se estivermos falando das versões com a BMS original.  
 - Tal limite que, em alguns casos, resulta sobrecarga, super-aquecimento, falhas, e até componentes sendo danificados prematuramente; (Obviamente que isso depende diretamente do modo de condução, configurações incorretas ou do clima ambiente.)
 
-**Concluíndo, não há como fazer sua Voltz EVS Work virar uma 1000cc, tão pouco uma 300cc, sem trocar/modificar equipamentos. (principalmente a bateria/celulas e a BMS)**  
+**Concluíndo, não há como fazer sua Voltz EVS Work virar uma 1000cc, tão pouco uma 300cc, nem mesmo uma EVS (monobraço), sem trocar/modificar equipamentos. (principalmente o motor e a bateria/celulas e a BMS)**  
 > Quer fazer **upgrade (mudanças físicas)** de equipamento na sua moto?
 1. Aumente a quantidade de bateria original Voltz EVS Work. Exemplo: de 1 para 2 baterias; de 2 para 3...
 2. Troque a bateria por outra superior, exemplo Volvo XC40. (Requer experiência e qualificação para isso). 
