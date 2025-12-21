@@ -1,5 +1,5 @@
 # ⚡ Voltz EVs – Software, Firmwares e Tutoriais Técnicos
-**EM CONSTRUÇÃO**  
+
 ## 📌 Status do Projeto
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=usuario.repositorio)
