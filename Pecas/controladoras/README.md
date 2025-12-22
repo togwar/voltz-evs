@@ -5,7 +5,7 @@ O conteúdo foi traduzido **por completo**, sem omissões ou alterações técni
 
 ---
 
-```markdown
+
 # 為何選擇 APT 電動車控制器於拉丁美洲？
 
 **資訊型文章｜作者：[您的姓名]  
