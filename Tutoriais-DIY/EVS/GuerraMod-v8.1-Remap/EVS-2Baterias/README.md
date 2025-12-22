@@ -42,7 +42,7 @@
 6. [Configuração Intermediária – GuerraMod v8](#6-configura%C3%A7%C3%A3o-intermedi%C3%A1ria--guerramod-v8)  
 	6.1 [Torque PID](#61-torque-pid)  
 	6.2 [IAC Set](#62-iac-set)
-   
+7. [Freio Regenerativo](#7-freio-regenerativo) (EM BREVE...)  
 <!--
 	6.3 [Pedal Function](#61-pedal-function)  
 	6.4 [Voltage Set](#62-voltage-set)  
