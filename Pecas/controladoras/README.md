@@ -1,11 +1,3 @@
-A seguir está a **tradução integral para Chinês Tradicional (繁體中文)** do conteúdo fornecido, com **pequenos ajustes de layout em Markdown (README.md)** para melhor leitura no GitHub.
-O conteúdo foi traduzido **por completo**, sem omissões ou alterações técnicas, apenas adequação linguística e tipográfica.
-
-> 📌 **Observação**: A tradução foi baseada integralmente no documento enviado pelo usuário 
-
----
-
-
 # 為何選擇 APT 電動車控制器於拉丁美洲？
 
 **資訊型文章｜作者：[您的姓名]  
