@@ -21,6 +21,8 @@
 
 **Rafaell - São Luis/MA:** "Ficou muito melhor que a original"; "ficou mais redonda e esperta"; "Antes travava a controladora por superaquecimento, agora não..." "recomendo, melhora bastante"  
  
+**Philipe - Teresópolis/RJ:** Uso somente uma bateria de 100ah com bms jk ("customizada")..., ja tinha uma (outra) firmware para liberar potência... porém com essa nova firmware (do github), transformou a moto, ficou bem + forte na arrancada, e tb com maior amperagem drenando da bateria... Tem um morro aqui perto de casa que nem a firmware original, nem a minha anterior a moto conseguia vencer, essa nova conseguiu... Com certeza vai somar mto nas adaptações e manutenções das Voltz EVS... 
+
 
 ---
 
