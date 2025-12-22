@@ -16,6 +16,10 @@
 
 **Motociclistas testadores:** Luiz Eduardo, ...
 
+**Feedbacks curtos:**  
+**Luiz Eduardo - São Paulo/SP:** A moto ficou muito mais na mão, mais responsiva. A principal diferença que eu senti foi nas subidas, a moto esta com mais "fôlego" e da a sensação de mais segurança pra ultrapassagem e de andar no geral...
+
+
 ---
 
 ## 📚 Sumário
