@@ -36,8 +36,8 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 - 2 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
-- Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
-- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_IA_130_YM_T10.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_IA_130_YM_T10</strong>
+- Software: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.zip" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Firmware/APT/evs/A1705_V10000_EVS_IA_130_YM_T10.zip" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_IA_130_YM_T10</strong>
 
 
 ⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
@@ -79,8 +79,8 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 - 2 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
-- Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
-- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_130_YM-T7.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_130_YM-T7</strong>
+- Software: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.zip" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Firmware/APT/evs/A1705_V10000_EVS_130_YM-T7.zip" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_130_YM-T7</strong>
 
 ⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
@@ -107,8 +107,8 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 - 1 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
-- Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
-- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs/A1705_V10000_EVS_70_YM_T8.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_70_YM_T8.dat</strong>
+- Software: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.zip" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Firmware/APT/evs/A1705_V10000_EVS_70_YM_T8.zip" target="_blank" rel="noopener noreferrer">A1705_V10000_EVS_70_YM_T8.dat</strong>
 
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
 2. Destrava TBOX, que passa ter a função de **apenas colocar a hora e data no painel**, não mais fica refém dele, a moto não depende dele para funcionar ou acelerar.  
@@ -116,5 +116,3 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS com duas bater
 
 
 ---
-
-**EM CONSTRUÇÃO**  

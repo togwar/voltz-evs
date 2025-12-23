@@ -36,8 +36,8 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS Work com duas 
 - 2 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
-- Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
-- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Firmware/APT/evs-work/A1705_V10000_EVSW_130_QS-NT-T24.dat" target="_blank" rel="noopener noreferrer">A1705_V10000_EVSW_130_QS-NT-T24</strong>
+- Software: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.zip" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Download da Firmware: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Firmware/APT/evs-work/A1705_V10000_EVSW_130_QS-NT-T24.zip" target="_blank" rel="noopener noreferrer">A1705_V10000_EVSW_130_QS-NT-T24</strong>
 
 ⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
@@ -66,7 +66,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS Work com duas 
 - 2 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
-- Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Software: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.zip" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
 
 
 ⚠ **ATENÇÃO:** RECOMENDADA para quem possui **DUAS BATERIAS** ou superior.  
@@ -105,7 +105,7 @@ Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.
 - 1 Baterias Voltz EVS ou mais.
 - BMS Original **ou Paralela**.
 - Com **ou Sem TBOX**. (Desbloqueia TBOX)
-- Software: <strong><a href="https://github.com/togwar/voltz-evs/blob/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.exe" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
+- Software: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Softwares/APT/MCU%20Upgrade%20System/Firmware%20Updater%20V1.5.2.zip" target="_blank" rel="noopener noreferrer">Firmware Updater V1.5.2.exe</strong>
 
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
 2. Destrava TBOX, que passa ter a função de **apenas colocar a hora e data no painel**, não mais fica refém dele, a moto não depende dele para funcionar ou acelerar.  
