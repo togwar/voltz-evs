@@ -15,10 +15,6 @@ Instagram para contato: @hook3.d
 Quer modificar sua Voltz? Chame o ​⁠‪@blackdaniel_ev‬  (11) 96433-4574  
 
 
-## ⏱️ Imagens ou Prints importantes do vídeo/tutorial
-
-![Descrição da imagem](sample.png)  
-
 ## 💾 Links Externos de referencia:  
 
 <strong><a href="https://shopee.com.br/product/607821839/18598043495/" target="_blank" rel="noopener noreferrer">Link Entrada de Ar EVS</strong>  
