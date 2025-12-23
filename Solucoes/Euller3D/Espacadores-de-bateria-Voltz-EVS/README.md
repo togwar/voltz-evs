@@ -1,4 +1,4 @@
-# Euller Labs - Espaçadores de Bateria Voltz EVS.
+# Espaçadores de Bateria Voltz EVS.
 
 - Folga na Bateria EVS? Resolva esse problema da melhor maneira possível!
 <p align="center">
@@ -17,4 +17,8 @@ No meu caso, usei folha de EVA de 3mm e colei os espaçadores com fita dupla fac
 
 ## ⏱️ Imagens ou Prints importantes do vídeo/tutorial
 
-![Descrição da imagem](sample.png)
+![Descrição da imagem](sample.png)  
+
+## 💾 Arquivos para Download:  
+- Download do arquivo 3D: <strong><a href="https://github.com/togwar/voltz-evs/raw/main/Solucoes/Euller3D/Espacadores-de-bateria-Voltz-EVS/5783904.zip" target="_blank" rel="noopener noreferrer">5783904.zip</strong>
+
