@@ -46,6 +46,7 @@ Essa firmware **entrega mais potência (no geral) comparado a EVS Work com duas 
 
 
 ---
+<!--
 
 ## ⚙️ A1705_V10000_EVS_IA_130_YM-T26.dat - (EM DESENVOLVIMENTO)
 **NÃO RECOMENDADA** para quem possui **apenas uma bateria**.  
@@ -110,7 +111,7 @@ Para voltar à **potência máxima**, basta desligar e ligar a moto normalmente.
 1. Todas as configurações originais da moto e do fabricante incluindo motor.  
 2. Destrava TBOX, que passa ter a função de **apenas colocar a hora e data no painel**, não mais fica refém dele, a moto não depende dele para funcionar ou acelerar.  
 3. Nessa versão o parâmetro **Max idc pk [A]** é equivalente ao limite de 70A, ou seja igual o comportamento/potência da moto com apenas uma bateria, mesmo possuindo duas ou mais.
-
+-->
 
 ---
 
