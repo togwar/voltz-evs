@@ -10,6 +10,3 @@
 ## 🌟 Objetivo / O que você vai aprender
 
 Acompanhe a instalação/subistiuição da BMS Daly em uma bateria de EV1 Sport.
-
-
-**EM CONSTRUÇÃO**  
