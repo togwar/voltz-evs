@@ -303,7 +303,7 @@ Não é potência bruta.
 	> Controle de torque em alta velocidade; prioriza estabilidade e eficiência.
  - Alterar o valor em **Iqref 11[%]** de 45 para **50**.✅  
 	> Torque reduzido próximo ao limite de velocidade; protege motor e controladora.
- - Alterar o valor em **Iqref 11[%]** de 35 para **40**.✅💾  
+ - Alterar o valor em **Iqref 12[%]** de 35 para **40**.✅💾  
 	> Zona final de torque; limita esforço em rotações elevadas.
 
 Como ficou a curva com as mudanças.  
