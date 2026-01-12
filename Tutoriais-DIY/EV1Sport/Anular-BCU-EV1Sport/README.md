@@ -11,7 +11,8 @@
 ## 🌟 Objetivo / O que você vai aprender
 
 Isolando BCU da Ev1 Sport Voltz.  
-
++   
+Ligando 3 baterias na EV1 Sport  
 
 ## 🧰 Pré-requisitos
 
