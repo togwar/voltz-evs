@@ -1,4 +1,7 @@
 # ByPass do Carregador para EVS
+🚨 Toda a carga, qualidade da carga, limite da carga, proteções, e estabilidade, depende da "**QUALIDADE DO SEU CARREGADOR**".
+⚠️ PARA SUA Segurança e do seu veículo, certifique que possui um carregador de qualidade e que atenda os padrões do fabricante do seu veículo!
+💬 **Em resumo sobre o que o produto faz apenas envia uma "mensagem" para a BMS, se passando pelo carregador original.**
 
 # EU QUERO!!! https://forms.gle/Ka8GFxxT43yjCXXs7
 Preencha o formularo se tiver interesse nessa solução:
@@ -13,7 +16,7 @@ Preencha o formularo se tiver interesse nessa solução:
 
 ## 🌟 Objetivo / O que você vai aprender
 
-Solução desenvolvida pela empresa "EBM Eletronic" que permite a utilização de qualquer carregador paralelo com as baterias originais da VOLTZ EVS (desde que seja compatível com a tensão das baterias).
+Solução **protótipo** desenvolvida pela empresa "EBM Eletronic" que permite a utilização de qualquer carregador paralelo com as baterias originais da VOLTZ EVS (desde que seja compatível com a tensão das baterias).
 
 Ele emite a comunicação de autorização de carregamento entre outras funções necessárias para que a BMS original autorize a carga nas baterias, sem essa peça apenas com carregadores originais da VOLTZ é possível carregar a moto com suas baterias e BMS originais.
 
