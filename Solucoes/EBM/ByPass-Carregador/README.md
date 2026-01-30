@@ -1,4 +1,4 @@
-# ByPass do Carregador para EVS
+# ByPass v2.0 do Carregador para EVS
 🚨 Toda a carga, qualidade da carga, limite da carga, proteções, e estabilidade, depende da "**QUALIDADE DO SEU CARREGADOR**".  
 ⚠️ PARA SUA Segurança e do seu veículo, certifique que possui um carregador de qualidade e que atenda os padrões do fabricante do seu veículo!  
 💬 **Em resumo sobre o que o produto faz apenas envia uma "mensagem" para a BMS, se passando pelo carregador original.**  
