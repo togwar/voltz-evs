@@ -16,7 +16,7 @@ Preencha o formularo se tiver interesse nessa solução:
 
 ## 🌟 Objetivo / O que você vai aprender
 
-Solução **protótipo** desenvolvida pela empresa "EBM Eletronic" que permite a utilização de qualquer carregador paralelo com as baterias originais da VOLTZ EVS (desde que seja compatível com a tensão das baterias).
+Solução **protótipo** plug-and-play desenvolvida pela empresa "EBM Eletronic" que permite a utilização de qualquer carregador paralelo com as baterias originais da VOLTZ EVS (desde que seja compatível com a tensão das baterias).
 
 Ele emite a comunicação de autorização de carregamento entre outras funções necessárias para que a BMS original autorize a carga nas baterias, sem essa peça apenas com carregadores originais da VOLTZ é possível carregar a moto com suas baterias e BMS originais.
 
