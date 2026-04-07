@@ -26,7 +26,7 @@ O farol da EVS possui 6 LEDs no total, divididos em três funções:
 - 9V – 15W
 - Montados em uma barra de alumínio
 - São os que mais costumam apresentar defeito
-https://a.aliexpress.com/_mK7izwH
+https://meli.la/32E2NHh
 
 🔦 Farol alto
 
