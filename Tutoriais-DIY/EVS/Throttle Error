@@ -1,0 +1,69 @@
+# Guia de Solução: Moto Voltz EVS Não Responde ao Acelerador (Erro de Throttle em Controladora APT)
+
+## Visão Geral do Problema
+O sintoma é: a moto liga, o painel funciona, sai do modo P, mas ao acelerar, nada acontece. A causa raiz costuma ser o desalinhamento físico entre o sensor Hall e o ímã dentro do manípulo do acelerador, o que faz com que a tensão mínima de repouso fique muito alta, acima do limite configurado na controladora. A controladora pensa que você já está acelerando e, por segurança, impede o arranque.
+
+## Pré-requisitos
+* Um computador com o software da controladora APT instalado (`EV_DriveManager`).
+* Cabo de interface USB-serial compatível para conectar o PC à controladora da moto.
+
+---
+
+## Fase 1: Diagnóstico (Verificando o Erro)
+
+O primeiro passo é confirmar se o problema é realmente o acelerador.
+
+1. **Conecte e Abra o Software:** Conecte o cabo da moto ao PC e abra o software `EV_DriveManager`. Certifique-se de que a controladora esteja 'online'.
+2. **Verifique o Registro de Erros:** Na tela principal, localize e clique no botão **Error log**.
+
+![Tela Principal - Verificação de Erros](./imagens/passo1_error_log.jpg)
+> *Na imagem acima, destacamos o botão **Error log**, o campo de dados **Throttle vdc[V]** e o botão **Pedal function set**. Você usará todos eles.*
+
+3. **Análise do Log:** Uma pequena janela abrirá. Verifique se o item `Current` ao lado de `Hall` está como `NG` (Not Good), e se o erro listado é explicitamente **Throttle Error**. Se for, continue para a Fase 2. Se não houver erro de throttle, o problema é outro.
+
+---
+
+## Fase 2: Identificação do Problema (Visualizando o Erro)
+
+Agora vamos verificar os valores de tensão e entender por que o erro ocorre.
+
+1. **Anotação do Valor Real:** Volte para a tela principal. Com o manípulo do acelerador em repouso absoluto (sem tocar nele), anote o valor exibido no campo **Throttle vdc[V]**. No nosso exemplo, o valor real é **0,857 V**.
+2. **Entrada na Tela de Configuração:** Clique no botão **Pedal function set** para acessar as configurações detalhadas.
+3. **Comparação dos Valores (Visualizando o Conflito):** Na nova janela que abrir, localize o campo **Throttle low[V]**.
+
+![Problema Visualizado - Conflito de Valores](./imagens/passo2_limite_baixo.jpg)
+> *A imagem acima mostra uma simulação do problema de forma clara. O valor de **Throttle low[V]** foi alterado para **0,8000 V**, que é **menor** que o valor real anotado (0,857 V).*
+
+#### Entenda o Conflito:
+* **Valor Real Medido:** 0,857 V
+* **Limite Inferior de Software (simulado):** 0,8000 V
+* **Consequência:** Como o valor real (`0,857 V`) é *maior* que o limite (`0,8000 V`), a controladora entende que a moto já está acelerada. Por segurança, ela entra em modo de proteção e não arranca. Este é o erro.
+
+---
+
+## Fase 3: Correção Mecânica (A Solução Principal)
+
+Este problema geralmente não pode ser resolvido apenas pelo software. A controladora impede que você altere o valor de `Throttle low` se o valor real já estiver alto. A solução é física.
+
+1. **Solução de Contorno Mecânico:** Com a moto ligada e o software aberto na tela principal, tente forçar o manípulo do acelerador no **sentido contrário** (empurrando-o para frente, além da posição de repouso normal).
+2. **Monitore o Software:** Enquanto você força o acelerador para trás, observe o valor em **Throttle vdc[V]** na tela principal. Se a solução mecânica estiver funcionando, o valor deve cair.
+3. **Confirmação do Reparo Mecânico:** O objetivo é conseguir forçar o acelerador de modo que o valor caia para um nível mais baixo, idealmente próximo de 0,80V ou menos. Se você conseguir baixar o valor de 0,857V para, por exemplo, 0,820V, a moto deve voltar a funcionar.
+
+**Nota:** Se mesmo forçando ao contrário o valor não cair, ou se ele for muito alto (perto de 5V constante), o sensor do acelerador está danificado e o manípulo precisa ser substituído.
+
+---
+
+## Fase 4: Correção de Software (Finalização e Prevenção)
+
+Se você conseguiu reduzir o valor mecânico (ex: para 0,820V), você resolveu o problema imediato. Agora, para evitar que o erro volte, vamos aumentar ligeiramente o limite de calibração por software.
+
+1. **Acesse o Menu:** Clique novamente em **Pedal function set** na tela principal.
+2. **Leia os Valores Atuais:** Clique no botão `Read` na parte inferior para carregar os valores da controladora.
+3. **Ajuste o Limite:** Localize o campo **Throttle low[V]**. Nós vamos configurá-lo para um valor ligeiramente *acima* do novo valor real de repouso que você conseguiu mecanicamente. No nosso exemplo, como o valor real caiu para 0,820V, configure o limite para **0,8500 V**.
+
+![Configuração Final - Novo Limite](./imagens/passo3_valor_corrigido.jpg)
+> *A imagem mostra a configuração correta. O campo **Throttle low[V]** foi ajustado para **0,8500 V** e salvo clicando em **Write**.*
+
+4. **Gravação dos Novos Dados:** Clique no botão **Write** na parte inferior para salvar as novas configurações na controladora.
+
+Com esta configuração, garantimos que o valor real em repouso (0,820V) esteja seguramente abaixo do limite inferior (0,8500V), prevenindo futuros erros de calibração. A moto está pronta!
